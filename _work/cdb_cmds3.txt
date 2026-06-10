@@ -1,0 +1,5 @@
+.logopen E:\game\_work\cdb3.log
+.symopt+0x100
+bp USER32!MessageBoxA ".echo ===MBA===; da poi(@esp+8) L60; k 12; g"
+bp USER32!MessageBoxW ".echo ===MBW===; du poi(@esp+8) L60; k 12; g"
+g

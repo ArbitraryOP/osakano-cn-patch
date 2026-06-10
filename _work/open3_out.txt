@@ -1,0 +1,107 @@
+
+========== ARCHIVE_OPEN 0x4547E0 0x004547E0 ==========
+  0x004547E0: sub      esp, 8
+  0x004547E3: push     ebx
+  0x004547E4: mov      ebx, edx
+  0x004547E6: push     ebp
+  0x004547E7: push     esi
+  0x004547E8: test     ebx, ebx
+  0x004547EA: push     edi
+  0x004547EB: mov      esi, ecx
+  0x004547ED: je       0x454882
+  0x004547F3: call     0x4540b0
+  0x004547F8: lea      edx, [esi + 0x108]
+  0x004547FE: mov      ecx, esi
+  0x00454800: push     ebx
+  0x00454801: lea      edi, [esi + 0x414]
+  0x00454807: call     0x455850
+  0x0045480C: mov      ebp, dword ptr [0x522bd0]  ; IMP:lstrcpyA IMP:lstrcpyA
+  0x00454812: push     eax
+  0x00454813: push     edi
+  0x00454814: call     ebp
+  0x00454816: mov      ecx, edi
+  0x00454818: call     0x458210  ; "錦ｹ"
+  0x0045481D: test     eax, eax
+  0x0045481F: je       0x454840
+  0x00454821: mov      eax, dword ptr [esi + 0x548]
+  0x00454827: mov      edx, ebx
+  0x00454829: or       al, 1
+  0x0045482B: mov      ecx, esi
+  0x0045482D: mov      dword ptr [esi + 0x548], eax
+  0x00454833: call     0x4548d0
+  0x00454838: pop      edi
+  0x00454839: pop      esi
+  0x0045483A: pop      ebp
+  0x0045483B: pop      ebx
+  0x0045483C: add      esp, 8
+  0x0045483F: ret      
+
+========== openfile 0x4583CE 0x004583CE ==========
+  0x004583CE: nop      
+  0x004583CF: nop      
+  0x004583D0: sub      esp, 0x108
+  0x004583D6: mov      eax, edx
+  0x004583D8: lea      edx, [esp + 4]
+  0x004583DC: push     esi
+  0x004583DD: mov      esi, ecx
+  0x004583DF: mov      ecx, eax
+  0x004583E1: call     0x458710
+  0x004583E6: test     eax, eax
+  0x004583E8: je       0x458443
+  0x004583EA: cmp      esi, 0x80000000
+  0x004583F0: ja       0x458414
+  0x004583F2: je       0x45840d
+  0x004583F4: mov      ecx, esi
+  0x004583F6: sub      ecx, 0x40000000
+  0x004583FC: je       0x45841c
+  0x004583FE: dec      ecx
+  0x004583FF: jne      0x458423
+  0x00458401: mov      ecx, 2
+  0x00458406: mov      esi, 0x40000000
+  0x0045840B: jmp      0x458427  ; "j"
+  0x0045840D: mov      ecx, 3
+  0x00458412: jmp      0x458427  ; "j"
+  0x00458414: cmp      esi, 0xc0000000
+  0x0045841A: jne      0x458423
+  0x0045841C: mov      ecx, 4
+  0x00458421: jmp      0x458427  ; "j"
+  0x00458423: mov      ecx, dword ptr [esp + 4]
+  0x00458427: push     0
+  0x00458429: push     0x8000080
+  0x0045842E: push     ecx
+  0x0045842F: push     0
+  0x00458431: push     0
+  0x00458433: push     esi
+  0x00458434: push     eax
+  0x00458435: call     dword ptr [0x522a48]  ; IMP:CreateFileA IMP:CreateFileA
+  0x0045843B: pop      esi
+  0x0045843C: add      esp, 0x108
+  0x00458442: ret      
+
+========== buildname 0x455849 0x00455849 ==========
+  0x00455849: nop      
+  0x0045584A: nop      
+  0x0045584B: nop      
+  0x0045584C: nop      
+  0x0045584D: nop      
+  0x0045584E: nop      
+  0x0045584F: nop      
+  0x00455850: mov      eax, dword ptr [esp + 4]
+  0x00455854: push     ebx
+  0x00455855: mov      bl, byte ptr [eax]
+  0x00455857: cmp      bl, 0x5c
+  0x0045585A: pop      ebx
+  0x0045585B: jne      0x45585e
+  0x0045585D: inc      eax
+  0x0045585E: push     esi
+  0x0045585F: push     eax
+  0x00455860: lea      esi, [ecx + 0x310]
+  0x00455866: push     edx
+  0x00455867: push     0x48bbf4  ; "%s%s"
+  0x0045586C: push     esi
+  0x0045586D: call     dword ptr [0x522da4]  ; IMP:wsprintfA IMP:wsprintfA
+  0x00455873: add      esp, 0x10
+  0x00455876: mov      eax, esi
+  0x00455878: pop      esi
+  0x00455879: ret      4
+done

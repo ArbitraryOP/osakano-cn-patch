@@ -1,0 +1,210 @@
+
+##### CALL 0x00458210 sites: ['0x43f37c', '0x44082e', '0x44087b', '0x4408c4', '0x440e88', '0x4545c7', '0x454818', '0x454c51', '0x45623d'] #####
+  --- caller context @0x0043F37C ---
+    0x0043F32C: sahf     
+    0x0043F32D: dec      esp
+    0x0043F32E: add      al, byte ptr [eax]
+    0x0043F330: add      byte ptr [edi], cl
+    0x0043F332: test     dword ptr [esi + 1], esp
+    0x0043F335: add      byte ptr [eax], al
+    0x0043F337: push     ebx
+    0x0043F338: mov      edx, 1
+    0x0043F33D: mov      ecx, esi
+    0x0043F33F: call     0x440150
+    0x0043F344: test     eax, eax
+    0x0043F346: je       0x43f49d
+    0x0043F34C: mov      al, byte ptr [esi + 0x460]
+    0x0043F352: lea      ebp, [esi + 0x460]
+    0x0043F358: cmp      al, bl
+    0x0043F35A: jne      0x43f36e
+    0x0043F35C: cmp      dword ptr [esi + 0x24c], ebx
+    0x0043F362: je       0x43f368
+    0x0043F364: xor      ebp, ebp
+    0x0043F366: jmp      0x43f36e
+    0x0043F368: lea      ebp, [esi + 0x358]
+    0x0043F36E: cmp      dword ptr [esi + 0x24c], ebx
+    0x0043F374: je       0x43f396
+    0x0043F376: mov      ecx, dword ptr [esi + 0x12590]
+    0x0043F37C: call     0x458210  ; "錦ｹ" <==
+    0x0043F381: test     eax, eax
+  --- caller context @0x0044082E ---
+    0x004407DE: push     edi
+    0x004407DF: push     eax
+    0x004407E0: call     dword ptr [0x522bd0]  ; IMP:lstrcpyA IMP:lstrcpyA
+    0x004407E6: jmp      0x440802
+    0x004407E8: movsx    ecx, byte ptr [esi + 0x45c]
+    0x004407EF: push     ecx
+    0x004407F0: lea      edx, [esp + 0x114]
+    0x004407F7: push     0x48c448  ; "%c:\"
+    0x004407FC: push     edx
+    0x004407FD: call     ebx
+    0x004407FF: add      esp, 0xc
+    0x00440802: mov      eax, dword ptr [esi + 0x126d0]
+    0x00440808: test     eax, eax
+    0x0044080A: je       0x440841
+    0x0044080C: mov      eax, dword ptr [esi + 0x12510]
+    0x00440812: lea      ecx, [esp + 0x110]
+    0x00440819: push     eax
+    0x0044081A: push     ecx
+    0x0044081B: lea      edx, [esp + 0x14]
+    0x0044081F: push     0x48bbf4  ; "%s%s"
+    0x00440824: push     edx
+    0x00440825: call     ebx
+    0x00440827: add      esp, 0x10
+    0x0044082A: lea      ecx, [esp + 0xc]
+    0x0044082E: call     0x458210  ; "錦ｹ" <==
+    0x00440833: test     eax, eax
+  --- caller context @0x0044087B ---
+    0x0044082B: dec      esp
+    0x0044082C: and      al, 0xc
+    0x0044082E: call     0x458210  ; "錦ｹ"
+    0x00440833: test     eax, eax
+    0x00440835: jne      0x440841
+    0x00440837: pop      edi
+    0x00440838: pop      esi
+    0x00440839: pop      ebx
+    0x0044083A: add      esp, 0x208
+    0x00440840: ret      
+    0x00440841: mov      eax, dword ptr [esi + 0x126cc]
+    0x00440847: test     eax, eax
+    0x00440849: je       0x4408d7
+    0x0044084F: mov      eax, dword ptr [esi + 0x248]
+    0x00440855: test     eax, eax
+    0x00440857: jne      0x44088e
+    0x00440859: mov      eax, dword ptr [esi + 0x12588]
+    0x0044085F: lea      ecx, [esp + 0x110]
+    0x00440866: push     eax
+    0x00440867: push     ecx
+    0x00440868: lea      edx, [esp + 0x14]
+    0x0044086C: push     0x48bbf4  ; "%s%s"
+    0x00440871: push     edx
+    0x00440872: call     ebx
+    0x00440874: add      esp, 0x10
+    0x00440877: lea      ecx, [esp + 0xc]
+    0x0044087B: call     0x458210  ; "錦ｹ" <==
+    0x00440880: test     eax, eax
+  --- caller context @0x004408C4 ---
+    0x00440874: add      esp, 0x10
+    0x00440877: lea      ecx, [esp + 0xc]
+    0x0044087B: call     0x458210  ; "錦ｹ"
+    0x00440880: test     eax, eax
+    0x00440882: jne      0x44088e
+    0x00440884: pop      edi
+    0x00440885: pop      esi
+    0x00440886: pop      ebx
+    0x00440887: add      esp, 0x208
+    0x0044088D: ret      
+    0x0044088E: mov      eax, dword ptr [esi + 0x24c]
+    0x00440894: test     eax, eax
+    0x00440896: jne      0x4408d7
+    0x00440898: mov      eax, dword ptr [esi + 0x1272c]
+    0x0044089E: test     eax, eax
+    0x004408A0: je       0x4408d7
+    0x004408A2: mov      eax, dword ptr [esi + 0x12590]
+    0x004408A8: lea      ecx, [esp + 0x110]
+    0x004408AF: push     eax
+    0x004408B0: push     ecx
+    0x004408B1: lea      edx, [esp + 0x14]
+    0x004408B5: push     0x48bbf4  ; "%s%s"
+    0x004408BA: push     edx
+    0x004408BB: call     ebx
+    0x004408BD: add      esp, 0x10
+    0x004408C0: lea      ecx, [esp + 0xc]
+    0x004408C4: call     0x458210  ; "錦ｹ" <==
+    0x004408C9: test     eax, eax
+  --- caller context @0x00440E88 ---
+    0x00440E38: adc      byte ptr [ecx - 1], dl
+    0x00440E3B: adc      eax, 0x522bd0  ; IMP:lstrcpyA
+    0x00440E40: lea      esi, [esp + 0xc]
+    0x00440E44: push     esi
+    0x00440E45: push     0
+    0x00440E47: mov      edx, edi
+    0x00440E49: mov      ecx, ebx
+    0x00440E4B: call     0x440c40
+    0x00440E50: mov      edx, esi
+    0x00440E52: mov      ecx, eax
+    0x00440E54: call     0x4565e0
+    0x00440E59: pop      edi
+    0x00440E5A: pop      esi
+    0x00440E5B: pop      ebx
+    0x00440E5C: add      esp, 0x104
+    0x00440E62: ret      8
+    0x00440E65: nop      
+    0x00440E66: nop      
+    0x00440E67: nop      
+    0x00440E68: nop      
+    0x00440E69: nop      
+    0x00440E6A: nop      
+    0x00440E6B: nop      
+    0x00440E6C: nop      
+    0x00440E6D: nop      
+    0x00440E6E: nop      
+    0x00440E6F: nop      
+    0x00440E70: sub      esp, 0x104
+    0x00440E76: push     ebx
+    0x00440E77: push     esi
+    0x00440E78: push     edi
+    0x00440E79: mov      edi, edx
+    0x00440E7B: lea      edx, [esp + 0xc]
+    0x00440E7F: mov      esi, ecx
+    0x00440E81: call     0x4411f0
+    0x00440E86: mov      ecx, eax
+    0x00440E88: call     0x458210  ; "錦ｹ" <==
+    0x00440E8D: test     eax, eax
+  --- caller context @0x004545C7 ---
+    0x00454577: sub      byte ptr [edx + 0x50], dl
+    0x0045457A: call     dword ptr [0x522bd0]  ; IMP:lstrcpyA IMP:lstrcpyA
+    0x00454580: lea      edx, [esp + 0x28]
+    0x00454584: mov      ecx, esi
+    0x00454586: push     edi
+    0x00454587: call     0x4559d0
+    0x0045458C: lea      ecx, [esp + 0x28]
+    0x00454590: mov      edx, ebx
+    0x00454592: push     ecx
+    0x00454593: mov      ecx, esi
+    0x00454595: call     0x454500  ; "d｡"
+    0x0045459A: jmp      0x45476e
+    0x0045459F: mov      ecx, esi
+    0x004545A1: call     0x4540b0
+    0x004545A6: mov      edx, dword ptr [esp + 0x340]
+    0x004545AD: mov      ecx, esi
+    0x004545AF: push     edx
+    0x004545B0: mov      edx, edi
+    0x004545B2: lea      ebp, [esi + 0x414]
+    0x004545B8: call     0x455850
+    0x004545BD: push     eax
+    0x004545BE: push     ebp
+    0x004545BF: call     dword ptr [0x522bd0]  ; IMP:lstrcpyA IMP:lstrcpyA
+    0x004545C5: mov      ecx, ebp
+    0x004545C7: call     0x458210  ; "錦ｹ" <==
+    0x004545CC: test     eax, eax
+
+##### CALL 0x004547E0 sites: ['0x45422a'] #####
+  --- caller context @0x0045422A ---
+    0x004541DA: add      dword ptr [eax], eax
+    0x004541DC: add      byte ptr [ebp + 0x108ae], cl
+    0x004541E2: add      byte ptr [edx], bh
+    0x004541E4: ret      
+    0x004541E5: jne      0x454221
+    0x004541E7: mov      eax, dword ptr [esp + 0x138]
+    0x004541EE: lea      ecx, [esp + 0x24]
+    0x004541F2: push     eax
+    0x004541F3: push     ecx
+    0x004541F4: call     dword ptr [0x522bd0]  ; IMP:lstrcpyA IMP:lstrcpyA
+    0x004541FA: lea      edx, [esp + 0x24]
+    0x004541FE: mov      ecx, esi
+    0x00454200: push     ebp
+    0x00454201: call     0x4559d0
+    0x00454206: lea      eax, [esp + 0x24]
+    0x0045420A: mov      ecx, esi
+    0x0045420C: mov      edx, dword ptr [esp + 0x13c]
+    0x00454213: push     edx
+    0x00454214: push     eax
+    0x00454215: mov      edx, edi
+    0x00454217: call     0x454170  ; "d｡"
+    0x0045421C: jmp      0x45431e
+    0x00454221: mov      edx, dword ptr [esp + 0x138]
+    0x00454228: mov      ecx, esi
+    0x0045422A: call     0x4547e0 <==
+    0x0045422F: test     eax, eax
+done

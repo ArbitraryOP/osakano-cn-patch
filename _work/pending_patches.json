@@ -1,0 +1,9 @@
+[
+ {"tag":"os-warning-skip",      "file_offset_hex":"0x0003F87D", "orig_bytes_hex":"7526", "new_bytes_hex":"EB26"},
+ {"tag":"cd-da-prompt-skip",    "file_offset_hex":"0x000580AD", "orig_bytes_hex":"744C", "new_bytes_hex":"EB53"},
+ {"tag":"render-class-nibbleA", "file_offset_hex":"0x0008CB10", "orig_bytes_hex":"01",   "new_bytes_hex":"02"},
+ {"tag":"render-class-nibbleB", "file_offset_hex":"0x0008CB14", "orig_bytes_hex":"01",   "new_bytes_hex":"02"},
+ {"tag":"render-class-nibbleC", "file_offset_hex":"0x0008CB18", "orig_bytes_hex":"01",   "new_bytes_hex":"02"},
+ {"tag":"render-class-nibbleD", "file_offset_hex":"0x0008CB1C", "orig_bytes_hex":"01",   "new_bytes_hex":"02"},
+ {"tag":"render-order-branch",  "file_offset_hex":"0x00046EC6", "orig_bytes_hex":"72",   "new_bytes_hex":"EB"}
+]

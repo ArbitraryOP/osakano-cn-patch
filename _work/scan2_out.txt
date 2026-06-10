@@ -1,0 +1,49 @@
+=== callers of IsSJISLead 0x0045C500 ===
+  22 direct calls: ['0x40f4ad', '0x41706f', '0x4170b8', '0x417107', '0x417149', '0x4171f0', '0x41724c', '0x4173d3', '0x4290c1', '0x4450e1', '0x445186', '0x445258', '0x44535d', '0x447075', '0x447157', '0x44727d', '0x45c069', '0x45c0da', '0x45c12f', '0x45c560', '0x4645ac', '0x4646e6']
+
+=== other potential lead-byte tests (cmp ?,0x81 clusters not at TARGET) ===
+=== caller contexts (first 3) ===
+--- around call @ 0x0040F4AD ---
+    0x0040F495: adc al, 0x8b
+    0x0040F497: dec esp
+    0x0040F498: and al, 0x18
+    0x0040F49A: mov cl, byte ptr [ecx]
+    0x0040F49C: cmp cl, 0x7c
+    0x0040F49F: je 0x40f5cf
+    0x0040F4A5: test cl, cl
+    0x0040F4A7: je 0x40f5cf
+    0x0040F4AD: call 0x45c500 <== call
+    0x0040F4B2: mov ecx, dword ptr [esp + 0x18]
+    0x0040F4B6: test eax, eax
+    0x0040F4B8: je 0x40f50a
+
+--- around call @ 0x0041706F ---
+    0x00417057: nop 
+    0x00417058: add al, byte ptr [eax]
+    0x0041705A: test eax, eax
+    0x0041705C: mov eax, esi
+    0x0041705E: je 0x4172ca
+    0x00417064: cmp byte ptr [eax], 0
+    0x00417067: je 0x417120
+    0x0041706D: mov cl, byte ptr [esi]
+    0x0041706F: call 0x45c500 <== call
+    0x00417074: test eax, eax
+    0x00417076: je 0x417112
+
+--- around call @ 0x004170B8 ---
+    0x004170A0: add byte ptr [ebx + 0x55f8e8ce], cl
+    0x004170A6: add al, 0
+    0x004170A8: test eax, eax
+    0x004170AA: jne 0x4170b1
+    0x004170AC: add esi, 2
+    0x004170AF: jmp 0x417113
+    0x004170B1: mov cl, byte ptr [esi + 2]
+    0x004170B4: add esi, 2
+    0x004170B7: inc ebx
+    0x004170B8: call 0x45c500 <== call
+    0x004170BD: test eax, eax
+    0x004170BF: je 0x417113
+    0x004170C1: mov edx, 0x8141
+    0x004170C6: mov ecx, esi
+
+done

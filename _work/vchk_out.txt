@@ -1,0 +1,146 @@
+  0x00440790: add      al, 0x27
+  0x00440792: add      dword ptr [eax], eax
+  0x00440794: test     eax, eax
+  0x00440796: je       0x440764
+  0x00440798: xor      edx, edx
+  0x0044079A: mov      ecx, esi
+  0x0044079C: call     0x4407b0
+  0x004407A1: test     eax, eax
+  0x004407A3: jne      0x440764
+  0x004407A5: pop      edi
+  0x004407A6: xor      eax, eax
+  0x004407A8: pop      esi
+  0x004407A9: ret      
+  0x004407AA: nop      
+  0x004407AB: nop      
+  0x004407AC: nop      
+  0x004407AD: nop      
+  0x004407AE: nop      
+  0x004407AF: nop      
+  0x004407B0: sub      esp, 0x208
+  0x004407B6: test     edx, edx
+  0x004407B8: push     ebx
+  0x004407B9: mov      ebx, dword ptr [0x522da4]  ; IMP:wsprintfA
+  0x004407BF: push     esi
+  0x004407C0: push     edi
+  0x004407C1: mov      esi, ecx
+  0x004407C3: jne      0x440802
+  0x004407C5: lea      edi, [esi + 0x358]
+  0x004407CB: push     edi
+  0x004407CC: call     dword ptr [0x522bc0]  ; IMP:lstrlenA
+  0x004407D2: cmp      eax, 3
+  0x004407D5: jle      0x4407e8
+  0x004407D7: lea      eax, [esp + 0x110]
+  0x004407DE: push     edi
+  0x004407DF: push     eax
+  0x004407E0: call     dword ptr [0x522bd0]  ; IMP:lstrcpyA
+  0x004407E6: jmp      0x440802
+  0x004407E8: movsx    ecx, byte ptr [esi + 0x45c]
+  0x004407EF: push     ecx
+  0x004407F0: lea      edx, [esp + 0x114]
+  0x004407F7: push     0x48c448  ; "%c:\"
+  0x004407FC: push     edx
+  0x004407FD: call     ebx
+  0x004407FF: add      esp, 0xc
+  0x00440802: mov      eax, dword ptr [esi + 0x126d0]
+  0x00440808: test     eax, eax
+  0x0044080A: je       0x440841
+  0x0044080C: mov      eax, dword ptr [esi + 0x12510]
+  0x00440812: lea      ecx, [esp + 0x110]
+  0x00440819: push     eax
+  0x0044081A: push     ecx
+  0x0044081B: lea      edx, [esp + 0x14]
+  0x0044081F: push     0x48bbf4  ; "%s%s"
+  0x00440824: push     edx
+  0x00440825: call     ebx
+  0x00440827: add      esp, 0x10
+  0x0044082A: lea      ecx, [esp + 0xc]
+  0x0044082E: call     0x458210
+  0x00440833: test     eax, eax
+  0x00440835: jne      0x440841
+  0x00440837: pop      edi
+  0x00440838: pop      esi
+  0x00440839: pop      ebx
+  0x0044083A: add      esp, 0x208
+  0x00440840: ret      
+  0x00440841: mov      eax, dword ptr [esi + 0x126cc]
+  0x00440847: test     eax, eax
+  0x00440849: je       0x4408d7
+  0x0044084F: mov      eax, dword ptr [esi + 0x248]
+  0x00440855: test     eax, eax
+  0x00440857: jne      0x44088e
+  0x00440859: mov      eax, dword ptr [esi + 0x12588]
+  0x0044085F: lea      ecx, [esp + 0x110]
+  0x00440866: push     eax
+  0x00440867: push     ecx
+  0x00440868: lea      edx, [esp + 0x14]
+  0x0044086C: push     0x48bbf4  ; "%s%s"
+  0x00440871: push     edx
+  0x00440872: call     ebx
+  0x00440874: add      esp, 0x10
+  0x00440877: lea      ecx, [esp + 0xc]
+  0x0044087B: call     0x458210
+  0x00440880: test     eax, eax
+  0x00440882: jne      0x44088e
+  0x00440884: pop      edi
+  0x00440885: pop      esi
+  0x00440886: pop      ebx
+  0x00440887: add      esp, 0x208
+  0x0044088D: ret      
+  0x0044088E: mov      eax, dword ptr [esi + 0x24c]
+  0x00440894: test     eax, eax
+  0x00440896: jne      0x4408d7
+  0x00440898: mov      eax, dword ptr [esi + 0x1272c]
+  0x0044089E: test     eax, eax
+  0x004408A0: je       0x4408d7
+  0x004408A2: mov      eax, dword ptr [esi + 0x12590]
+  0x004408A8: lea      ecx, [esp + 0x110]
+  0x004408AF: push     eax
+  0x004408B0: push     ecx
+  0x004408B1: lea      edx, [esp + 0x14]
+  0x004408B5: push     0x48bbf4  ; "%s%s"
+  0x004408BA: push     edx
+  0x004408BB: call     ebx
+  0x004408BD: add      esp, 0x10
+  0x004408C0: lea      ecx, [esp + 0xc]
+  0x004408C4: call     0x458210
+  0x004408C9: test     eax, eax
+  0x004408CB: jne      0x4408d7
+  0x004408CD: pop      edi
+  0x004408CE: pop      esi
+  0x004408CF: pop      ebx
+  0x004408D0: add      esp, 0x208
+  0x004408D6: ret      
+  0x004408D7: pop      edi
+  0x004408D8: pop      esi
+  0x004408D9: mov      eax, 1
+  0x004408DE: pop      ebx
+  0x004408DF: add      esp, 0x208
+  0x004408E5: ret      
+  0x004408E6: nop      
+  0x004408E7: nop      
+  0x004408E8: nop      
+  0x004408E9: nop      
+  0x004408EA: nop      
+  0x004408EB: nop      
+  0x004408EC: nop      
+  0x004408ED: nop      
+  0x004408EE: nop      
+  0x004408EF: nop      
+  0x004408F0: sub      esp, 0x234
+  0x004408F6: mov      eax, dword ptr [esp + 0x238]
+  0x004408FD: push     ebx
+  0x004408FE: push     ebp
+  0x004408FF: push     esi
+  0x00440900: mov      esi, ecx
+  0x00440902: push     edi
+  0x00440903: mov      edi, dword ptr [0x522bd0]  ; IMP:lstrcpyA
+  0x00440909: lea      ecx, [esp + 0x3c]
+  0x0044090D: push     eax
+  0x0044090E: push     ecx
+  0x0044090F: mov      ebx, edx
+  0x00440911: mov      dword ptr [esp + 0x20], esi
+  0x00440915: xor      ebp, ebp
+  0x00440917: call     edi
+  0x00440919: mov      edx, 0x2b
+done

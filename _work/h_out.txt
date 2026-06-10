@@ -1,0 +1,38 @@
+
+========== VERIFY-OPCODE 0x41ad50 0x0041AD50 ==========
+  0x0041AD50: push     esi
+  0x0041AD51: push     edi
+  0x0041AD52: mov      esi, ecx
+  0x0041AD54: xor      edi, edi
+  0x0041AD56: mov      ecx, 0x4df040
+  0x0041AD5B: mov      di, word ptr [esi]
+  0x0041AD5E: add      esi, 2
+  0x0041AD61: mov      edx, esi
+  0x0041AD63: call     0x45bdb0
+  0x0041AD68: test     eax, eax
+  0x0041AD6A: jl       0x41ad76
+  0x0041AD6C: shl      eax, 8
+  0x0041AD6F: add      eax, 0x4e3db0
+  0x0041AD74: jmp      0x41ad78
+  0x0041AD76: mov      eax, esi
+  0x0041AD78: push     edi
+  0x0041AD79: push     eax
+  0x0041AD7A: xor      edx, edx
+  0x0041AD7C: mov      ecx, 0x4b1f58
+  0x0041AD81: call     0x440b20
+  0x0041AD86: neg      eax
+  0x0041AD88: sbb      eax, eax
+  0x0041AD8A: pop      edi
+  0x0041AD8B: neg      eax
+  0x0041AD8D: pop      esi
+  0x0041AD8E: ret      
+
+========== OPCODE 0x416330 0x00416330 ==========
+  0x00416330: xor      eax, eax
+  0x00416332: mov      ax, word ptr [ecx]
+  0x00416335: cmp      eax, 4
+  0x00416338: ja       0x416355  ; "3ﾀﾃUcA"
+  0x0041633A: jmp      dword ptr [eax*4 + 0x416358]  ; "UcA"
+  0x00416341: mov      eax, 1
+  0x00416346: ret      
+done

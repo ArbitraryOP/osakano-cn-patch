@@ -1,0 +1,99 @@
+
+========== alloc/decompress? 0x457030 0x00457030 ==========
+  0x00457030: mov      eax, dword ptr [esp + 8]
+  0x00457034: push     esi
+  0x00457035: push     edi
+  0x00457036: push     eax
+  0x00457037: mov      edi, edx
+  0x00457039: call     0x456f90
+  0x0045703E: mov      esi, eax
+  0x00457040: test     esi, esi
+  0x00457042: je       0x457056
+  0x00457044: mov      ecx, dword ptr [esp + 0xc]
+  0x00457048: and      ecx, 0xff
+  0x0045704E: push     ecx
+  0x0045704F: push     edi
+  0x00457050: push     esi
+  0x00457051: call     0x4432c0
+  0x00457056: mov      eax, esi
+  0x00457058: pop      edi
+  0x00457059: pop      esi
+  0x0045705A: ret      8
+
+========== archive dir parse 0x458690 0x00458690 ==========
+  0x00458690: sub      esp, 8
+  0x00458693: push     ebx
+  0x00458694: push     ebp
+  0x00458695: push     esi
+  0x00458696: push     edi
+  0x00458697: mov      edi, edx
+  0x00458699: mov      esi, ecx
+  0x0045869B: call     0x458520
+  0x004586A0: mov      ebx, dword ptr [esp + 0x1c]
+  0x004586A4: mov      ebp, dword ptr [0x522a54]  ; IMPORT KERNEL32!WriteFile
+  0x004586AA: mov      dword ptr [esp + 0x14], eax
+  0x004586AE: mov      dword ptr [esp + 0x10], 0
+  0x004586B6: lea      eax, [esp + 0x1c]
+  0x004586BA: push     0
+  0x004586BC: push     eax
+  0x004586BD: push     ebx
+  0x004586BE: push     edi
+  0x004586BF: push     esi
+  0x004586C0: call     ebp
+  0x004586C2: test     eax, eax
+  0x004586C4: je       0x4586cc
+  0x004586C6: cmp      dword ptr [esp + 0x1c], ebx
+  0x004586CA: je       0x4586f8
+  0x004586CC: mov      ecx, dword ptr [esp + 0x14]
+  0x004586D0: xor      edx, edx
+  0x004586D2: push     ecx
+  0x004586D3: mov      ecx, esi
+  0x004586D5: call     0x458640
+  0x004586DA: test     eax, eax
+  0x004586DC: je       0x4586ec
+  0x004586DE: mov      eax, dword ptr [esp + 0x10]
+  0x004586E2: inc      eax
+  0x004586E3: cmp      eax, 5
+  0x004586E6: mov      dword ptr [esp + 0x10], eax
+  0x004586EA: jl       0x4586b6
+  0x004586EC: pop      edi
+  0x004586ED: pop      esi
+  0x004586EE: pop      ebp
+  0x004586EF: xor      eax, eax
+  0x004586F1: pop      ebx
+  0x004586F2: add      esp, 8
+  0x004586F5: ret      4
+
+========== 0x458710 0x00458710 ==========
+  0x00458710: push     esi
+  0x00458711: mov      esi, ecx
+  0x00458713: push     edi
+  0x00458714: mov      edi, edx
+  0x00458716: test     esi, esi
+  0x00458718: je       0x458749
+  0x0045871A: call     0x43c470
+  0x0045871F: test     eax, eax
+  0x00458721: je       0x458730
+  0x00458723: push     esi
+  0x00458724: push     edi
+  0x00458725: call     dword ptr [0x522bd0]  ; IMPORT KERNEL32!lstrcpyA
+  0x0045872B: mov      eax, edi
+  0x0045872D: pop      edi
+  0x0045872E: pop      esi
+  0x0045872F: ret      
+
+========== archive open region 0x454820 0x00454820 ==========
+  0x00454820: pop      ds
+  0x00454821: mov      eax, dword ptr [esi + 0x548]
+  0x00454827: mov      edx, ebx
+  0x00454829: or       al, 1
+  0x0045482B: mov      ecx, esi
+  0x0045482D: mov      dword ptr [esi + 0x548], eax
+  0x00454833: call     0x4548d0
+  0x00454838: pop      edi
+  0x00454839: pop      esi
+  0x0045483A: pop      ebp
+  0x0045483B: pop      ebx
+  0x0045483C: add      esp, 8
+  0x0045483F: ret      
+done

@@ -1,0 +1,26 @@
+=== SJIS-lead check #1 @ VA 0x0045C500 (file 0x05C500) ===
+    immediates seen: ['0x45C510', '0x45C520', '0x81', '0x9F', '0xE0', '0xFC']
+    0x0045C500 (f0x05C500) 80f981         cmp cl, 0x81 <<<
+    0x0045C503 (f0x05C503) 720b           jb 0x45c510
+    0x0045C505 (f0x05C505) 80f99f         cmp cl, 0x9f <<<
+    0x0045C508 (f0x05C508) 7706           ja 0x45c510
+    0x0045C50A (f0x05C50A) b801000000     mov eax, 1
+    0x0045C50F (f0x05C50F) c3             ret 
+    0x0045C510 (f0x05C510) 80f9e0         cmp cl, 0xe0 <<<
+    0x0045C513 (f0x05C513) 720b           jb 0x45c520
+    0x0045C515 (f0x05C515) 80f9fc         cmp cl, 0xfc <<<
+    0x0045C518 (f0x05C518) 7706           ja 0x45c520
+    0x0045C51A (f0x05C51A) b801000000     mov eax, 1
+    0x0045C51F (f0x05C51F) c3             ret 
+    0x0045C520 (f0x05C520) 33c0           xor eax, eax
+    0x0045C522 (f0x05C522) c3             ret 
+    0x0045C523 (f0x05C523) 90             nop 
+    0x0045C524 (f0x05C524) 90             nop 
+
+
+Total SJIS-lead-style checks found: 1
+
+relevant imports:
+  KERNEL32.dll!WideCharToMultiByte @ IAT 0x00522AD0
+  KERNEL32.dll!MultiByteToWideChar @ IAT 0x00522BA0
+done

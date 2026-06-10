@@ -1,0 +1,5 @@
+.logopen E:\game\_work\cdb5.log
+.symopt+0x100
+bp 0x4162b0 ".echo >>>ERROR_OPCODE_DISPATCHED<<<; g"
+bp 0x45a6f9 ".printf \"%x\\n\", edx; g"
+g

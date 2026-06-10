@@ -1,0 +1,73 @@
+# ============================================================
+#  《幼なじみな彼女 / 青梅竹马的她》简中汉化项目 —— .gitignore
+#  原则：只版本控制「汉化工具链 + 补丁产物 + 文档」；
+#  排除 GB 级游戏原始资源、发布包、截图、转储、存档与中间产物。
+# ============================================================
+
+# ---- 游戏原始大资源（非汉化产物，GB 级二进制不进库）----
+voice.lax
+gr24.lax
+common.lax
+*.wav
+*.mpg
+*.mpeg
+*.avi
+
+# ---- 发布包 ----
+*.zip
+*.7z
+*.rar
+
+# ---- jp 是指向「幼なじみな彼女」的 junction（内容重复）----
+/jp/
+
+# ---- 工作流路径拼接 bug 误生成的畸形顶层目录 ----
+/Egame_workwf2r05/
+/Egame_workwf2r07/
+/Egame_workwf2r11/
+/Egame_workwftr-C/
+
+# ---- 玩家存档（随游玩变化，非项目资产）----
+savedata/
+
+# ---- 调试/验证截图、内存转储、解码中间二进制（体积大、可再生成）----
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.gif
+*.dmp
+*.bin
+
+# ---- 调试日志 ----
+*.log
+
+# ---- _work 工作流中间产物（解包块/翻译分片/agent 输出，
+#       均可由顶层脚本从原始资源重新生成）----
+_work/agentA/
+_work/agentB/
+_work/agentC/
+_work/build/
+_work/built/
+_work/chunks/
+_work/defect_chunks/
+_work/defect_out/
+_work/overflow_chunks/
+_work/extract/
+_work/unpacked/
+_work/verify_unpacked/
+_work/translated/
+_work/translated.bak1/
+_work/translated_parts/
+_work/test/
+_work/wf/
+_work/wf2/
+_work/wf3/
+_work/wf4/
+_work/Egame_workwf3site03/
+_work/Egame_workwf3site37/
+
+# ---- 操作系统/编辑器杂项 ----
+Thumbs.db
+desktop.ini
+.DS_Store

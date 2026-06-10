@@ -1,0 +1,5 @@
+func head bytes: 80 f9 81 72 0b 80 f9 9f 77 06
+patched 0x05C507: 9F -> FE  (IsSJISLead now accepts GBK leads 0x81..0xFE)
+patched func: 80 f9 81 72 0b 80 f9 fe 77 06 b8 01 00 00 00 c3 80 f9 e0 72 0b 80 f9 fc 77 06 b8 01 00 00 00 c3 33 c0 c3
+synced -> build\osakano.exe
+done

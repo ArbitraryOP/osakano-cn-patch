@@ -1,0 +1,59 @@
+
+========== DECOMPRESS 0x4432c0 0x004432C0 ==========
+  0x004432C0: push     ebp
+  0x004432C1: mov      ebp, esp
+  0x004432C3: push     ebx
+  0x004432C4: push     edi
+  0x004432C5: cld      
+  0x004432C6: push     ds
+  0x004432C7: pop      es
+  0x004432C8: mov      edi, dword ptr [ebp + 8]
+  0x004432CB: mov      ecx, dword ptr [ebp + 0xc]
+  0x004432CE: mov      edx, ecx
+  0x004432D0: shr      ecx, 2
+  0x004432D3: and      edx, 3
+  0x004432D6: mov      ebx, dword ptr [ebp + 0x10]
+  0x004432D9: mov      bh, bl
+  0x004432DB: mov      eax, ebx
+  0x004432DD: bswap    eax
+  0x004432DF: mov      ax, bx
+  0x004432E2: jecxz    0x4432e6
+  0x004432E4: rep stosd dword ptr es:[edi], eax
+  0x004432E6: mov      ecx, edx
+  0x004432E8: jecxz    0x4432f4
+  0x004432EA: mov      edi, edi
+  0x004432EC: mov      byte ptr [edi], al
+  0x004432EE: inc      edi
+  0x004432EF: loop     0x4432ec
+  0x004432F1: lea      ecx, [ecx]
+  0x004432F4: pop      edi
+  0x004432F5: pop      ebx
+  0x004432F6: pop      ebp
+  0x004432F7: ret      0xc
+
+========== alloc 0x456f90 0x00456F90 ==========
+  0x00456F90: push     ebx
+  0x00456F91: push     edi
+  0x00456F92: mov      edi, edx
+  0x00456F94: mov      ebx, ecx
+  0x00456F96: lea      eax, [edi + 0x180]
+  0x00456F9C: push     eax
+  0x00456F9D: push     ebx
+  0x00456F9E: call     dword ptr [0x522a2c]  ; IMPORT GlobalAlloc
+  0x00456FA4: test     eax, eax
+  0x00456FA6: je       0x456fd9
+  0x00456FA8: test     bl, 2
+  0x00456FAB: je       0x456fc8
+  0x00456FAD: push     esi
+  0x00456FAE: push     eax
+  0x00456FAF: call     dword ptr [0x522a30]  ; IMPORT GlobalLock
+  0x00456FB5: mov      esi, eax
+  0x00456FB7: mov      edx, edi
+  0x00456FB9: mov      ecx, esi
+  0x00456FBB: call     0x4571d0
+  0x00456FC0: mov      eax, esi
+  0x00456FC2: pop      esi
+  0x00456FC3: pop      edi
+  0x00456FC4: pop      ebx
+  0x00456FC5: ret      4
+done

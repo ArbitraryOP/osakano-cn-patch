@@ -1,0 +1,18 @@
+scenario.lax size 1100878
+header: 24 4c 61 70 48 5f 5f 00 5f 41 46 31 85 57 00 00
+magic b'$LapH__\x00' method b'_AF1' val@12 0x5785
+te files: 29
+CANDIDATE start=0x12 ring=4096 init=0 thr=2 lit1=True lsb=True plv=1 -> 24 54 41 4d 64 61 74 61 71 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc 52 00 00 bc b9
+CANDIDATE start=0x12 ring=4096 init=0 thr=2 lit1=True lsb=True plv=3 -> 24 54 41 4d 64 61 74 61 71 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc 52 00 00 bc b9 02
+CANDIDATE start=0x12 ring=4096 init=0 thr=3 lit1=True lsb=True plv=0 -> 24 54 41 4d 64 61 74 61 71 00 00 00 fc 52 00 00 bc b9 02 00 19 00 00 00 de 00 00 00 02 00 00 00
+CANDIDATE start=0x12 ring=4096 init=0 thr=3 lit1=True lsb=True plv=1 -> 24 54 41 4d 64 61 74 61 71 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc 52 00 00 bc
+CANDIDATE start=0x12 ring=4096 init=0 thr=3 lit1=True lsb=True plv=2 -> 24 54 41 4d 64 61 74 61 71 00 00 00 fc 52 00 00 bc b9 02 00 19 00 00 00 de 00 00 00 02 00 00 00
+CANDIDATE start=0x12 ring=4096 init=0 thr=3 lit1=True lsb=True plv=3 -> 24 54 41 4d 64 61 74 61 71 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc 52 00 00 bc b9
+CANDIDATE start=0x12 ring=2048 init=0 thr=2 lit1=True lsb=True plv=1 -> 24 54 41 4d 64 61 74 61 71 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc 52 00 00 bc b9
+CANDIDATE start=0x12 ring=2048 init=0 thr=2 lit1=True lsb=True plv=3 -> 24 54 41 4d 64 61 74 61 71 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc 52 00 00 bc b9 02
+CANDIDATE start=0x12 ring=2048 init=0 thr=3 lit1=True lsb=True plv=0 -> 24 54 41 4d 64 61 74 61 71 00 00 00 fc 52 00 00 bc b9 02 00 19 00 00 00 de 00 00 00 02 00 00 00
+CANDIDATE start=0x12 ring=2048 init=0 thr=3 lit1=True lsb=True plv=1 -> 24 54 41 4d 64 61 74 61 71 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc 52 00 00 bc
+CANDIDATE start=0x12 ring=2048 init=0 thr=3 lit1=True lsb=True plv=2 -> 24 54 41 4d 64 61 74 61 71 00 00 00 fc 52 00 00 bc b9 02 00 19 00 00 00 de 00 00 00 02 00 00 00
+CANDIDATE start=0x12 ring=2048 init=0 thr=3 lit1=True lsb=True plv=3 -> 24 54 41 4d 64 61 74 61 71 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc 52 00 00 bc b9
+BEST: (1, 18, 4096, 0, 3, True, True, 0, '24 54 41 4d 64 61 74 61 71 00 00 00 fc 52 00 00 bc b9 02 00 19 00 00 00 de 00 00 00 02 00 00 00')
+done

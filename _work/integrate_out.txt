@@ -1,0 +1,31 @@
+baseline: copied 31 original entries into built/
+  salvaged 100 records from 0708__501_600.json
+0708           parts=28 salvaged=1 edited=2395 overflow=29 [28, 69, 671, 707, 723, 774, 847, 849]
+  salvaged 100 records from 0709__2001_2100.json
+0709           parts=41 salvaged=1 edited=3597 overflow=45 [22, 63, 416, 430, 644, 906, 944, 946]
+0710           parts=38 salvaged=0 edited=3273 overflow=55 [3, 14, 78, 82, 83, 87, 149, 151]
+0711           parts=32 salvaged=0 edited=2842 overflow=21 [151, 155, 160, 242, 263, 280, 490, 495]
+0712           parts=29 salvaged=0 edited=2588 overflow=15 [129, 531, 541, 561, 585, 624, 653, 956]
+0720           parts=25 salvaged=0 edited=2229 overflow=18 [17, 133, 195, 251, 292, 349, 708, 714]
+0721           parts= 4 salvaged=0 edited= 164 overflow=2 [5, 117]
+cgmode         parts= 1 salvaged=0 edited=   6 overflow=0 []
+config         parts= 4 salvaged=0 edited=  60 overflow=1 [29]
+edmode         parts= 1 salvaged=0 edited=  13 overflow=0 []
+ending         parts= 4 salvaged=0 edited=  61 overflow=2 [19, 21]
+ending_rec     parts= 4 salvaged=0 edited=  64 overflow=2 [19, 21]
+etc            parts= 3 salvaged=0 edited=  10 overflow=1 [5]
+mem            parts= 8 salvaged=0 edited= 301 overflow=10 [12, 21, 27, 29, 56, 57, 58, 112]
+musmode        parts= 1 salvaged=0 edited=   3 overflow=0 []
+  salvaged 60 records from op__1562_1621.json
+op             parts=39 salvaged=1 edited=2144 overflow=22 [123, 381, 412, 439, 443, 481, 490, 525]
+prof           parts= 4 salvaged=0 edited=  30 overflow=0 []
+sp             parts= 1 salvaged=0 edited=   6 overflow=0 []
+special1       parts= 8 salvaged=0 edited= 345 overflow=2 [2, 197]
+special2       parts=16 salvaged=0 edited=1361 overflow=11 [222, 239, 258, 403, 971, 1042, 1044, 1072]
+special3       parts= 2 salvaged=0 edited=  61 overflow=0 []
+staff          parts= 1 salvaged=0 edited=   4 overflow=0 []
+svld           parts= 1 salvaged=0 edited=  12 overflow=0 []
+system         parts= 1 salvaged=0 edited=  44 overflow=0 []
+title          parts= 1 salvaged=0 edited=  10 overflow=0 []
+zakki          parts= 9 salvaged=0 edited= 105 overflow=6 [77, 82, 85, 97, 100, 102]
+TOTAL edited=21728 overflow=242

@@ -1,0 +1,13 @@
+scenario.lax 1100878 bytes
+$LapI__ at compressed offset: 0x10cc26 ( 1100838 )
+bytes from header: 5f 41 46 31 85 57 00 00
+index region hex (from $LapI__):
+  +0000: 24 4C 61 70 49 5F 5F 00 1F 00 00 00 9F C4 10 00  $LapI__.........
+  +0010: D8 23 00 00 87 07 00 00 B8 74 1E 00 97 C4 10 00  .#.......t......
+  +0020: DC 00 00 00 00 00 00 00  ........
+
+decoded size (stream up to index): 2032097
+declared count: 31
+after count, next 64 bytes: 9f c4 10 00 d8 23 00 00 87 07 00 00 b8 74 1e 00 97 c4 10 00 dc 00 00 00 00 00 00 00
+ascii tokens in index: [('0x1', 'LapI__'), ('0x19', 't')]
+done

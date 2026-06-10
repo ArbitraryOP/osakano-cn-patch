@@ -1,0 +1,254 @@
+[
+ {
+  "api": "RegSetValueExA",
+  "kind": "call",
+  "va": "0x004617DA",
+  "file": "0x0617DA"
+ },
+ {
+  "api": "RegSetValueExA",
+  "kind": "call",
+  "va": "0x0046184A",
+  "file": "0x06184A"
+ },
+ {
+  "api": "RegSetValueExA",
+  "kind": "call",
+  "va": "0x004618DC",
+  "file": "0x0618DC"
+ },
+ {
+  "api": "RegSetValueExA",
+  "kind": "jmp",
+  "va": "0x0046732E",
+  "file": "0x06732E"
+ },
+ {
+  "api": "RegQueryValueExA",
+  "kind": "call",
+  "va": "0x00461971",
+  "file": "0x061971"
+ },
+ {
+  "api": "RegQueryValueExA",
+  "kind": "call",
+  "va": "0x004619C5",
+  "file": "0x0619C5"
+ },
+ {
+  "api": "RegQueryValueExA",
+  "kind": "call",
+  "va": "0x00461A74",
+  "file": "0x061A74"
+ },
+ {
+  "api": "RegQueryValueExA",
+  "kind": "jmp",
+  "va": "0x00467334",
+  "file": "0x067334"
+ },
+ {
+  "api": "mciSendCommandA",
+  "kind": "jmp",
+  "va": "0x004673F4",
+  "file": "0x0673F4"
+ },
+ {
+  "api": "waveOutSetVolume",
+  "kind": "call",
+  "va": "0x004521A7",
+  "file": "0x0521A7"
+ },
+ {
+  "api": "waveOutSetVolume",
+  "kind": "jmp",
+  "va": "0x004673BE",
+  "file": "0x0673BE"
+ },
+ {
+  "api": "waveOutGetVolume",
+  "kind": "call",
+  "va": "0x00452153",
+  "file": "0x052153"
+ },
+ {
+  "api": "waveOutGetVolume",
+  "kind": "jmp",
+  "va": "0x004673B8",
+  "file": "0x0673B8"
+ },
+ {
+  "api": "waveOutRestart",
+  "kind": "call",
+  "va": "0x00452113",
+  "file": "0x052113"
+ },
+ {
+  "api": "waveOutRestart",
+  "kind": "jmp",
+  "va": "0x004673B2",
+  "file": "0x0673B2"
+ },
+ {
+  "api": "waveOutUnprepareHeader",
+  "kind": "call",
+  "va": "0x00451F45",
+  "file": "0x051F45"
+ },
+ {
+  "api": "waveOutUnprepareHeader",
+  "kind": "call",
+  "va": "0x00452030",
+  "file": "0x052030"
+ },
+ {
+  "api": "waveOutUnprepareHeader",
+  "kind": "jmp",
+  "va": "0x004673A6",
+  "file": "0x0673A6"
+ },
+ {
+  "api": "waveOutReset",
+  "kind": "call",
+  "va": "0x00451EF7",
+  "file": "0x051EF7"
+ },
+ {
+  "api": "waveOutReset",
+  "kind": "call",
+  "va": "0x00451FF9",
+  "file": "0x051FF9"
+ },
+ {
+  "api": "waveOutReset",
+  "kind": "jmp",
+  "va": "0x004673A0",
+  "file": "0x0673A0"
+ },
+ {
+  "api": "waveOutPrepareHeader",
+  "kind": "call",
+  "va": "0x00451E83",
+  "file": "0x051E83"
+ },
+ {
+  "api": "waveOutPrepareHeader",
+  "kind": "jmp",
+  "va": "0x0046739A",
+  "file": "0x06739A"
+ },
+ {
+  "api": "waveOutWrite",
+  "kind": "call",
+  "va": "0x00451EAE",
+  "file": "0x051EAE"
+ },
+ {
+  "api": "waveOutWrite",
+  "kind": "call",
+  "va": "0x00451F07",
+  "file": "0x051F07"
+ },
+ {
+  "api": "waveOutWrite",
+  "kind": "jmp",
+  "va": "0x00467394",
+  "file": "0x067394"
+ },
+ {
+  "api": "waveOutClose",
+  "kind": "call",
+  "va": "0x00451CF5",
+  "file": "0x051CF5"
+ },
+ {
+  "api": "waveOutClose",
+  "kind": "jmp",
+  "va": "0x0046738E",
+  "file": "0x06738E"
+ },
+ {
+  "api": "waveOutGetNumDevs",
+  "kind": "call",
+  "va": "0x00451B0E",
+  "file": "0x051B0E"
+ },
+ {
+  "api": "waveOutGetNumDevs",
+  "kind": "jmp",
+  "va": "0x00467388",
+  "file": "0x067388"
+ },
+ {
+  "api": "waveOutGetDevCapsA",
+  "kind": "call",
+  "va": "0x00451BA4",
+  "file": "0x051BA4"
+ },
+ {
+  "api": "waveOutGetDevCapsA",
+  "kind": "jmp",
+  "va": "0x00467382",
+  "file": "0x067382"
+ },
+ {
+  "api": "waveOutOpen",
+  "kind": "call",
+  "va": "0x00451C1E",
+  "file": "0x051C1E"
+ },
+ {
+  "api": "waveOutOpen",
+  "kind": "jmp",
+  "va": "0x00467376",
+  "file": "0x067376"
+ },
+ {
+  "api": "waveOutGetID",
+  "kind": "call",
+  "va": "0x00451C32",
+  "file": "0x051C32"
+ },
+ {
+  "api": "waveOutGetID",
+  "kind": "jmp",
+  "va": "0x00467370",
+  "file": "0x067370"
+ },
+ {
+  "api": "waveOutGetErrorTextA",
+  "kind": "call",
+  "va": "0x00451CA4",
+  "file": "0x051CA4"
+ },
+ {
+  "api": "waveOutGetErrorTextA",
+  "kind": "jmp",
+  "va": "0x0046736A",
+  "file": "0x06736A"
+ },
+ {
+  "api": "waveOutPause",
+  "kind": "call",
+  "va": "0x004520E3",
+  "file": "0x0520E3"
+ },
+ {
+  "api": "waveOutPause",
+  "kind": "jmp",
+  "va": "0x004673AC",
+  "file": "0x0673AC"
+ },
+ {
+  "api": "strref:MusicInstall",
+  "kind": "ref",
+  "va": "0x0043FB01",
+  "file": "0x03FB01"
+ },
+ {
+  "api": "strref:VoiceInstall",
+  "kind": "ref",
+  "va": "0x0043FADF",
+  "file": "0x03FADF"
+ }
+]

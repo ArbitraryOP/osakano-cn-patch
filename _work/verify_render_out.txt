@@ -1,0 +1,92 @@
+=== bodyPump 0x446E50 region (file 0x046E50..0x046F10) ===
+  0x00446E50 (046E50): 8b442408       mov eax, dword ptr [esp + 8]
+  0x00446E54 (046E54): 53             push ebx
+  0x00446E55 (046E55): 56             push esi
+  0x00446E56 (046E56): 8bf1           mov esi, ecx
+  0x00446E58 (046E58): 85c0           test eax, eax
+  0x00446E5A (046E5A): 7505           jne 0x446e61
+  0x00446E5C (046E5C): 5e             pop esi
+  0x00446E5D (046E5D): 5b             pop ebx
+  0x00446E5E (046E5E): c20c00         ret 0xc
+  0x00446E61 (046E61): 50             push eax
+  0x00446E62 (046E62): 8b442410       mov eax, dword ptr [esp + 0x10]
+  0x00446E66 (046E66): 50             push eax
+  0x00446E67 (046E67): 8bce           mov ecx, esi
+  0x00446E69 (046E69): e862e7ffff     call 0x4455d0
+  0x00446E6E (046E6E): 8b542414       mov edx, dword ptr [esp + 0x14]
+  0x00446E72 (046E72): 85d2           test edx, edx
+  0x00446E74 (046E74): 7e07           jle 0x446e7d
+  0x00446E76 (046E76): 8bce           mov ecx, esi
+  0x00446E78 (046E78): e883d7ffff     call 0x444600
+  0x00446E7D (046E7D): 8b86202b0000   mov eax, dword ptr [esi + 0x2b20]
+  0x00446E83 (046E83): 8a10           mov dl, byte ptr [eax]
+  0x00446E85 (046E85): 40             inc eax
+  0x00446E86 (046E86): 84d2           test dl, dl
+  0x00446E88 (046E88): 8854240c       mov byte ptr [esp + 0xc], dl
+  0x00446E8C (046E8C): 8986202b0000   mov dword ptr [esi + 0x2b20], eax
+  0x00446E92 (046E92): 0f84ec000000   je 0x446f84
+  0x00446E98 (046E98): b304           mov bl, 4
+  0x00446E9A (046E9A): 8b4c240c       mov ecx, dword ptr [esp + 0xc]
+  0x00446E9E (046E9E): 81e1ff000000   and ecx, 0xff
+  0x00446EA4 (046EA4): c1e904         shr ecx, 4
+  0x00446EA7 (046EA7): 8b0c8de8ca4800 mov ecx, dword ptr [ecx*4 + 0x48cae8]   <-- table index (lead>>4)
+  0x00446EAE (046EAE): 83e900         sub ecx, 0
+  0x00446EB1 (046EB1): 0f849a000000   je 0x446f51
+  0x00446EB7 (046EB7): 49             dec ecx
+  0x00446EB8 (046EB8): 744b           je 0x446f05
+  0x00446EBA (046EBA): 49             dec ecx
+  0x00446EBB (046EBB): 0f85a8000000   jne 0x446f69
+  0x00446EC1 (046EC1): 33c9           xor ecx, ecx
+  0x00446EC3 (046EC3): 80faeb         cmp dl, 0xeb   <-- cmp dl,0xEB
+  0x00446EC6 (046EC6): 7211           jb 0x446ed9   <-- jb (Fix2: 72->EB)
+  0x00446EC8 (046EC8): 8aea           mov ch, dl
+  0x00446ECA (046ECA): 8a08           mov cl, byte ptr [eax]
+  0x00446ECC (046ECC): 40             inc eax
+  0x00446ECD (046ECD): 894c2410       mov dword ptr [esp + 0x10], ecx
+  0x00446ED1 (046ED1): 8986202b0000   mov dword ptr [esi + 0x2b20], eax
+  0x00446ED7 (046ED7): eb6e           jmp 0x446f47
+  0x00446ED9 (046ED9): 8a28           mov ch, byte ptr [eax]
+  0x00446EDB (046EDB): 40             inc eax
+  0x00446EDC (046EDC): 8aca           mov cl, dl
+  0x00446EDE (046EDE): 8986202b0000   mov dword ptr [esi + 0x2b20], eax
+  0x00446EE4 (046EE4): 894c2410       mov dword ptr [esp + 0x10], ecx
+  0x00446EE8 (046EE8): 6681f94081     cmp cx, 0x8140
+  0x00446EED (046EED): 8d542410       lea edx, [esp + 0x10]
+  0x00446EF1 (046EF1): 6a02           push 2
+  0x00446EF3 (046EF3): 8bce           mov ecx, esi
+  0x00446EF5 (046EF5): 754b           jne 0x446f42
+  0x00446EF7 (046EF7): e8d4f8ffff     call 0x4467d0
+  0x00446EFC (046EFC): 8bce           mov ecx, esi
+  0x00446EFE (046EFE): e84df9ffff     call 0x446850
+  0x00446F03 (046F03): eb42           jmp 0x446f47
+  0x00446F05 (046F05): 8b86082e0000   mov eax, dword ptr [esi + 0x2e08]
+  0x00446F0B (046F0B): 85c0           test eax, eax
+  0x00446F0D (046F0D): 7520           jne 0x446f2f
+
+=== SJIS class table @ VA 0x48CAE8 (file 0x08CAE8), 16 dwords by high-nibble ===
+  nib 0x0 file 0x08CAE8: dword=00000000  byte0=00
+  nib 0x1 file 0x08CAEC: dword=00000000  byte0=00
+  nib 0x2 file 0x08CAF0: dword=00000001  byte0=01
+  nib 0x3 file 0x08CAF4: dword=00000001  byte0=01
+  nib 0x4 file 0x08CAF8: dword=00000001  byte0=01
+  nib 0x5 file 0x08CAFC: dword=00000001  byte0=01
+  nib 0x6 file 0x08CB00: dword=00000001  byte0=01
+  nib 0x7 file 0x08CB04: dword=00000001  byte0=01
+  nib 0x8 file 0x08CB08: dword=00000002  byte0=02
+  nib 0x9 file 0x08CB0C: dword=00000002  byte0=02
+  nib 0xA file 0x08CB10: dword=00000001  byte0=01  <-- leads 0xA0-0xAF (GBK hanzi) Fix1: 01->02
+  nib 0xB file 0x08CB14: dword=00000001  byte0=01  <-- leads 0xB0-0xBF (GBK hanzi) Fix1: 01->02
+  nib 0xC file 0x08CB18: dword=00000001  byte0=01  <-- leads 0xC0-0xCF (GBK hanzi) Fix1: 01->02
+  nib 0xD file 0x08CB1C: dword=00000001  byte0=01  <-- leads 0xD0-0xDF (GBK hanzi) Fix1: 01->02
+  nib 0xE file 0x08CB20: dword=00000002  byte0=02
+  nib 0xF file 0x08CB24: dword=00000002  byte0=02
+
+=== exact patch-site bytes ===
+  0x08CB10: 01 (want 01->02)
+  0x08CB14: 01 (want 01->02)
+  0x08CB18: 01 (want 01->02)
+  0x08CB1C: 01 (want 01->02)
+  0x046EC6: 72 (want 72->EB)
+  0x03F87D: 75 26 (OS warn, want 75 26->EB 26)
+  0x0580AD: 74 4C (CD prompt, want 74 4C->EB 53)
+done

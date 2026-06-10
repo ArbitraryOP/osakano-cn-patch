@@ -1,0 +1,4 @@
+waveOutSetVolume call sites: ['0x4521a7']
+
+=== context @ 0x004521A7 (waveOutSetVolume) ===
+   0x00452147: add al, 0x74

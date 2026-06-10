@@ -1,0 +1,183 @@
+
+========== voice-fail decision @0x4162cb 0x00416240-0x004162F0 ==========
+  0x00416240: dec      edi
+  0x00416241: add      bl, al
+  0x00416243: xor      eax, eax
+  0x00416245: ret      
+  0x00416246: nop      
+  0x00416247: nop      
+  0x00416248: nop      
+  0x00416249: nop      
+  0x0041624A: nop      
+  0x0041624B: nop      
+  0x0041624C: nop      
+  0x0041624D: nop      
+  0x0041624E: nop      
+  0x0041624F: nop      
+  0x00416250: int3     
+  0x00416251: int3     
+  0x00416252: int3     
+  0x00416253: int3     
+  0x00416254: int3     
+  0x00416255: int3     
+  0x00416256: int3     
+  0x00416257: int3     
+  0x00416258: int3     
+  0x00416259: int3     
+  0x0041625A: int3     
+  0x0041625B: int3     
+  0x0041625C: int3     
+  0x0041625D: int3     
+  0x0041625E: int3     
+  0x0041625F: int3     
+  0x00416260: push     esi
+  0x00416261: mov      esi, ecx
+  0x00416263: mov      edx, esi
+  0x00416265: mov      ecx, 0x4df040
+  0x0041626A: call     0x45bdb0
+  0x0041626F: test     eax, eax
+  0x00416271: jl       0x41627d
+  0x00416273: shl      eax, 8
+  0x00416276: add      eax, 0x4e3db0
+  0x0041627B: jmp      0x41627f
+  0x0041627D: mov      eax, esi
+  0x0041627F: mov      ecx, dword ptr [0x4b1f60]
+  0x00416285: mov      edx, eax
+  0x00416287: push     ecx
+  0x00416288: mov      ecx, 0x4b1f58
+  0x0041628D: call     0x40191a  ; "鴦G"
+  0x00416292: mov      eax, 1
+  0x00416297: pop      esi
+  0x00416298: ret      
+  0x00416299: nop      
+  0x0041629A: nop      
+  0x0041629B: nop      
+  0x0041629C: nop      
+  0x0041629D: nop      
+  0x0041629E: nop      
+  0x0041629F: nop      
+  0x004162A0: int3     
+  0x004162A1: int3     
+  0x004162A2: int3     
+  0x004162A3: int3     
+  0x004162A4: int3     
+  0x004162A5: int3     
+  0x004162A6: int3     
+  0x004162A7: int3     
+  0x004162A8: int3     
+  0x004162A9: int3     
+  0x004162AA: int3     
+  0x004162AB: int3     
+  0x004162AC: int3     
+  0x004162AD: int3     
+  0x004162AE: int3     
+  0x004162AF: int3     
+  0x004162B0: push     esi
+  0x004162B1: mov      esi, ecx
+  0x004162B3: mov      edx, esi
+  0x004162B5: mov      ecx, 1
+  0x004162BA: call     0x417e30
+  0x004162BF: mov      edx, esi
+  0x004162C1: xor      ecx, ecx
+  0x004162C3: push     0
+  0x004162C5: push     eax
+  0x004162C6: call     0x458110
+  0x004162CB: mov      eax, 1
+  0x004162D0: pop      esi
+  0x004162D1: ret      
+  0x004162D2: nop      
+  0x004162D3: nop      
+  0x004162D4: nop      
+  0x004162D5: nop      
+  0x004162D6: nop      
+  0x004162D7: nop      
+  0x004162D8: nop      
+  0x004162D9: nop      
+  0x004162DA: nop      
+  0x004162DB: nop      
+  0x004162DC: nop      
+  0x004162DD: nop      
+  0x004162DE: nop      
+  0x004162DF: nop      
+  0x004162E0: int3     
+  0x004162E1: int3     
+  0x004162E2: int3     
+  0x004162E3: int3     
+  0x004162E4: int3     
+  0x004162E5: int3     
+  0x004162E6: int3     
+  0x004162E7: int3     
+  0x004162E8: int3     
+  0x004162E9: int3     
+  0x004162EA: int3     
+  0x004162EB: int3     
+  0x004162EC: int3     
+  0x004162ED: int3     
+  0x004162EE: int3     
+  0x004162EF: int3     
+
+========== caller @0x45a6fb 0x0045A6A0-0x0045A710 ==========
+  0x0045A6A0: xchg     esi, eax
+  0x0045A6A1: sbb      byte ptr [eax], cl
+  0x0045A6A4: add      bl, ch
+  0x0045A6A6: push     0x4874968b
+  0x0045A6AB: add      byte ptr [eax], al
+  0x0045A6AD: add      edx, 0x64
+  0x0045A6B0: cmp      eax, edx
+  0x0045A6B2: jae      0x45a7a1
+  0x0045A6B8: mov      edx, dword ptr [esi + 0x4878]
+  0x0045A6BE: mov      edx, dword ptr [edx + eax*4 - 0x190]
+  0x0045A6C5: test     edx, edx
+  0x0045A6C7: je       0x45a7a1
+  0x0045A6CD: mov      ecx, dword ptr [esi + 0x6d88]
+  0x0045A6D3: test     ecx, ecx
+  0x0045A6D5: je       0x45a6f7
+  0x0045A6D7: cmp      eax, dword ptr [esi + 0x6d80]
+  0x0045A6DD: jne      0x45a701  ; "究@H"
+  0x0045A6DF: or       eax, 0xffffffff
+  0x0045A6E2: mov      dword ptr [esi + 0x1c], eax
+  0x0045A6E5: mov      dword ptr [esi + 0x20], eax
+  0x0045A6E8: mov      dword ptr [esi + 0x6d8c], 1
+  0x0045A6F2: jmp      0x45a7e0
+  0x0045A6F7: mov      ecx, edi
+  0x0045A6F9: call     edx
+  0x0045A6FB: mov      dword ptr [esi + 0x4818], eax
+  0x0045A701: mov      eax, dword ptr [esi + 0x4840]
+  0x0045A707: test     eax, eax
+  0x0045A709: jne      0x45a7e0
+
+========== caller @0x459d1b 0x00459CD0-0x00459D30 ==========
+  0x00459CD0: add      byte ptr [ecx], al
+  0x00459CD2: add      byte ptr [eax], al
+  0x00459CD4: ret      8
+  0x00459CD7: test     ebx, ebx
+  0x00459CD9: je       0x459d09
+  0x00459CDB: mov      edx, ebx
+  0x00459CDD: mov      ecx, esi
+  0x00459CDF: call     0x45b420
+  0x00459CE4: mov      ecx, dword ptr [esi + 4]
+  0x00459CE7: push     0
+  0x00459CE9: lea      edx, [eax + ecx + 0x40]
+  0x00459CED: mov      ecx, dword ptr [esi + 0x4028]
+  0x00459CF3: inc      ecx
+  0x00459CF4: mov      dword ptr [esi + 8], edx
+  0x00459CF7: mov      dword ptr [esi + 0x4028], ecx
+  0x00459CFD: mov      edx, 0x48d0ec  ; "\m"
+  0x00459D02: mov      ecx, esi
+  0x00459D04: call     0x45b2c0  ; "V虞克4H"
+  0x00459D09: lea      eax, [esp + 0x10]
+  0x00459D0D: lea      ecx, [esi + 0x402c]
+  0x00459D13: push     eax
+  0x00459D14: push     ecx
+  0x00459D15: call     dword ptr [0x522bd0]  ; IMP:lstrcpyA IMP:lstrcpyA
+  0x00459D1B: test     ebp, ebp
+  0x00459D1D: jle      0x459d5b  ; "究xH"
+  0x00459D1F: mov      edx, dword ptr [esi + 4]
+  0x00459D22: mov      eax, dword ptr [esi + 0x24]
+  0x00459D25: lea      edi, [esi + 8]
+  0x00459D28: push     0
+  0x00459D2A: push     edx
+  0x00459D2B: push     edi
+  0x00459D2C: push     eax
+  0x00459D2D: mov      edx, ebp
+done

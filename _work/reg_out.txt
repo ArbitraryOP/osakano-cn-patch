@@ -1,0 +1,273 @@
+key 'Software\E-G-O\OsaKano' VA=0x0048B8F0
+refs: ['0x407af9', '0x42a435']
+
+===== context @ 0x00407AF9 =====
+  0x00407A99: add      bl, al
+  0x00407A9B: nop      
+  0x00407A9C: nop      
+  0x00407A9D: nop      
+  0x00407A9E: nop      
+  0x00407A9F: nop      
+  0x00407AA0: int3     
+  0x00407AA1: int3     
+  0x00407AA2: int3     
+  0x00407AA3: int3     
+  0x00407AA4: int3     
+  0x00407AA5: int3     
+  0x00407AA6: int3     
+  0x00407AA7: int3     
+  0x00407AA8: int3     
+  0x00407AA9: int3     
+  0x00407AAA: int3     
+  0x00407AAB: int3     
+  0x00407AAC: int3     
+  0x00407AAD: int3     
+  0x00407AAE: int3     
+  0x00407AAF: int3     
+  0x00407AB0: int3     
+  0x00407AB1: int3     
+  0x00407AB2: int3     
+  0x00407AB3: int3     
+  0x00407AB4: int3     
+  0x00407AB5: int3     
+  0x00407AB6: int3     
+  0x00407AB7: int3     
+  0x00407AB8: int3     
+  0x00407AB9: int3     
+  0x00407ABA: int3     
+  0x00407ABB: int3     
+  0x00407ABC: int3     
+  0x00407ABD: int3     
+  0x00407ABE: int3     
+  0x00407ABF: int3     
+  0x00407AC0: int3     
+  0x00407AC1: int3     
+  0x00407AC2: int3     
+  0x00407AC3: int3     
+  0x00407AC4: int3     
+  0x00407AC5: int3     
+  0x00407AC6: int3     
+  0x00407AC7: int3     
+  0x00407AC8: int3     
+  0x00407AC9: int3     
+  0x00407ACA: int3     
+  0x00407ACB: int3     
+  0x00407ACC: int3     
+  0x00407ACD: int3     
+  0x00407ACE: int3     
+  0x00407ACF: int3     
+  0x00407AD0: int3     
+  0x00407AD1: int3     
+  0x00407AD2: int3     
+  0x00407AD3: int3     
+  0x00407AD4: int3     
+  0x00407AD5: int3     
+  0x00407AD6: int3     
+  0x00407AD7: int3     
+  0x00407AD8: int3     
+  0x00407AD9: int3     
+  0x00407ADA: int3     
+  0x00407ADB: int3     
+  0x00407ADC: int3     
+  0x00407ADD: int3     
+  0x00407ADE: int3     
+  0x00407ADF: int3     
+  0x00407AE0: push     esi
+  0x00407AE1: xor      esi, esi
+  0x00407AE3: mov      dword ptr [0x4c46b0], esi
+  0x00407AE9: mov      dword ptr [0x4c4468], 0x48b90c  ; "OsaKano.exe"
+  0x00407AF3: mov      dword ptr [0x4c446c], 0x48b8f0  ; "Software\E-G-O\OsaKano"
+  0x00407AFD: mov      dword ptr [0x4c4470], 0x48b8dc  ; "KumaData  E.G.O"
+  0x00407B07: mov      dword ptr [0x4c4474], 0x48b8cc  ; "KumaRecord "
+  0x00407B11: mov      dword ptr [0x4c447c], 0x32
+  0x00407B1B: mov      dword ptr [0x4c4478], 0x28
+  0x00407B25: mov      dword ptr [0x4c4480], 0x64
+  0x00407B2F: mov      dword ptr [0x4c4498], 0x48b8a8  ; "幼なじみな彼女 致命的エラー"
+  0x00407B39: mov      dword ptr [0x4c4494], 0xd
+  0x00407B43: mov      dword ptr [0x4c449c], 0x1c
+  0x00407B4D: mov      dword ptr [0x4c44a0], 0x4893a0
+  0x00407B57: call     0x4570d0
+  0x00407B5C: mov      ecx, dword ptr [0x4f4804]
+  0x00407B62: mov      eax, 1
+  0x00407B67: mov      dword ptr [0x4c4610], esi
+  0x00407B6D: mov      dword ptr [0x4c46ac], esi
+  0x00407B73: mov      dword ptr [0x4c4690], esi
+  0x00407B79: mov      dword ptr [0x4c4698], esi
+  0x00407B7F: mov      dword ptr [0x4c4484], eax
+  0x00407B84: mov      dword ptr [0x4c4488], 0x10
+  0x00407B8E: mov      dword ptr [0x4c448c], 0x5622
+  0x00407B98: mov      dword ptr [0x4c4490], 0x64
+  0x00407BA2: mov      dword ptr [0x4c44c0], 0x48b890  ; "com\cursor\%s.cur"
+  0x00407BAC: mov      dword ptr [0x4c44c4], 0x48b878  ; "com\cursor\%s.ani"
+  0x00407BB6: mov      dword ptr [0x4c44c8], 0x48b868  ; "com\se\%s.wav"
+  0x00407BC0: mov      dword ptr [0x4c44cc], 0x48b850  ; "com\se\sys\s%s.wav"
+  0x00407BCA: mov      dword ptr [0x4c44d0], 0x48b840  ; "voice\%s.wav"
+  0x00407BD4: mov      dword ptr [0x4c44d4], 0x48b82c  ; "com\music\%s.mid"
+  0x00407BDE: mov      dword ptr [0x4c44d8], 0x48b820  ; "%02d\%06d"
+  0x00407BE8: mov      dword ptr [0x4c44dc], 0x48b810  ; "bgm%02d.wav"
+
+===== context @ 0x0042A435 =====
+  0x0042A3D5: push     es
+  0x0042A3D7: add      dword ptr [eax], eax
+  0x0042A3D9: pop      edi
+  0x0042A3DA: pop      esi
+  0x0042A3DB: ret      4
+  0x0042A3DE: nop      
+  0x0042A3DF: nop      
+  0x0042A3E0: int3     
+  0x0042A3E1: int3     
+  0x0042A3E2: int3     
+  0x0042A3E3: int3     
+  0x0042A3E4: int3     
+  0x0042A3E5: int3     
+  0x0042A3E6: int3     
+  0x0042A3E7: int3     
+  0x0042A3E8: int3     
+  0x0042A3E9: int3     
+  0x0042A3EA: int3     
+  0x0042A3EB: int3     
+  0x0042A3EC: int3     
+  0x0042A3ED: int3     
+  0x0042A3EE: int3     
+  0x0042A3EF: int3     
+  0x0042A3F0: sub      esp, 0x104
+  0x0042A3F6: push     ebx
+  0x0042A3F7: push     esi
+  0x0042A3F8: push     edi
+  0x0042A3F9: mov      edi, ecx
+  0x0042A3FB: push     0
+  0x0042A3FD: mov      ebx, edx
+  0x0042A3FF: lea      esi, [edi + 0x442]
+  0x0042A405: push     0xc8
+  0x0042A40A: push     esi
+  0x0042A40B: mov      dword ptr [esp + 0x18], ebx
+  0x0042A40F: mov      dword ptr [edi + 0x384], ebx
+  0x0042A415: call     0x4432c0
+  0x0042A41A: test     ebx, ebx
+  0x0042A41C: je       0x42a489
+  0x0042A41E: mov      eax, dword ptr [0x4b1f74]
+  0x0042A423: lea      ebx, [edi + 0x268]
+  0x0042A429: push     ebp
+  0x0042A42A: lea      ebp, [edi + 0x41a]
+  0x0042A430: mov      ecx, dword ptr [eax]
+  0x0042A432: mov      dword ptr [ebx + 4], 0x48b8f0  ; "Software\E-G-O\OsaKano"
+  0x0042A439: mov      dword ptr [ebx], ecx
+  0x0042A43B: mov      dword ptr [ebx + 0xc], 0
+  0x0042A442: mov      dword ptr [edi + 0x416], 1
+  0x0042A44C: xor      eax, eax
+  0x0042A44E: mov      edx, dword ptr [esp + 0x10]
+  0x0042A452: lea      edi, [eax + 1]
+  0x0042A455: push     edi
+  0x0042A456: push     edx
+  0x0042A457: lea      eax, [esp + 0x1c]
+  0x0042A45B: push     0x48c258  ; "%s%d"
+  0x0042A460: push     eax
+  0x0042A461: call     dword ptr [0x522da4]  ; IMPORT wsprintfA IMPORT wsprintfA
+  0x0042A467: add      esp, 0x10
+  0x0042A46A: lea      edx, [esp + 0x14]
+  0x0042A46E: mov      ecx, ebx
+  0x0042A470: mov      dword ptr [ebp], esi
+  0x0042A473: push     0x14
+  0x0042A475: push     esi
+  0x0042A476: call     0x461910
+  0x0042A47B: mov      eax, edi
+  0x0042A47D: add      esi, 0x14
+  0x0042A480: add      ebp, 4
+  0x0042A483: cmp      eax, 0xa
+  0x0042A486: jl       0x42a44e
+  0x0042A488: pop      ebp
+  0x0042A489: pop      edi
+  0x0042A48A: pop      esi
+  0x0042A48B: mov      eax, 1
+  0x0042A490: pop      ebx
+  0x0042A491: add      esp, 0x104
+  0x0042A497: ret      
+  0x0042A498: nop      
+  0x0042A499: nop      
+  0x0042A49A: nop      
+  0x0042A49B: nop      
+  0x0042A49C: nop      
+  0x0042A49D: nop      
+  0x0042A49E: nop      
+  0x0042A49F: nop      
+  0x0042A4A0: int3     
+  0x0042A4A1: int3     
+  0x0042A4A2: int3     
+  0x0042A4A3: int3     
+  0x0042A4A4: int3     
+  0x0042A4A5: int3     
+  0x0042A4A6: int3     
+  0x0042A4A7: int3     
+  0x0042A4A8: int3     
+  0x0042A4A9: int3     
+  0x0042A4AA: int3     
+  0x0042A4AB: int3     
+  0x0042A4AC: int3     
+  0x0042A4AD: int3     
+  0x0042A4AE: int3     
+  0x0042A4AF: int3     
+  0x0042A4B0: int3     
+  0x0042A4B1: int3     
+  0x0042A4B2: int3     
+  0x0042A4B3: int3     
+  0x0042A4B4: int3     
+  0x0042A4B5: int3     
+  0x0042A4B6: int3     
+  0x0042A4B7: int3     
+  0x0042A4B8: int3     
+  0x0042A4B9: int3     
+  0x0042A4BA: int3     
+  0x0042A4BB: int3     
+  0x0042A4BC: int3     
+  0x0042A4BD: int3     
+  0x0042A4BE: int3     
+  0x0042A4BF: int3     
+  0x0042A4C0: int3     
+  0x0042A4C1: int3     
+  0x0042A4C2: int3     
+  0x0042A4C3: int3     
+  0x0042A4C4: int3     
+  0x0042A4C5: int3     
+  0x0042A4C6: int3     
+  0x0042A4C7: int3     
+  0x0042A4C8: int3     
+  0x0042A4C9: int3     
+  0x0042A4CA: int3     
+  0x0042A4CB: int3     
+  0x0042A4CC: int3     
+  0x0042A4CD: int3     
+  0x0042A4CE: int3     
+  0x0042A4CF: int3     
+  0x0042A4D0: sub      esp, 0x100
+  0x0042A4D6: push     ebx
+  0x0042A4D7: mov      ebx, ecx
+  0x0042A4D9: mov      eax, dword ptr [ebx + 0x416]
+  0x0042A4DF: test     eax, eax
+  0x0042A4E1: je       0x42a53e
+  0x0042A4E3: push     ebp
+  0x0042A4E4: push     esi
+  0x0042A4E5: push     edi
+  0x0042A4E6: xor      eax, eax
+  0x0042A4E8: lea      ebp, [ebx + 0x268]
+  0x0042A4EE: lea      edi, [ebx + 0x41a]
+  0x0042A4F4: lea      esi, [eax + 1]
+  0x0042A4F7: mov      eax, dword ptr [ebx + 0x384]
+  0x0042A4FD: push     esi
+  0x0042A4FE: push     eax
+  0x0042A4FF: lea      ecx, [esp + 0x18]
+  0x0042A503: push     0x48c258  ; "%s%d"
+  0x0042A508: push     ecx
+  0x0042A509: call     dword ptr [0x522da4]  ; IMPORT wsprintfA IMPORT wsprintfA
+  0x0042A50F: mov      edx, dword ptr [edi]
+  0x0042A511: add      esp, 0x10
+  0x0042A514: mov      ecx, ebp
+  0x0042A516: push     edx
+  0x0042A517: lea      edx, [esp + 0x14]
+  0x0042A51B: call     0x461790
+  0x0042A520: mov      eax, esi
+  0x0042A522: add      edi, 4
+  0x0042A525: cmp      eax, 0xa
+  0x0042A528: jl       0x42a4f4
+  0x0042A52A: mov      ecx, ebp
+  0x0042A52C: call     0x461750
+done

@@ -1,0 +1,15 @@
+--- aligned from 0x00452148 ---
+   0x00452182: je 0x4521b5
+   0x00452184: test al, 8
+   0x00452186: je 0x45219e
+   0x00452188: mov eax, dword ptr [esp + 4]
+   0x0045218C: and edx, 0xffff
+   0x00452192: shl edx, 0x10
+   0x00452195: and eax, 0xffff
+   0x0045219A: or edx, eax
+   0x0045219C: jmp 0x4521a2
+   0x0045219E: mov edx, dword ptr [esp + 4]
+   0x004521A2: mov ecx, dword ptr [ecx + 0x38]
+   0x004521A5: push edx
+   0x004521A6: push ecx
+   0x004521A7: call dword ptr [0x522f18]

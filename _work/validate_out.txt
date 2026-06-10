@@ -1,0 +1,37 @@
+blob size: 2032090
+
+op.te dialogue samples: 10
+  MISS            「はあ？　お前が葵の男ぉ？」
+  MISS            「…葵も迷惑がってる。|　これ以上、付きまとうのはやめてくれ
+  MISS            「おいおい。お前、この状況が分かってんのか？」
+  MISS            「まさか、このまま無事に帰れるなんて思ってねえ|　だろうなあ
+  MISS            「用が済んだら帰らせてもらうさ」
+  MISS            「おい、みんな。聞いたか？|　こいつ全然、自分の置かれた立場
+  MISS            「そんなもん、分かりたくもねえや…」
+  MISS            「お前、オレ様の名前を聞いて驚くなよ」
+  MISS            「鬼の特攻隊長？　それってまさか…」
+  MISS            「お、知ってるのか？|　そうよ、オレ様があの鬼嶋龍童様だ！」
+dialogue hits in blob: 0/10
+
+SJIS double-byte coverage: 1139712/2032090 = 56.1% (rest are ascii/control/single)
+
+filename markers found in blob:
+  0708       yes
+  0709       yes
+  op         yes
+  system     no
+  zakki      yes
+  config     yes
+  end        yes
+  ending     yes
+  cgmode     yes
+  special1   yes
+  title      yes
+  prof       yes
+  staff      yes
+  mem        yes
+  sp         yes
+
+blob window near middle (offset 0xF80ED):
+'\ue041ｳせﾆ羨愠8ﾆﾉｦ\x00｢｢EM6ーﾅﾅ弱[絃�4（朝まで焦ｏﾀｵｳｵEｪｏﾀｸ6\nFﾆーﾅx俺ｬほyA轣A壊ｹﾆ汰ま､覆､EM6烽ﾈ。宗O麻сFラ）綣絃�5ﾅ無とG想像ｱ撫ｵ8ﾆﾉﾂれFﾄび中ﾕﾍC兜\uf8f0⑮ﾉ任梶ﾅ膣届ﾓﾉ|ザラ'
+done

@@ -1,0 +1,119 @@
+
+========== LOADFILE tail/single path 0x4409e1 0x004409E1 ==========
+  0x004409E1: mov      eax, dword ptr [esp + edi*4 + 0x1c]
+  0x004409E5: push     0
+  0x004409E7: push     0
+  0x004409E9: push     0
+  0x004409EB: push     0
+  0x004409ED: push     0
+  0x004409EF: push     eax
+  0x004409F0: mov      edx, ebx
+  0x004409F2: mov      ecx, esi
+  0x004409F4: call     0x4408f0
+  0x004409F9: mov      esi, eax
+  0x004409FB: test     esi, esi
+  0x004409FD: je       0x440a37
+  0x004409FF: mov      ecx, dword ptr [esp + 0x10]
+  0x00440A03: call     0x43ba50
+  0x00440A08: mov      edx, esi
+  0x00440A0A: mov      ecx, eax
+  0x00440A0C: call     0x461f50  ; "d｡"
+  0x00440A11: test     eax, eax
+  0x00440A13: mov      ecx, esi
+  0x00440A15: je       0x440a32
+  0x00440A17: call     0x457060
+  0x00440A1C: inc      edi
+  0x00440A1D: cmp      edi, ebp
+  0x00440A1F: jl       0x4409dd
+  0x00440A21: mov      eax, dword ptr [esp + 0x10]
+  0x00440A25: pop      edi
+  0x00440A26: pop      esi
+  0x00440A27: pop      ebp
+  0x00440A28: pop      ebx
+  0x00440A29: add      esp, 0x234
+  0x00440A2F: ret      0x18
+
+=== raw 0x454740..0x454900 ===
+  0x00454740: 0B 00 00 8B 4C 24 1C C6 84 24 38 03 00 00 00 E8
+  0x00454750: 0C 29 00 00 8B 4C 24 10 C7 84 24 38 03 00 00 FF
+  0x00454760: FF FF FF 85 C9 74 05 E8 F4 28 00 00 33 C0 8B 8C
+  0x00454770: 24 30 03 00 00 5F 5E 5D 5B 64 89 0D 00 00 00 00
+  0x00454780: 81 C4 2C 03 00 00 C2 04 00 90 90 90 90 90 90 90
+  0x00454790: 51 56 8D 44 24 04 57 50 8B FA 8B F1 E8 0F 0B 00
+  0x004547A0: 00 85 C0 75 13 8B 06 57 BA 05 00 00 00 8B CE FF
+  0x004547B0: 10 83 C8 FF 5F 5E 59 C3 8B 4C 24 08 5F 5E 8B 41
+  0x004547C0: 10 59 C3 90 90 90 90 90 90 90 90 90 90 90 90 90
+  0x004547D0: B8 01 00 00 00 C3 90 90 90 90 90 90 90 90 90 90
+  0x004547E0: 83 EC 08 53 8B DA 55 56 85 DB 57 8B F1 0F 84 8F
+  0x004547F0: 00 00 00 E8 B8 F8 FF FF 8D 96 08 01 00 00 8B CE
+  0x00454800: 53 8D BE 14 04 00 00 E8 44 10 00 00 8B 2D D0 2B
+  0x00454810: 52 00 50 57 FF D5 8B CF E8 F3 39 00 00 85 C0 74
+  0x00454820: 1F 8B 86 48 05 00 00 8B D3 0C 01 8B CE 89 86 48
+  0x00454830: 05 00 00 E8 98 00 00 00 5F 5E 5D 5B 83 C4 08 C3
+  0x00454840: 8D 9E 1C 05 00 00 6A 00 6A 28 53 E8 70 EA FE FF
+  0x00454850: 68 D0 CE 48 00 53 FF D5 8B D7 B9 01 00 00 40 C7
+  0x00454860: 86 3C 05 00 00 DC 00 00 00 E8 62 3B 00 00 83 F8
+  0x00454870: FF 89 86 18 05 00 00 75 13 8B 06 57 33 D2 8B CE
+  0x00454880: FF 10 5F 5E 5D 33 C0 5B 83 C4 08 C3 6A 00 6A 00
+  0x00454890: BA 00 40 2E 00 33 C9 E8 94 27 00 00 8D 4C 24 10
+  0x004548A0: 89 86 44 05 00 00 68 C8 CE 48 00 51 FF D5 8D 54
+  0x004548B0: 24 10 8B CE 6A 08 E8 15 01 00 00 5F 5E 5D 5B 83
+  0x004548C0: C4 08 C3 90 90 90 90 90 90 90 90 90 90 90 90 90
+  0x004548D0: 56 57 85 D2 8B F1 74 26 8D BE 14 04 00 00 B9 00
+  0x004548E0: 00 00 C0 8B D7 E8 66 3B 00 00 83 F8 FF 89 86 18
+  0x004548F0: 05 00 00 8B CE 75 0C 8B 06 57 33 D2 FF 10 5F 33
+
+========== 0x458520 (called by dir-parse) 0x00458520 ==========
+  0x00458520: push     ebx
+  0x00458521: push     esi
+  0x00458522: push     edi
+  0x00458523: mov      edi, dword ptr [0x522a4c]  ; IMPORT SetFilePointer
+  0x00458529: mov      esi, ecx
+  0x0045852B: xor      ebx, ebx
+  0x0045852D: push     1
+  0x0045852F: push     0
+  0x00458531: push     0
+  0x00458533: push     esi
+  0x00458534: call     edi
+  0x00458536: cmp      eax, -1
+  0x00458539: jne      0x458543
+  0x0045853B: inc      ebx
+  0x0045853C: cmp      ebx, 5
+  0x0045853F: jl       0x45852d
+  0x00458541: or       eax, eax
+  0x00458543: pop      edi
+  0x00458544: pop      esi
+  0x00458545: pop      ebx
+  0x00458546: ret      
+
+========== 0x458640 0x00458640 ==========
+  0x00458640: push     ecx
+  0x00458641: push     ebx
+  0x00458642: mov      ebx, dword ptr [esp + 0xc]
+  0x00458646: push     ebp
+  0x00458647: mov      ebp, dword ptr [0x522a4c]  ; IMPORT SetFilePointer
+  0x0045864D: push     esi
+  0x0045864E: push     edi
+  0x0045864F: mov      esi, edx
+  0x00458651: mov      edi, ecx
+  0x00458653: mov      dword ptr [esp + 0x10], 0
+  0x0045865B: push     esi
+  0x0045865C: push     0
+  0x0045865E: push     ebx
+  0x0045865F: push     edi
+  0x00458660: call     ebp
+  0x00458662: cmp      eax, -1
+  0x00458665: jne      0x45867f
+  0x00458667: mov      eax, dword ptr [esp + 0x10]
+  0x0045866B: inc      eax
+  0x0045866C: cmp      eax, 5
+  0x0045866F: mov      dword ptr [esp + 0x10], eax
+  0x00458673: jl       0x45865b  ; "Vj"
+  0x00458675: pop      edi
+  0x00458676: pop      esi
+  0x00458677: pop      ebp
+  0x00458678: xor      eax, eax
+  0x0045867A: pop      ebx
+  0x0045867B: pop      ecx
+  0x0045867C: ret      4
+done

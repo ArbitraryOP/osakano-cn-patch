@@ -1,0 +1,29 @@
+read_archive sig: (lax_path)
+parse_directory sig: (dir_bytes)
+read_archive returned <class 'tuple'> len 4
+  elem[3] = entries, count=307
+     {'name': 'com\\cursor\\cur0a_1.cur'}
+     {'name': 'com\\cursor\\cur0a_4.cur'}
+     {'name': 'com\\cursor\\cur0a_8.cur'}
+     {'name': 'com\\cursor\\cur0b_1.cur'}
+     {'name': 'com\\cursor\\cur0b_4.cur'}
+     {'name': 'com\\cursor\\cur0b_8.cur'}
+     {'name': 'com\\cursor\\cur0c_1.cur'}
+     {'name': 'com\\cursor\\cur0c_4.cur'}
+     {'name': 'com\\cursor\\cur0c_8.cur'}
+     {'name': 'com\\cursor\\cur0d_1.cur'}
+     {'name': 'com\\cursor\\cur0d_4.cur'}
+     {'name': 'com\\cursor\\cur0d_8.cur'}
+     {'name': 'com\\cursor\\cur1a_1.cur'}
+     {'name': 'com\\cursor\\cur1a_4.cur'}
+     {'name': 'com\\cursor\\cur1a_8.cur'}
+     {'name': 'com\\cursor\\cur1b_1.cur'}
+     {'name': 'com\\cursor\\cur1b_4.cur'}
+     {'name': 'com\\cursor\\cur1b_8.cur'}
+     {'name': 'com\\cursor\\cur1c_1.cur'}
+     {'name': 'com\\cursor\\cur1c_4.cur'}
+     {'name': 'com\\cursor\\cur1c_8.cur'}
+     {'name': 'com\\cursor\\cur1_1.ani'}
+     {'name': 'com\\cursor\\cur1_4.ani'}
+     {'name': 'com\\cursor\\cur1_8.ani'}
+     {'name': 'com\\cursor\\cur2a_1.cur'}

@@ -1,0 +1,5 @@
+
+========== install-check (find voice path/flag use) 0x0043F9C0 ==========
+  0x0043F9C0: add      byte ptr [eax], al
+  0x0043F9C2: ret      
+done

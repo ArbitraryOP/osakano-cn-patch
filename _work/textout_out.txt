@@ -1,0 +1,146 @@
+relevant GDI IAT slots: {'GetTextExtentPoint32A': '0x522934', 'CreateFontIndirectA': '0x522948', 'CreateDIBSection': '0x522954', 'SetDIBitsToDevice': '0x522960', 'TextOutA': '0x522964'}
+GetTextExtentPoint32A: 3 direct call/jmp sites: ['0x445a39', '0x446800', '0x4672e6']
+CreateFontIndirectA: 2 direct call/jmp sites: ['0x461e22', '0x467304']
+CreateDIBSection: 2 direct call/jmp sites: ['0x43cce3', '0x4672c8']
+SetDIBitsToDevice: 6 direct call/jmp sites: ['0x43b414', '0x448580', '0x448771', '0x448a1d', '0x458da5', '0x4672b6']
+TextOutA: 3 direct call/jmp sites: ['0x43a0d9', '0x445a71', '0x4672b0']
+
+callers of TextOutA thunk 0x4672b0: []
+
+--- context @ GetTextExtentPoint32A call 0x00445A39 ---
+  0x004459F9: add     byte ptr [eax], al
+  0x004459FB: imul    ecx, dword ptr [esi + 0x3000]
+  0x00445A02: mov     eax, dword ptr [esi + 0x3028]
+  0x00445A08: push    1
+  0x00445A0A: push    ecx
+  0x00445A0B: push    eax
+  0x00445A0C: mov     dword ptr [esp + 0x28], edx
+  0x00445A10: call    0x4432c0
+  0x00445A15: mov     ebp, dword ptr [esi + 0x2b6c]
+  0x00445A1B: mov     eax, dword ptr [esi + 0x3034]
+  0x00445A21: mov     ecx, dword ptr [esp + 0x38]
+  0x00445A25: lea     edx, [esp + 0x20]
+  0x00445A29: push    edx
+  0x00445A2A: imul    ebp, ecx
+  0x00445A2D: push    ecx
+  0x00445A2E: mov     ecx, dword ptr [esp + 0x20]
+  0x00445A32: push    ecx
+  0x00445A33: push    eax
+  0x00445A34: mov     edi, 4
+  0x00445A39: call    dword ptr [0x522934] <==
+
+--- context @ CreateFontIndirectA call 0x00461E22 ---
+  0x00461DE2: cmp     eax, ebx
+  0x00461DE4: mov     byte ptr [esp + 0x28], bl
+  0x00461DE8: jl      0x461dee
+  0x00461DEA: mov     dword ptr [esp + 0x1c], eax
+  0x00461DEE: mov     edi, dword ptr [esp + 0x50]
+  0x00461DF2: cmp     edi, ebx
+  0x00461DF4: je      0x461e0d
+  0x00461DF6: mov     ecx, edi
+  0x00461DF8: call    0x461ea0
+  0x00461DFD: test    eax, eax
+  0x00461DFF: je      0x461e0d
+  0x00461E01: lea     eax, [esp + 0x28]
+  0x00461E05: push    edi
+  0x00461E06: push    eax
+  0x00461E07: call    dword ptr [0x522bd0]
+  0x00461E0D: cmp     dword ptr [esi*4 + 0x510bcc], ebx
+  0x00461E14: je      0x461e1d
+  0x00461E16: mov     ecx, esi
+  0x00461E18: call    0x461e50
+  0x00461E1D: lea     ecx, [esp + 0xc]
+  0x00461E21: push    ecx
+  0x00461E22: call    dword ptr [0x522948] <==
+  0x00461E28: cmp     eax, ebx
+
+--- context @ CreateDIBSection call 0x0043CCE3 ---
+  0x0043CCA3: mov     edi, eax
+  0x0043CCA5: lea     eax, [esp + 0x10]
+  0x0043CCA9: push    eax
+  0x0043CCAA: mov     eax, dword ptr [esp + 0x44c]
+  0x0043CCB1: push    0
+  0x0043CCB3: push    ecx
+  0x0043CCB4: mov     ecx, dword ptr [esp + 0x448]
+  0x0043CCBB: add     edx, eax
+  0x0043CCBD: mov     dword ptr [esi + 0x38], ebx
+  0x0043CCC0: call    0x43ba70
+  0x0043CCC5: push    edi
+  0x0043CCC6: call    dword ptr [0x522950]
+  0x0043CCCC: test    eax, eax
+  0x0043CCCE: mov     dword ptr [esi + 0x3c], eax
+  0x0043CCD1: je      0x43cd37
+  0x0043CCD3: lea     ebp, [esi + 0x40]
+  0x0043CCD6: push    0
+  0x0043CCD8: push    0
+  0x0043CCDA: push    ebp
+  0x0043CCDB: lea     ecx, [esp + 0x1c]
+  0x0043CCDF: push    0
+  0x0043CCE1: push    ecx
+  0x0043CCE2: push    edi
+  0x0043CCE3: call    dword ptr [0x522954] <==
+  0x0043CCE9: test    eax, eax
+
+--- context @ SetDIBitsToDevice call 0x0043B414 ---
+  0x0043B3D4: dec     esp
+  0x0043B3D5: and     al, 0
+  0x0043B3D7: push    esi
+  0x0043B3D8: push    edi
+  0x0043B3D9: mov     edi, dword ptr [esp + 0x44]
+  0x0043B3DD: push    0
+  0x0043B3DF: push    0
+  0x0043B3E1: push    0
+  0x0043B3E3: mov     esi, edx
+  0x0043B3E5: push    0
+  0x0043B3E7: push    edi
+  0x0043B3E8: xor     edx, edx
+  0x0043B3EA: call    0x461040
+  0x0043B3EF: mov     edx, dword ptr [esi + 0x20]
+  0x0043B3F2: mov     eax, dword ptr [esp + 0x3c]
+  0x0043B3F6: push    0
+  0x0043B3F8: mov     ecx, dword ptr [esp + 0x18]
+  0x0043B3FC: push    edi
+  0x0043B3FD: push    eax
+  0x0043B3FE: mov     eax, dword ptr [esp + 0x24]
+  0x0043B402: push    eax
+  0x0043B403: push    0
+  0x0043B405: push    0
+  0x0043B407: push    0
+  0x0043B409: push    eax
+  0x0043B40A: mov     eax, dword ptr [esi + 0x1c]
+  0x0043B40D: push    ecx
+  0x0043B40E: mov     ecx, dword ptr [esi + 0x18]
+  0x0043B411: push    edx
+  0x0043B412: push    eax
+  0x0043B413: push    ecx
+  0x0043B414: call    dword ptr [0x522960] <==
+  0x0043B41A: neg     eax
+
+--- context @ TextOutA call 0x0043A0D9 ---
+  0x0043A099: iretd   
+  0x0043A09A: mov     edx, dword ptr [esp + 0x10]
+  0x0043A09E: add     edx, 0x14
+  0x0043A0A1: mov     dword ptr [esp + 0x10], edx
+  0x0043A0A5: mov     edx, esi
+  0x0043A0A7: call    0x461360
+  0x0043A0AC: mov     edx, dword ptr [esi + 0x18]
+  0x0043A0AF: lea     ecx, [esp + 0x10]
+  0x0043A0B3: push    eax
+  0x0043A0B4: push    ecx
+  0x0043A0B5: push    edx
+  0x0043A0B6: call    dword ptr [0x522e70]
+  0x0043A0BC: lea     edi, [ebp + 0xc]
+  0x0043A0BF: push    edi
+  0x0043A0C0: call    dword ptr [0x522bc0]
+  0x0043A0C6: mov     ecx, dword ptr [ebx]
+  0x0043A0C8: mov     edx, dword ptr [esi + 0x18]
+  0x0043A0CB: push    eax
+  0x0043A0CC: mov     eax, dword ptr [esi + 0x20]
+  0x0043A0CF: add     eax, 2
+  0x0043A0D2: push    edi
+  0x0043A0D3: add     ecx, 0x18
+  0x0043A0D6: push    eax
+  0x0043A0D7: push    ecx
+  0x0043A0D8: push    edx
+  0x0043A0D9: call    dword ptr [0x522964] <==
+done

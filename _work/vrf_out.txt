@@ -1,0 +1,12 @@
+
+========== ARCHIVE_VERIFY 0x458210 0x00458210 ==========
+  0x00458210: mov      edx, ecx
+  0x00458212: mov      ecx, 0x80000000
+  0x00458217: call     0x4583d0
+  0x0045821C: cmp      eax, -1
+  0x0045821F: je       0x45822e
+  0x00458221: mov      ecx, eax
+  0x00458223: call     0x4584d0
+  0x00458228: mov      eax, 1
+  0x0045822D: ret      
+done

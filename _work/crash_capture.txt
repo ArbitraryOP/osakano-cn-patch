@@ -1,0 +1,20 @@
+.logopen E:\game\_work\crash.log
+.symopt+0x100
+.echo === CDB attached, running. Will catch the first unhandled (2nd-chance) exception. ===
+g
+.echo ============ CRASH CAUGHT (2nd chance) ============
+.lastevent
+.echo === REGISTERS ===
+r
+.echo === STACK (kb) ===
+kb 60
+.echo === STACK (kv) ===
+kv 40
+.echo === FAULTING INSTRUCTION ===
+u @eip-10 L20
+.echo === MODULE OF EIP ===
+lm a @eip
+.dump /ma E:\game\_work\crash.dmp
+.echo === DUMP WRITTEN ===
+.logclose
+q

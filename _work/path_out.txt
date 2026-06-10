@@ -1,0 +1,64 @@
+
+========== OPENFILE 0x4583d0 0x004583D0 ==========
+  0x004583D0: sub      esp, 0x108
+  0x004583D6: mov      eax, edx
+  0x004583D8: lea      edx, [esp + 4]
+  0x004583DC: push     esi
+  0x004583DD: mov      esi, ecx
+  0x004583DF: mov      ecx, eax
+  0x004583E1: call     0x458710
+  0x004583E6: test     eax, eax
+  0x004583E8: je       0x458443
+  0x004583EA: cmp      esi, 0x80000000
+  0x004583F0: ja       0x458414
+  0x004583F2: je       0x45840d
+  0x004583F4: mov      ecx, esi
+  0x004583F6: sub      ecx, 0x40000000
+  0x004583FC: je       0x45841c
+  0x004583FE: dec      ecx
+  0x004583FF: jne      0x458423
+  0x00458401: mov      ecx, 2
+  0x00458406: mov      esi, 0x40000000
+  0x0045840B: jmp      0x458427  ; "j"
+  0x0045840D: mov      ecx, 3
+  0x00458412: jmp      0x458427  ; "j"
+  0x00458414: cmp      esi, 0xc0000000
+  0x0045841A: jne      0x458423
+  0x0045841C: mov      ecx, 4
+  0x00458421: jmp      0x458427  ; "j"
+  0x00458423: mov      ecx, dword ptr [esp + 4]
+  0x00458427: push     0
+  0x00458429: push     0x8000080
+  0x0045842E: push     ecx
+
+========== PATHPROC 0x458710 0x00458710 ==========
+  0x00458710: push     esi
+  0x00458711: mov      esi, ecx
+  0x00458713: push     edi
+  0x00458714: mov      edi, edx
+  0x00458716: test     esi, esi
+  0x00458718: je       0x458749  ; "_3ﾀ^ﾃ瑞Rj"
+  0x0045871A: call     0x43c470
+  0x0045871F: test     eax, eax
+  0x00458721: je       0x458730
+  0x00458723: push     esi
+  0x00458724: push     edi
+  0x00458725: call     dword ptr [0x522bd0]  ; IMP:lstrcpyA IMP:lstrcpyA
+  0x0045872B: mov      eax, edi
+  0x0045872D: pop      edi
+  0x0045872E: pop      esi
+  0x0045872F: ret      
+
+========== PATHCHECK 0x43c470 0x0043C470 ==========
+  0x0043C470: mov      al, byte ptr [ecx + 1]
+  0x0043C473: cmp      al, 0x3a
+  0x0043C475: jne      0x43c47d
+  0x0043C477: cmp      byte ptr [ecx + 2], 0x5c
+  0x0043C47B: je       0x43c486
+  0x0043C47D: cmp      byte ptr [ecx], 0x5c
+  0x0043C480: jne      0x43c48c
+  0x0043C482: cmp      al, 0x5c
+  0x0043C484: jne      0x43c48c
+  0x0043C486: mov      eax, 1
+  0x0043C48B: ret      
+done

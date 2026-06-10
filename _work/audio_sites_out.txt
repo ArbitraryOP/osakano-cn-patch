@@ -1,0 +1,22 @@
+total audio sites: 42
+  RegSetValueExA: 4
+  RegQueryValueExA: 4
+  waveOutUnprepareHeader: 3
+  waveOutReset: 3
+  waveOutWrite: 3
+  waveOutSetVolume: 2
+  waveOutGetVolume: 2
+  waveOutRestart: 2
+  waveOutPrepareHeader: 2
+  waveOutClose: 2
+  waveOutGetNumDevs: 2
+  waveOutGetDevCapsA: 2
+  waveOutOpen: 2
+  waveOutGetID: 2
+  waveOutGetErrorTextA: 2
+  waveOutPause: 2
+  mciSendCommandA: 1
+  strref:MusicInstall: 1
+  strref:VoiceInstall: 1
+
+wrote audio_sites.json

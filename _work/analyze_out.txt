@@ -1,0 +1,317 @@
+sec .text    raw 0x00001000+0x07F000  VA 0x00401000+0x07E57D
+sec .rdata   raw 0x00080000+0x008000  VA 0x00480000+0x007CF8
+sec .data    raw 0x00088000+0x028000  VA 0x00488000+0x099154
+sec .idata   raw 0x000B0000+0x003000  VA 0x00522000+0x002782
+sec .rsrc    raw 0x000B3000+0x008000  VA 0x00525000+0x007210
+sec .reloc   raw 0x000BB000+0x008000  VA 0x0052D000+0x0079A6
+sec 9G£u±  raw 0x000C3000+0x005000  VA 0x00535000+0x005000
+ImageBase 0x00400000
+IAT CreateFontIndirectA: 0x00522948
+IAT TextOutA: 0x00522964
+IAT MultiByteToWideChar: 0x00522BA0
+IAT WideCharToMultiByte: 0x00522AD0
+IAT EnumFontFamiliesExA: 0x00522998
+IAT CreateFileA: 0x00522A48
+IAT ReadFile: 0x00522A50
+IAT SetFilePointer: 0x00522A4C
+
+=== String VAs and code references ===
+
+[sce\%s.te] foff=0x8BA9C va=0x0048BA9C
+  refs in .text: 0x0040B00F, 0x00415500
+  --- context @ ref 0x0040B00F ---
+  0x0040AFE7: int3    
+  0x0040AFE8: int3    
+  0x0040AFE9: int3    
+  0x0040AFEA: int3    
+  0x0040AFEB: int3    
+  0x0040AFEC: int3    
+  0x0040AFED: int3    
+  0x0040AFEE: int3    
+  0x0040AFEF: int3    
+  0x0040AFF0: int3    
+  0x0040AFF1: int3    
+  0x0040AFF2: int3    
+  0x0040AFF3: int3    
+  0x0040AFF4: int3    
+  0x0040AFF5: int3    
+  0x0040AFF6: int3    
+  0x0040AFF7: int3    
+  0x0040AFF8: int3    
+  0x0040AFF9: int3    
+  0x0040AFFA: int3    
+  0x0040AFFB: int3    
+  0x0040AFFC: int3    
+  0x0040AFFD: int3    
+  0x0040AFFE: int3    
+  0x0040AFFF: int3    
+  0x0040B000: mov     eax, dword ptr [esp + 8]
+  0x0040B004: push    2
+  0x0040B006: push    eax
+  0x0040B007: push    0
+  0x0040B009: push    0
+  0x0040B00B: push    0 <==
+  0x0040B00D: push    edx <==
+  0x0040B00E: mov     edx, 0x48ba9c <==
+  0x0040B013: mov     ecx, 0x4b1f58 <==
+  0x0040B018: call    0x4408f0
+  0x0040B01D: test    eax, eax
+  0x0040B01F: mov     ecx, dword ptr [esp + 4]
+  0x0040B023: mov     dword ptr [ecx], eax
+  0x0040B025: je      0x40b034
+  0x0040B027: call    0x4013fc
+  0x0040B02C: mov     eax, 1
+  0x0040B031: ret     8
+  0x0040B034: xor     eax, eax
+  --- context @ ref 0x00415500 ---
+  0x004154D8: dec     esi
+  0x004154D9: add     byte ptr [ebx], dh
+  0x004154DB: rol     bl, 0x90
+  0x004154DE: nop     
+  0x004154DF: nop     
+  0x004154E0: int3    
+  0x004154E1: int3    
+  0x004154E2: int3    
+  0x004154E3: int3    
+  0x004154E4: int3    
+  0x004154E5: int3    
+  0x004154E6: int3    
+  0x004154E7: int3    
+  0x004154E8: int3    
+  0x004154E9: int3    
+  0x004154EA: int3    
+  0x004154EB: int3    
+  0x004154EC: int3    
+  0x004154ED: int3    
+  0x004154EE: int3    
+  0x004154EF: int3    
+  0x004154F0: push    esi
+  0x004154F1: push    edi
+  0x004154F2: push    2
+  0x004154F4: push    0
+  0x004154F6: push    0
+  0x004154F8: mov     edi, ecx
+  0x004154FA: push    0
+  0x004154FC: push    0 <==
+  0x004154FE: push    edi <==
+  0x004154FF: mov     edx, 0x48ba9c <==
+  0x00415504: mov     ecx, 0x4b1f58 <==
+  0x00415509: call    0x4408f0
+  0x0041550E: mov     esi, eax
+  0x00415510: test    esi, esi
+  0x00415512: je      0x41553f
+  0x00415514: mov     eax, dword ptr [esi + 0x20]
+  0x00415517: mov     ecx, dword ptr [esi + 0x24]
+  0x0041551A: mov     edx, dword ptr [esi + 0x30]
+  0x0041551D: add     ecx, eax
+  0x0041551F: push    ecx
+  0x00415520: mov     ecx, dword ptr [esi + 0x1c]
+  0x00415523: add     edx, eax
+
+[scenario.lax] foff=0x8B7F4 va=0x0048B7F4
+  refs in .text: 0x00407C08
+  --- context @ ref 0x00407C08 ---
+  0x00407BE0: fadd    dword ptr [esp + ecx*2]
+  0x00407BE4: and     byte ptr [eax + 0x5c70048], bh
+  0x00407BEA: fadd    qword ptr [esp + ecx*2]
+  0x00407BEE: adc     byte ptr [eax + 0x5c70048], bh
+  0x00407BF4: call    0x440c83d
+  0x00407BF9: mov     eax, 0xd890048
+  0x00407BFE: hlt     
+  0x00407BFF: inc     esp
+  0x00407C00: dec     esp
+  0x00407C01: add     bh, al
+  0x00407C03: add     eax, 0x4c44ec <==
+  0x00407C08: hlt      <==
+  0x00407C09: mov     bh, 0x48 <==
+  0x00407C0B: add     bh, al <==
+  0x00407C0D: add     eax, 0x4c44e4 <==
+  0x00407C12: in      al, 0xb7
+  0x00407C14: dec     eax
+  0x00407C15: add     bh, al
+  0x00407C17: add     eax, 0x4c44f0
+  0x00407C1C: fdiv    dword ptr [edi + 0x5c70048]
+  0x00407C22: add     byte ptr [esi + 0x4c], al
+  0x00407C25: add     byte ptr [edx], cl
+  0x00407C27: add     byte ptr [eax], al
+  0x00407C29: add     bh, al
+  0x00407C2B: add     eax, 0x4c4608
+
+[patch\%s.id] foff=0x8B4F4 va=0x0048B4F4
+  refs in .text: 0x00404D08
+  --- context @ ref 0x00404D08 ---
+  0x00404CE0: int3    
+  0x00404CE1: int3    
+  0x00404CE2: int3    
+  0x00404CE3: int3    
+  0x00404CE4: int3    
+  0x00404CE5: int3    
+  0x00404CE6: int3    
+  0x00404CE7: int3    
+  0x00404CE8: int3    
+  0x00404CE9: int3    
+  0x00404CEA: int3    
+  0x00404CEB: int3    
+  0x00404CEC: int3    
+  0x00404CED: int3    
+  0x00404CEE: int3    
+  0x00404CEF: int3    
+  0x00404CF0: int3    
+  0x00404CF1: int3    
+  0x00404CF2: int3    
+  0x00404CF3: int3    
+  0x00404CF4: int3    
+  0x00404CF5: int3    
+  0x00404CF6: int3    
+  0x00404CF7: int3    
+  0x00404CF8: int3    
+  0x00404CF9: int3    
+  0x00404CFA: int3    
+  0x00404CFB: int3    
+  0x00404CFC: int3    
+  0x00404CFD: int3    
+  0x00404CFE: int3    
+  0x00404CFF: int3    
+  0x00404D00: push    0
+  0x00404D02: push    0x48b504
+  0x00404D07: mov     edx, 0x48b4f4 <==
+  0x00404D0C: call    0x440b20 <==
+  0x00404D11: neg     eax
+  0x00404D13: sbb     eax, eax
+  0x00404D15: neg     eax
+  0x00404D17: ret     
+  0x00404D18: nop     
+  0x00404D19: nop     
+  0x00404D1A: nop     
+  0x00404D1B: nop     
+  0x00404D1C: nop     
+  0x00404D1D: nop     
+  0x00404D1E: nop     
+  0x00404D1F: nop     
+  0x00404D20: int3    
+  0x00404D21: int3    
+  0x00404D22: int3    
+  0x00404D23: int3    
+  0x00404D24: int3    
+  0x00404D25: int3    
+  0x00404D26: int3    
+  0x00404D27: int3    
+  0x00404D28: int3    
+  0x00404D29: int3    
+  0x00404D2A: int3    
+  0x00404D2B: int3    
+  0x00404D2C: int3    
+  0x00404D2D: int3    
+  0x00404D2E: int3    
+  0x00404D2F: int3    
+
+[ＭＳ ゴシック(font)] foff=0x8B64C va=0x0048B64C
+  refs in .text: 0x004062A7, 0x00406F1B, 0x0043EE37, 0x0043FC2C, 0x0043FC6A
+  --- context @ ref 0x004062A7 ---
+  0x0040627F: and     al, 0xd0
+  0x00406281: add     al, byte ptr [eax]
+  0x00406283: add     al, ch
+  0x00406285: push    edi
+  0x00406286: in      al, dx
+  0x00406287: add     eax, dword ptr [eax]
+  0x00406289: mov     ecx, dword ptr [0x4cc2bc]
+  0x0040628F: lea     edx, [esp + 0x32c]
+  0x00406296: call    0x445030
+  0x0040629B: mov     ecx, dword ptr [0x4cc2bc]
+  0x004062A1: mov     edx, 0x14
+  0x004062A6: push    0x48b64c <==
+  0x004062AB: push    1 <==
+  0x004062AD: call    0x444510
+  0x004062B2: mov     ecx, dword ptr [0x4cc2bc]
+  0x004062B8: xor     edx, edx
+  0x004062BA: call    0x444930
+  0x004062BF: mov     ecx, dword ptr [0x4cc2bc]
+  0x004062C5: xor     edx, edx
+  0x004062C7: push    ebx
+  0x004062C8: mov     dword ptr [ecx + 0x2e08], ebx
+  --- context @ ref 0x00406F1B ---
+  0x00406EF3: add     byte ptr [ecx - 0x17a3dbbc], cl
+  0x00406EF9: jecxz   0x406eda
+  0x00406EFB: add     eax, dword ptr [eax]
+  0x00406EFD: mov     ecx, dword ptr [0x4cc2bc]
+  0x00406F03: lea     edx, [esp + 0x33c]
+  0x00406F0A: call    0x445030
+  0x00406F0F: mov     ecx, dword ptr [0x4cc2bc]
+  0x00406F15: mov     edx, 0x14
+  0x00406F1A: push    0x48b64c <==
+  0x00406F1F: push    1 <==
+  0x00406F21: call    0x444510
+  0x00406F26: mov     ecx, dword ptr [0x4cc2bc]
+  0x00406F2C: xor     edx, edx
+  0x00406F2E: call    0x444930
+  0x00406F33: mov     ecx, dword ptr [0x4cc2bc]
+  0x00406F39: xor     edx, edx
+  0x00406F3B: push    ebx
+  0x00406F3C: mov     dword ptr [ecx + 0x2e08], ebx
+  --- context @ ref 0x0043EE37 ---
+  0x0043EE0F: stosb   byte ptr es:[edi], al
+  0x0043EE10: add     dword ptr [eax], eax
+  0x0043EE12: mov     ecx, 9
+  0x0043EE17: call    0x459870
+  0x0043EE1C: call    0x4572f0
+  0x0043EE21: call    0x461d30
+  0x0043EE26: call    0x43c340
+  0x0043EE2B: xor     ecx, ecx
+  0x0043EE2D: mov     edx, 0x10
+  0x0043EE32: test    eax, eax <==
+  0x0043EE34: je      0x43ee3d <==
+  0x0043EE36: push    0x48b64c <==
+  0x0043EE3B: jmp     0x43ee42 <==
+  0x0043EE3D: push    0x48c86c
+  0x0043EE42: push    0x190
+  0x0043EE47: call    0x461d80
+  0x0043EE4C: mov     edx, esi
+  0x0043EE4E: mov     ecx, 0x43ebe0
+  0x0043EE53: mov     dword ptr [esi + 0x22c], 1
+
+[$LapH__] foff=0x8CEC8 va=0x0048CEC8
+  refs in .text: 0x004548A7, 0x00455B2B
+  --- context @ ref 0x004548A7 ---
+  0x0045487F: into    
+  0x00454880: call    dword ptr [eax]
+  0x00454882: pop     edi
+  0x00454883: pop     esi
+  0x00454884: pop     ebp
+  0x00454885: xor     eax, eax
+  0x00454887: pop     ebx
+  0x00454888: add     esp, 8
+  0x0045488B: ret     
+  0x0045488C: push    0
+  0x0045488E: push    0
+  0x00454890: mov     edx, 0x2e4000
+  0x00454895: xor     ecx, ecx
+  0x00454897: call    0x457030
+  0x0045489C: lea     ecx, [esp + 0x10]
+  0x004548A0: mov     dword ptr [esi + 0x544], eax
+  0x004548A6: push    0x48cec8 <==
+  0x004548AB: push    ecx <==
+  0x004548AC: call    ebp <==
+  0x004548AE: lea     edx, [esp + 0x10]
+  0x004548B2: mov     ecx, esi
+  0x004548B4: push    8
+  0x004548B6: call    0x4549d0
+  0x004548BB: pop     edi
+  0x004548BC: pop     esi
+  0x004548BD: pop     ebp
+  0x004548BE: pop     ebx
+  0x004548BF: add     esp, 8
+  0x004548C2: ret     
+  0x004548C3: nop     
+  0x004548C4: nop     
+  0x004548C5: nop     
+  0x004548C6: nop     
+  0x004548C7: nop     
+  0x004548C8: nop     
+  0x004548C9: nop     
+  0x004548CA: nop     
+  0x004548CB: nop     
+  0x004548CC: nop     
+  0x004548CD: nop     
+  0x004548CE: nop     
+  --- context @ ref 0x00455B2B ---
+  0x00455B03: add     al, ch

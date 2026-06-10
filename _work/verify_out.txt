@@ -1,0 +1,7 @@
+file size: 819200
+0x061DC1 charset lfCharSet (want 0x86): 86
+0x061EC7 charset EnumFont (want 0x86): 86
+0x01AD86 voice verify tail (want B8 01 00 00 00 5F 5E C3 90): b8 01 00 00 00 5f 5e c3 90
+0x08B64C font name MS Gothic (want song-ti): cb ce cc e5 00 00 00 00
+0x08C86C font name MS PGothic: cb ce cc e5 00 00 00 00
+done

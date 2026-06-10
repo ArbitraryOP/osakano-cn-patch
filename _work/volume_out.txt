@@ -1,0 +1,9 @@
+TotalVolume  VA 0x0048B170 file 0x08B170
+MusicVolume  VA 0x0048B160 file 0x08B160
+VoiceVolume  VA 0x0048B150 file 0x08B150
+SEVolume     VA 0x0048B144 file 0x08B144
+Music        VA 0x0048B237 file 0x08B237
+
+audio/reg imports: {'RegSetValueExA': '0x522878', 'RegQueryValueExA': '0x522884', 'mciSendCommandA': '0x522ef4', 'waveOutSetVolume': '0x522f18', 'waveOutGetVolume': '0x522f1c', 'waveOutRestart': '0x522f20', 'waveOutUnprepareHeader': '0x522f24', 'waveOutReset': '0x522f28', 'waveOutPrepareHeader': '0x522f2c', 'waveOutWrite': '0x522f30', 'waveOutClose': '0x522f34', 'waveOutGetNumDevs': '0x522f38', 'waveOutGetDevCapsA': '0x522f3c', 'waveOutOpen': '0x522f44', 'waveOutGetID': '0x522f48', 'waveOutGetErrorTextA': '0x522f4c', 'waveOutPause': '0x522f54'}
+
+done

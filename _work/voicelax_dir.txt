@@ -1,0 +1,1 @@
+lax funcs: ['_main', 'af1_compress_literal_stream', 'af1_decompress', 'af2_decompress', 'build_record', 'compress_blob_literal', 'decompress_blob', 'ftr_to_jsonable', 'parse_directory', 'parse_footer', 'read_archive', 'repack', 'unpack']

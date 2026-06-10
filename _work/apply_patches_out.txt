@@ -1,0 +1,11 @@
+=== OK (will apply) ===
+  [os-warning-skip] 0x03F87D: 75 26 -> eb 26
+  [cd-da-prompt-skip] 0x0580AD: 74 4c -> eb 53
+  [render-class-nibbleA] 0x08CB10: 01 -> 02
+  [render-class-nibbleB] 0x08CB14: 01 -> 02
+  [render-class-nibbleC] 0x08CB18: 01 -> 02
+  [render-class-nibbleD] 0x08CB1C: 01 -> 02
+  [render-order-branch] 0x046EC6: 72 -> eb
+=== SKIPPED ===
+
+WROTE 7 patches to exe + synced build/. backup: osakano.exe.pre_bin.bak

@@ -1,0 +1,55 @@
+
+##### gr24.lax VA=0x0048B72C refs=['0x407a2d'] #####
+
+##### common.lax VA=0x0048B7E4 refs=['0x407c12'] #####
+
+##### scenario.lax VA=0x0048B7F4 refs=['0x407c08'] #####
+
+##### voice.lax VA=0x0048B804 refs=['0x407bf8'] #####
+
+===== voice.lax ref @0x00407BF8 (wide) =====
+  0x00407B58: je       0x407b4f  ; "DL"
+  0x00407B5A: add      al, 0
+  0x00407B5C: mov      ecx, dword ptr [0x4f4804]
+  0x00407B62: mov      eax, 1
+  0x00407B67: mov      dword ptr [0x4c4610], esi
+  0x00407B6D: mov      dword ptr [0x4c46ac], esi
+  0x00407B73: mov      dword ptr [0x4c4690], esi
+  0x00407B79: mov      dword ptr [0x4c4698], esi
+  0x00407B7F: mov      dword ptr [0x4c4484], eax
+  0x00407B84: mov      dword ptr [0x4c4488], 0x10
+  0x00407B8E: mov      dword ptr [0x4c448c], 0x5622
+  0x00407B98: mov      dword ptr [0x4c4490], 0x64
+  0x00407BA2: mov      dword ptr [0x4c44c0], 0x48b890  ; "com\cursor\%s.cur"
+  0x00407BAC: mov      dword ptr [0x4c44c4], 0x48b878  ; "com\cursor\%s.ani"
+  0x00407BB6: mov      dword ptr [0x4c44c8], 0x48b868  ; "com\se\%s.wav"
+  0x00407BC0: mov      dword ptr [0x4c44cc], 0x48b850  ; "com\se\sys\s%s.wav"
+  0x00407BCA: mov      dword ptr [0x4c44d0], 0x48b840  ; "voice\%s.wav"
+  0x00407BD4: mov      dword ptr [0x4c44d4], 0x48b82c  ; "com\music\%s.mid"
+  0x00407BDE: mov      dword ptr [0x4c44d8], 0x48b820  ; "%02d\%06d"
+  0x00407BE8: mov      dword ptr [0x4c44dc], 0x48b810  ; "bgm%02d.wav"
+  0x00407BF2: mov      dword ptr [0x4c44e8], 0x48b804  ; "voice.lax"
+  0x00407BFC: mov      dword ptr [0x4c44f4], ecx
+  0x00407C02: mov      dword ptr [0x4c44ec], 0x48b7f4  ; "scenario.lax"
+  0x00407C0C: mov      dword ptr [0x4c44e4], 0x48b7e4  ; "common.lax"
+  0x00407C16: mov      dword ptr [0x4c44f0], 0x48b7d8  ; "patch.lax"
+  0x00407C20: mov      dword ptr [0x4c4600], 0xa
+  0x00407C2A: mov      dword ptr [0x4c4608], 0x4895b0
+  0x00407C34: mov      dword ptr [0x4c4604], 0x4895d8  ; "ﾔｭH"
+  0x00407C3E: mov      dword ptr [0x4c460c], 0x489600
+  0x00407C48: mov      dword ptr [0x4c467c], eax
+  0x00407C4D: mov      dword ptr [0x4c461c], eax
+  0x00407C52: mov      dword ptr [0x4c4624], eax
+  0x00407C57: mov      dword ptr [0x4c462c], eax
+  0x00407C5C: mov      dword ptr [0x4c4648], eax
+  0x00407C61: mov      dword ptr [0x4c4664], eax
+  0x00407C66: mov      dword ptr [0x4c4668], eax
+  0x00407C6B: mov      dword ptr [0x4c466c], eax
+  0x00407C70: mov      dword ptr [0x4c4670], eax
+  0x00407C75: mov      dword ptr [0x4c4674], eax
+  0x00407C7A: mov      dword ptr [0x4c4678], eax
+  0x00407C7F: mov      dword ptr [0x4c4680], eax
+  0x00407C84: mov      dword ptr [0x4c4684], eax
+  0x00407C89: mov      dword ptr [0x4c4688], eax
+  0x00407C8E: mov      dword ptr [0x4c468c], eax
+done

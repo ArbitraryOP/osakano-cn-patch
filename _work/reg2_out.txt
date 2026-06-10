@@ -1,0 +1,318 @@
+
+===== InstallDir VA=0x0048CA60 refs=['0x43fa7d'] =====
+
+--- InstallDir @0x0043FA7D ---
+  0x0043FA5D: sbb      al, 0x39
+  0x0043FA5F: mov      esi, 0x12758
+  0x0043FA64: je       0x43fa70
+  0x0043FA66: mov      ecx, dword ptr [esi + 4]
+  0x0043FA69: call     0x4581c0
+  0x0043FA6E: jmp      0x43fa99
+  0x0043FA70: lea      edi, [esi + 0x254]
+  0x0043FA76: push     0x104
+  0x0043FA7B: push     edi
+  0x0043FA7C: mov      edx, 0x48ca60  ; "InstallDir"
+  0x0043FA81: lea      ecx, [esp + 0x18]
+  0x0043FA85: call     0x461910
+  0x0043FA8A: test     eax, eax
+  0x0043FA8C: je       0x43fb80
+  0x0043FA92: mov      ecx, edi
+  0x0043FA94: call     0x458170
+  0x0043FA99: lea      ebp, [esi + 0x358]
+  0x0043FA9F: push     0x104
+  0x0043FAA4: push     ebp
+  0x0043FAA5: mov      edx, 0x48ca50  ; "CD-ROM Drive"
+  0x0043FAAA: lea      ecx, [esp + 0x18]
+  0x0043FAAE: call     0x461910
+  0x0043FAB3: test     eax, eax
+  0x0043FAB5: lea      ecx, [esp + 0x10]
+
+===== GrInstall VA=0x0048CA1C refs=['0x43fb2f'] =====
+
+--- GrInstall @0x0043FB2F ---
+  0x0043FB0F: xchg     byte ptr [edi + 1], bl
+  0x0043FB13: add      byte ptr [ebp - 0x74b08b40], al
+  0x0043FB19: xchg     al, al
+  0x0043FB1B: add      dword ptr es:[eax], eax
+  0x0043FB1E: test     eax, eax
+  0x0043FB20: jle      0x43fb80
+  0x0043FB22: mov      dword ptr [esi + 0x240], eax
+  0x0043FB28: lea      ecx, [esi + 0x248]
+  0x0043FB2E: mov      edx, 0x48ca1c  ; "GrInstall"
+  0x0043FB33: push     ecx
+  0x0043FB34: lea      ecx, [esp + 0x14]
+  0x0043FB38: call     0x4619f0
+  0x0043FB3D: test     eax, eax
+  0x0043FB3F: lea      ecx, [esp + 0x10]
+  0x0043FB43: jne      0x43fba6
+  0x0043FB45: mov      dword ptr [esp + 0x34], 0xffffffff
+  0x0043FB4D: call     0x461750
+  0x0043FB52: xor      eax, eax
+  0x0043FB54: pop      edi
+  0x0043FB55: pop      esi
+  0x0043FB56: pop      ebp
+  0x0043FB57: pop      ebx
+  0x0043FB58: mov      ecx, dword ptr [esp + 0x1c]
+  0x0043FB5C: mov      dword ptr fs:[0], ecx
+  0x0043FB63: add      esp, 0x28
+  0x0043FB66: ret      
+  0x0043FB67: lea      eax, [esi + 0x240]
+
+===== MusicInstall VA=0x0048CA28 refs=['0x43fb01'] =====
+
+--- MusicInstall @0x0043FB01 ---
+  0x0043FAE1: dec      eax
+  0x0043FAE2: add      byte ptr [ecx - 0x73], dl
+  0x0043FAE5: dec      esp
+  0x0043FAE6: and      al, 0x14
+  0x0043FAE8: call     0x4619f0
+  0x0043FAED: test     eax, eax
+  0x0043FAEF: lea      ecx, [esp + 0x10]
+  0x0043FAF3: je       0x43fb84
+  0x0043FAF9: lea      edx, [esi + 0x250]
+  0x0043FAFF: push     edx
+  0x0043FB00: mov      edx, 0x48ca28  ; "MusicInstall"
+  0x0043FB05: call     0x4619f0
+  0x0043FB0A: test     eax, eax
+  0x0043FB0C: je       0x43fb80
+  0x0043FB0E: mov      eax, dword ptr [esi + 0x1275c]
+  0x0043FB14: test     eax, eax
+  0x0043FB16: je       0x43fb67
+  0x0043FB18: mov      eax, dword ptr [esi + 0x126c0]
+  0x0043FB1E: test     eax, eax
+  0x0043FB20: jle      0x43fb80
+  0x0043FB22: mov      dword ptr [esi + 0x240], eax
+  0x0043FB28: lea      ecx, [esi + 0x248]
+  0x0043FB2E: mov      edx, 0x48ca1c  ; "GrInstall"
+  0x0043FB33: push     ecx
+  0x0043FB34: lea      ecx, [esp + 0x14]
+  0x0043FB38: call     0x4619f0
+  0x0043FB3D: test     eax, eax
+
+===== VoiceInstall VA=0x0048CA38 refs=['0x43fadf'] =====
+
+--- VoiceInstall @0x0043FADF ---
+  0x0043FABF: lea      eax, [esi + 0x238]
+  0x0043FAC5: mov      edx, 0x48ca48  ; "Music"
+  0x0043FACA: push     eax
+  0x0043FACB: call     0x4619f0
+  0x0043FAD0: test     eax, eax
+  0x0043FAD2: je       0x43fb80
+  0x0043FAD8: lea      ecx, [esi + 0x24c]
+  0x0043FADE: mov      edx, 0x48ca38  ; "VoiceInstall"
+  0x0043FAE3: push     ecx
+  0x0043FAE4: lea      ecx, [esp + 0x14]
+  0x0043FAE8: call     0x4619f0
+  0x0043FAED: test     eax, eax
+  0x0043FAEF: lea      ecx, [esp + 0x10]
+  0x0043FAF3: je       0x43fb84
+  0x0043FAF9: lea      edx, [esi + 0x250]
+  0x0043FAFF: push     edx
+  0x0043FB00: mov      edx, 0x48ca28  ; "MusicInstall"
+  0x0043FB05: call     0x4619f0
+  0x0043FB0A: test     eax, eax
+  0x0043FB0C: je       0x43fb80
+  0x0043FB0E: mov      eax, dword ptr [esi + 0x1275c]
+  0x0043FB14: test     eax, eax
+  0x0043FB16: je       0x43fb67
+  0x0043FB18: mov      eax, dword ptr [esi + 0x126c0]
+
+##### RegOpenKeyExA call sites: ['0x4616a3', '0x461723', '0x467322'] #####
+
+--- RegOpenKeyExA @0x004616A3 ---
+
+--- RegOpenKeyExA @0x00461723 ---
+  0x004616D3: add      byte ptr [eax], al
+  0x004616D5: pop      edi
+  0x004616D6: xor      eax, eax
+  0x004616D8: pop      esi
+  0x004616D9: ret      
+  0x004616DA: mov      eax, 1
+  0x004616DF: pop      edi
+  0x004616E0: mov      dword ptr [esi + 0x10], eax
+  0x004616E3: pop      esi
+  0x004616E4: ret      
+  0x004616E5: nop      
+  0x004616E6: nop      
+  0x004616E7: nop      
+  0x004616E8: nop      
+  0x004616E9: nop      
+  0x004616EA: nop      
+  0x004616EB: nop      
+  0x004616EC: nop      
+  0x004616ED: nop      
+  0x004616EE: nop      
+  0x004616EF: nop      
+  0x004616F0: push     esi
+  0x004616F1: mov      esi, ecx
+  0x004616F3: push     edi
+  0x004616F4: mov      eax, dword ptr [esi + 0x14]
+  0x004616F7: test     eax, eax
+  0x004616F9: jne      0x46173f
+  0x004616FB: mov      eax, dword ptr [esi + 0xc]
+  0x004616FE: lea      edi, [esi + 0xc]
+  0x00461701: test     eax, eax
+  0x00461703: je       0x46170c
+  0x00461705: mov      eax, dword ptr [esi + 0x10]
+  0x00461708: test     eax, eax
+  0x0046170A: je       0x46173f
+  0x0046170C: mov      ecx, esi
+  0x0046170E: call     0x461750
+  0x00461713: mov      eax, dword ptr [esi + 4]
+  0x00461716: mov      ecx, dword ptr [esi + 8]
+  0x00461719: push     edi
+  0x0046171A: push     0x20019
+  0x0046171F: push     0
+  0x00461721: push     eax
+  0x00461722: push     ecx
+  0x00461723: call     dword ptr [0x522870]  ; IMP:RegOpenKeyExA <==
+  0x00461729: test     eax, eax
+  0x0046172B: je       0x461738
+  0x0046172D: mov      dword ptr [edi], 0
+
+##### RegOpenKeyA call sites: [] #####
+
+##### RegQueryValueExA call sites: ['0x461971', '0x4619c5', '0x461a74', '0x467334'] #####
+
+--- RegQueryValueExA @0x00461971 ---
+  0x00461921: sub      cl, byte ptr [ebx + 0x4c8b1846]
+  0x00461927: and      al, 0x14
+  0x00461929: push     eax
+  0x0046192A: push     ecx
+  0x0046192B: push     ebx
+  0x0046192C: push     0x502f28
+  0x00461931: push     edi
+  0x00461932: push     0x4a4ec8  ; "Options"
+  0x00461937: call     dword ptr [0x522a70]  ; IMP:GetPrivateProfileStringA
+  0x0046193D: test     eax, eax
+  0x0046193F: je       0x46194c
+  0x00461941: pop      edi
+  0x00461942: pop      esi
+  0x00461943: mov      eax, 1
+  0x00461948: pop      ebx
+  0x00461949: ret      8
+  0x0046194C: mov      ecx, esi
+  0x0046194E: call     0x4616f0
+  0x00461953: test     eax, eax
+  0x00461955: je       0x461986
+  0x00461957: mov      ecx, dword ptr [esi + 0xc]
+  0x0046195A: lea      edx, [esp + 0x14]
+  0x0046195E: push     edx
+  0x0046195F: lea      eax, [esp + 0x14]
+  0x00461963: push     ebx
+  0x00461964: push     eax
+  0x00461965: push     0
+  0x00461967: push     edi
+  0x00461968: push     ecx
+  0x00461969: mov      dword ptr [esp + 0x28], 1
+  0x00461971: call     dword ptr [0x522884]  ; IMP:RegQueryValueExA <==
+  0x00461977: test     eax, eax
+  0x00461979: jne      0x461986
+  0x0046197B: pop      edi
+  0x0046197C: pop      esi
+
+--- RegQueryValueExA @0x004619C5 ---
+  0x00461975: push     edx
+  0x00461976: add      byte ptr [ebp + 0x5f0b75c0], al
+  0x0046197C: pop      esi
+  0x0046197D: mov      eax, 1
+  0x00461982: pop      ebx
+  0x00461983: ret      8
+  0x00461986: pop      edi
+  0x00461987: pop      esi
+  0x00461988: xor      eax, eax
+  0x0046198A: pop      ebx
+  0x0046198B: ret      8
+  0x0046198E: nop      
+  0x0046198F: nop      
+  0x00461990: push     ecx
+  0x00461991: push     esi
+  0x00461992: mov      esi, ecx
+  0x00461994: push     edi
+  0x00461995: mov      edi, edx
+  0x00461997: mov      eax, dword ptr [esi + 0x14]
+  0x0046199A: test     eax, eax
+  0x0046199C: jne      0x4619da
+  0x0046199E: call     0x4616f0
+  0x004619A3: test     eax, eax
+  0x004619A5: je       0x4619da
+  0x004619A7: mov      ecx, dword ptr [esp + 0x10]
+  0x004619AB: lea      eax, [esp + 0x14]
+  0x004619AF: push     eax
+  0x004619B0: mov      eax, dword ptr [esi + 0xc]
+  0x004619B3: lea      edx, [esp + 0xc]
+  0x004619B7: push     ecx
+  0x004619B8: push     edx
+  0x004619B9: push     0
+  0x004619BB: push     edi
+  0x004619BC: push     eax
+  0x004619BD: mov      dword ptr [esp + 0x20], 7
+  0x004619C5: call     dword ptr [0x522884]  ; IMP:RegQueryValueExA <==
+  0x004619CB: test     eax, eax
+  0x004619CD: jne      0x4619da
+  0x004619CF: pop      edi
+  0x004619D0: mov      eax, 1
+
+##### RegQueryValueA call sites: [] #####
+
+##### RegCreateKeyExA call sites: ['0x4616c5', '0x46731c'] #####
+
+--- RegCreateKeyExA @0x004616C5 ---
+  0x00461675: or       al, 0x8d
+  0x00461677: jle      0x461685
+  0x00461679: test     eax, eax
+  0x0046167B: je       0x46168c  ; "勤霓"
+  0x0046167D: mov      eax, dword ptr [esi + 0x10]
+  0x00461680: test     eax, eax
+  0x00461682: je       0x46168c  ; "勤霓"
+  0x00461684: pop      edi
+  0x00461685: mov      eax, 1
+  0x0046168A: pop      esi
+  0x0046168B: ret      
+  0x0046168C: mov      ecx, esi
+  0x0046168E: call     0x461750
+  0x00461693: mov      eax, dword ptr [esi + 4]
+  0x00461696: mov      ecx, dword ptr [esi + 8]
+  0x00461699: push     edi
+  0x0046169A: push     0x20006
+  0x0046169F: push     0
+  0x004616A1: push     eax
+  0x004616A2: push     ecx
+  0x004616A3: call     dword ptr [0x522870]  ; IMP:RegOpenKeyExA
+  0x004616A9: test     eax, eax
+  0x004616AB: je       0x4616da
+  0x004616AD: mov      edx, dword ptr [esi + 4]
+  0x004616B0: mov      eax, dword ptr [esi + 8]
+  0x004616B3: push     0
+  0x004616B5: push     edi
+  0x004616B6: push     0
+  0x004616B8: push     0xf003f
+  0x004616BD: push     0
+  0x004616BF: push     0
+  0x004616C1: push     0
+  0x004616C3: push     edx
+  0x004616C4: push     eax
+  0x004616C5: call     dword ptr [0x52286c]  ; IMP:RegCreateKeyExA <==
+  0x004616CB: test     eax, eax
+  0x004616CD: je       0x4616da
+  0x004616CF: mov      dword ptr [edi], 0
+
+--- RegCreateKeyExA @0x0046731C ---
+  0x004672CC: push     edx
+  0x004672CD: add      bh, bh
+  0x004672CF: and      eax, 0x522950  ; IMP:CreateCompatibleDC
+  0x004672D4: jmp      dword ptr [0x52294c]  ; IMP:DeleteDC
+  0x004672DA: jmp      dword ptr [0x52293c]  ; IMP:GetDeviceCaps
+  0x004672E0: jmp      dword ptr [0x522930]  ; IMP:SetBkMode
+  0x004672E6: jmp      dword ptr [0x522934]  ; IMP:GetTextExtentPoint32A
+  0x004672EC: jmp      dword ptr [0x522938]  ; IMP:GdiSetBatchLimit
+  0x004672F2: jmp      dword ptr [0x522990]  ; IMP:StretchDIBits
+  0x004672F8: jmp      dword ptr [0x522940]  ; IMP:ExtFloodFill
+  0x004672FE: jmp      dword ptr [0x522944]  ; IMP:GetObjectA
+  0x00467304: jmp      dword ptr [0x522948]  ; IMP:CreateFontIndirectA
+  0x0046730A: jmp      dword ptr [0x522880]  ; IMP:AdjustTokenPrivileges
+  0x00467310: jmp      dword ptr [0x522864]  ; IMP:LookupPrivilegeValueA
+  0x00467316: jmp      dword ptr [0x522868]  ; IMP:OpenProcessToken
+  0x0046731C: jmp      dword ptr [0x52286c]  ; IMP:RegCreateKeyExA <==
+  0x00467322: jmp      dword ptr [0x522870]  ; IMP:RegOpenKeyExA
+done

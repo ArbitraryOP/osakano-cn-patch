@@ -1,0 +1,6 @@
+.logopen E:\game\_work\cdb2.log
+.symopt+0x100
+bp KERNEL32!GetFileAttributesA "da poi(@esp+4) L100; g"
+bp KERNEL32!FindFirstFileA "da poi(@esp+4) L100; g"
+bp KERNEL32!CreateFileA "da poi(@esp+4) L100; g"
+g

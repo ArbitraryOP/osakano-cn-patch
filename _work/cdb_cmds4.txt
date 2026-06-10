@@ -1,0 +1,4 @@
+.logopen E:\game\_work\cdb4.log
+.symopt+0x100
+bp USER32!MessageBoxA ".echo ===MBA===; da poi(@esp+8) L60; .echo --STACK--; dps @esp L30; g"
+g

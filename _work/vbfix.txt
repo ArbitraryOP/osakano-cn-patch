@@ -1,0 +1,87 @@
+======== SYNTHESIS ========
+### SYNTH: area=combined conf=high
+  DIAG: ROOT CAUSE (two parts, both byte-verified against osakano.exe.jp.bak):
+
+(A) AN UNDOCUMENTED BINARY PATCH crippled the audio engine. Global RM+0x1271C (abs 0x4C4674) is the AUDIO BACKEND SELECTOR, written exactly once at 0x407C75 inside startup init fn 0x407AE0 (the SAME function that enables the COMMON section for SE, so it provably runs). BAK writes eax(=1)=DirectSound multi-channel mixer (original design). The shipped exe was patched at file 0x7C75 (10-byte span 0x7C75..0x7C7E: a374464c00 a378464c00 -> 893574464c00 90909090) so it writes esi(=0)=single-stream waveOut, and NOP'd the adjacent 0x12720=1 write. EVERY audio play/volume routine branches on [obj+0x1271C]: !=0 -> DirectSound (voic
+  PATCH: {"file_offset_hex": "0x07C75", "orig_bytes_hex": "893574464c0090909090", "new_bytes_hex": "a374464c00a378464c00", "why": "STEP 2 / THE FIX. Revert undocumented backend-switch patch. orig (current) = mov [0x4c4674],esi(=0) + 4 NOP -> selects single-stream waveOut backend (cannot mix BGM+voice+SE, so 
+  PATCH: {"file_offset_hex": "0x3FCD3", "orig_bytes_hex": "8b86bc260100", "new_bytes_hex": "b80100000090", "why": "KEEP AS-IS (already applied; do NOT revert). Forces Music config+0x238=1 selecting the HDD-wav BGM SOURCE branch in MusicSourceInit 0x441257. This is independent of the 0x1271C audio backend and
+  PATCH: {"file_offset_hex": "0x41816", "orig_bytes_hex": "b80100000090", "new_bytes_hex": "8b8630270100", "why": "STEP 3 (optional cleanliness). Revert REDUNDANT BGM GATE_B patch. current = mov eax,1;nop (force gate true). new = mov eax,[esi+0x12730] (== BAK, honest read). Redundant because 0x12730 is alrea
+  PATCH: {"file_offset_hex": "0x41787", "orig_bytes_hex": "b80100000090", "new_bytes_hex": "8b8730270100", "why": "STEP 3 (optional cleanliness). Revert REDUNDANT BGM GATE_B patch in music-ready wrapper 0x441780. current = mov eax,1;nop. new = mov eax,[edi+0x12730] (== BAK). Same rationale as 0x41816; 0x1273
+  PATCH: {"file_offset_hex": "0x1AD86", "orig_bytes_hex": "b8010000005f5ec390", "new_bytes_hex": "f7d81bc05ff7d85ec3", "why": "STEP 3 (optional cleanliness). Revert the NO-OP voice-verify patch. Handler 0x41AD50 only calls resolver 0x440B20 (an exists/VoiceBar check) and returns; it NEVER plays audio, so for
+  REG: TotalVolume = 100
+  REG: VoiceVolume = 100
+  REG: SEVolume = 100
+  REG: MusicVolume = 100
+  REG: Voice = 1
+  REG: UseSE = 1
+  REG: UseMusic = 1
+  REG: MouseSE = 1
+  REG: SystemVoice = 1
+  REG: VoiceBar = 1
+  REG: Music = 1
+  REG: MusicInstall = 1
+  REG: VoiceInstall = 1
+  FILEOP: OPTIONAL E:\game\jp\osakano.exe (STEP 3): revert 0x41816, 0x41787, 0x1AD86 to BAK bytes (cleanliness only; same apply_fix.py covers them).
+
+======== BGM ========
+### bgm: area=bgm conf=high
+  DIAG: BGM is blocked by a SECOND GATE, distinct from the config+0x238 (Music) value. The 0x3FCD3 (Music=1) patch is itself correct but ineffective: with Music=1, config+0x238 is still never read during play because the 4-way source switch at VA 0x441257 sits behind GATE_A (mov eax,[esi+0x12728] at 0x441236; jne 0x441257 at 0x441250; else early-out at 0x441252). [esi+0x12728]==0 so the switch is never reached.
+
+The REAL blocker on the actual play path is GATE_B = config+0x12730. The scenario DOES fire BGM during normal play: many VM opcode handlers (0x40ffaa, 0x41003e, 0x41125a, 0x4116ce, 0x413381, 0x420c93, ...) write the pending music id to word [0x4cc2b6]; the per-tick poller at 0x40b3b1 then ca
+  PATCH: {"file_offset_hex": "0x41816", "orig_bytes_hex": "8b8630270100", "new_bytes_hex": "b80100000090", "why": "BeginMusicStream (VA 0x441810): the GATE_B read 'mov eax,[esi+0x12730]' (config+0x12730, always 0 in BSS) feeds 'test eax,eax; je 0x4418a6' which returns 0 = no music. Replace with 'mov eax,1; n
+  PATCH: {"file_offset_hex": "0x41787", "orig_bytes_hex": "8b8730270100", "new_bytes_hex": "b80100000090", "why": "Music-ready wrapper (VA 0x441780, called by poller @0x40b391 before dispatch): GATE_B read 'mov eax,[edi+0x12730]' feeds 'test eax,eax; je 0x4417bf' which returns 0 early. Replace with 'mov eax,
+  FILEOP: VERIFIED 0x3FCD3 (pre-existing Music=1 patch) on disk = B8 01 00 00 00 90 (mov eax,1; nop); at runtime stores config+0x238=1 via 0x43fcdd 'mov [esi+0x238],eax' after 'test eax,eax; jle' (not taken). C
+  FILEOP: APPLIED to E:\game\jp\osakano.exe: patch P1 @file 0x41816 (BeginMusicStream GATE_B read -> mov eax,1; nop).
+  FILEOP: APPLIED to E:\game\jp\osakano.exe: patch P2 @file 0x41787 (music-ready wrapper GATE_B read -> mov eax,1; nop).
+  FILEOP: Full diff vs osakano.exe.jp.bak shows exactly the two new 6-byte runs plus all prior patches intact (0x1AD86 voice, 0x3F873/87D OS-warn, 0x3FCD3 Music, 0x46EC6/0x5C507/0x61DC1/0x61EC7/0x8CB10.. GBK/ch
+
+### bgm: area=bgm conf=high
+  DIAG: ROOT CAUSE (two-part). BGM has TWO delivery engines selected by the music "backend-selector" field obj+0x1271c (CMusic global object base = 0x4B1F58; abs addr 0x4C4674):
+ - 0x1271c == 0  -> simple CWave/waveOut mode. Audio-init (0x43EE70) takes the CWave branch (0x43EF91, plain CWave::Enable on music obj [app+0xf402]); the DirectSound music MIXER (0x4523F0 -> DirectSoundCreate 0x46DAB0 -> global 0x503E20) is NEVER created. In this mode BeginMusicStream (scenario play entry 0x441810) routes to PlayA(0x451750) whose resolver [obj+0x66]=0x442C60 builds clip names with format obj+0x12580="%02d\\%06d" (packed voice-style clips) -- it NEVER builds bgmNN.wav. The loose bgm%02d.wav files are unreach
+  PATCH: {"file_offset_hex": "0x07C75", "orig_bytes_hex": "893574464C0090909090", "new_bytes_hex": "A374464C00A378464C00", "why": "Restore music backend-selector obj+0x1271c (abs 0x4C4674) = 1 (eax) instead of 0 (esi), reverting a prior undocumented patch that forced CWave mode. Setting 1271c=1 makes audio-i
+  PATCH: {"file_offset_hex": "0x3FCD4", "orig_bytes_hex": "01", "new_bytes_hex": "03", "why": "At the user's existing Music-force site 0x43FCD3 (mov eax,IMM ; nop ; ... ; mov [esi+0x238],eax), change the immediate from 1 to 3. Music(+0x238)=3 selects MusicDispatch case-3 (0x44127E) = HDD 'bgm%02d.wav' via Di
+
+### bgm: area=bgm conf=high
+  DIAG: BGM PATH/INSTALL RESOLUTION (osakano.exe, file_off = VA - 0x400000 for .text).
+
+ANSWER TO THE TASK: In THIS build the game does NOT look for bgmNN.wav as a loose file (nor inside an archive). The loose-file mechanism is dead code. With Music=1 (your current patch) the path NEVER resolves to E:\game\jp\bgmNN.wav, so a different fix is needed.
+
+=== Generic path resolution (VERIFIED, this part is fine) ===
+CreateFileA wrappers 0x4583d0(read)/0x458450; path normalizer 0x458710:
+- 0x43c470 is_absolute(p) = (p[1]==':' && p[2]=='\\') || p starts with "\\".
+- absolute -> used as-is; relative -> dest = PREFIX(global @0x50cf18) + p (lstrcpy+lstrcat).
+- PREFIX @0x50cf18 = runtime InstallDir (empty in f
+  PATCH: {"file_offset_hex": "0x41250", "orig_bytes_hex": "7505", "new_bytes_hex": "eb05", "why": "music-prepare gate @VA0x441250: change `jne 0x441257` to `jmp 0x441257` so the function proceeds even though the gate field [esi+0x12728] is permanently 0 (it is only ever written =0 in the ctor and never set n
+  PATCH: {"file_offset_hex": "0x3fcd3", "orig_bytes_hex": "b801000000", "new_bytes_hex": "b803000000", "why": "ALREADY-PATCHED site that forces the Music mode into [esi+0x238]. Currently `mov eax,1` (Music=1 = stream branch, which uses NULL [esi+0x1257c]). Change immediate 1->3 to select the Music==3 FILE br
+  REG: Music = 3
+  FILEOP: NONE - bgmNN.wav files are already present in E:\game\jp\ as valid PCM 22050Hz/16bit/stereo RIFF/WAVE; they do not need to be moved or repacked. They are simply never referenced by this build's music 
+
+### bgm: area=bgm conf=high
+  DIAG: ROOT CAUSE: BGM was routed to the CD-DA/MCI player instead of the loose-wav waveOut player. The SndMgr singleton (base 0x4B1F58) has a "CD-DA vs HDD select" field at +0x1271C (abs 0x4C4674) and a "music master-enable" field at +0x12730 (abs 0x4C4688). BeginMusicStream (0x441810) first checks the master-enable (+0x12730) then branches: if [+0x1271C]!=0 it calls 0x4622B0 (mciSendCommandA CD-DA); if [+0x1271C]==0 it sets [+0x700]=2 and calls SndMgr::PlayA (0x451750 -> CWave waveOut -> 0x451D10), the same engine SE uses. The global sound/resource-init routine at 0x407AE0 sets BOTH fields to 1 via an absolute-store chain: 0x407C89 writes +0x12730=1 (eax=1) and 0x407C75 writes +0x1271C=1 (eax=1). 
+  PATCH: {"file_offset_hex": "0x7C75", "orig_bytes_hex": "A374464C00A378464C00", "new_bytes_hex": "893574464C0090909090", "why": "At SndMgr/resource-init 0x407AE0, the original code stores eax(=1) to abs 0x4C4674 (SndMgr+0x1271C, the CD-DA-vs-HDD music select), forcing CD-DA mode so BeginMusicStream (0x44181
+  FILEOP: Applied patch to E:\game\jp\osakano.exe at file offset 0x7C75 (10 bytes: A374464C00A378464C00 -> 893574464C0090909090), forcing SndMgr+0x1271C (CD/HDD music select) = 0 so BGM uses the loose bgmNN.wav
+  FILEOP: Created backup E:\game\jp\osakano.exe.pre_bgm.bak (copy of the pre-BGM-patch shipping exe).
+
+======== VOICE (rest) ========
+### voice: area=voice conf=high
+  DIAG: VoicePath (HKCU\Software\E-G-O\OsaKano\VoicePath, str@0x48CA0C) is read at 0x43FBA6 via RegQueryValueExA into config field [esi+0x460] (260-byte MAX_PATH buffer). It is a BASE DIRECTORY (a folder), NOT an archive name and NOT a per-file path. Its ONLY role is to optionally override the base directory in which the engine looks for the voice.lax FILE; the per-voice entry names ("voice\01\010001.wav", built from "voice\%s.wav" + sprintf("%02d\%06d")) are then resolved INSIDE the mounted voice.lax index, never as on-disk paths.
+
+Lifecycle: on a successful read, post-processor 0x43FDC0 appends a trailing '\' if missing. On an ABSENT/empty value (RegQueryValueExA fails), 0x43FBC0 sets [esi+0x460][
+  REG: VoicePath = 0
+  REG: VoiceInstall = 1
+  REG: GrInstall = 1
+  FILEOP: No exe byte-patch needed for VoicePath.
+  FILEOP: OPTIONAL registry (belt-and-suspenders, equivalent to existing InstallDir fallback): set HKCU\Software\E-G-O\OsaKano\VoicePath = REG_SZ "E:\game\幼なじみな彼女\" (must end with a backslash). Mirror it under 
+  FILEOP: Keep VoiceInstall=1 so the voice base uses the InstallDir/VoicePath (HDD) branch; ensure InstallDir ends with a backslash (it does: E:\game\幼なじみな彼女\).
+  FILEOP: Verified present: E:\game\幼なじみな彼女\voice.lax (934MB, $LapH__, 4620 voice\NN\NNNNNN.wav entries, RIFF/WAVE PCM 22050Hz/16-bit).
+
+### voice: area=voice conf=high
+  DIAG: VOICE DATA IS 100% INTACT — the no-audio problem is purely game-side resolve/mount, NOT corrupt data. Verified via lax.py read_archive on E:\game\jp\voice.lax (4620 entries, total_decomp=0x48626462). Entry "voice\01\010001.wav" is index 0, decomp(file size)=267866 (0x4165a), comp(slot)=221324, off=0x0 -> file off 0x8. decompress_blob(data, ENTRY_BASE+off, decomp) produced exactly 267866 bytes (length match). It is a VALID RIFF/WAVE PCM file: magic "RIFF" (52 49 46 46), RIFF chunk size 267858 = len-8, "WAVE" id present; fmt chunk (18 bytes) audio_format=1(PCM), channels=1, sample_rate=22050 Hz, bits=16, byte_rate=44100 (=22050*1*16/8, correct), block_align=2 (correct); data chunk = 267820 byt
+  PATCH: {"file_offset_hex": "0x1AD86", "orig_bytes_hex": "", "new_bytes_hex": "B8010000005F5EC390", "why": "Previously-applied voice-area patch (reported in task context): voice-verify function 0x41AD50 tail patched to 'mov eax,1; pop edi; pop esi; ret; nop' so it always reports the named voice entry as pre
+  REG: Voice = 1
+  REG: VoiceBar = 1
+  REG: SystemVoice = 1
+  REG: VoiceVolume = 100
+  FILEOP: read E:\game\jp\voice.lax via lax.read_archive (4620 entries, magic $LapH__ / _AF2 Huffman)
+  FILEOP: decompress_blob entry 'voice\01\010001.wav' -> 267866 bytes
+

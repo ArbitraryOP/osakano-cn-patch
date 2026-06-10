@@ -1,0 +1,17 @@
+repair files: 16, records: 278
+  repair_0708 28-2369
+  repair_0709 22-3641
+  repair_0710 3-3323
+  repair_0711 133-2648
+  repair_0712 129-2596
+  repair_0720 17-2245
+  repair_0721 5-117
+  repair_config 29-29
+  repair_ending 19-21
+  repair_ending_rec 19-21
+  repair_etc 5-5
+  repair_mem 12-152
+  repair_op 123-2163
+  repair_special1 2-284
+  repair_special2 30-1282
+  repair_zakki 77-102

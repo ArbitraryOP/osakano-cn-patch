@@ -1,0 +1,9 @@
+  0708           records= 2424 chunks=25
+  0709           records= 3642 chunks=37
+  0710           records= 3328 chunks=34
+  0711           records= 2863 chunks=29
+  0712           records= 2603 chunks=27
+  0720           records= 2247 chunks=23
+  special2       records= 1372 chunks=14
+  0721           records=  166 chunks=2
+TOTAL records=18645, chunks=191

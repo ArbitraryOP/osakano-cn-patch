@@ -1,0 +1,25 @@
+TOTAL defective records: 566
+  0709: 120
+  0710: 111
+  0708: 74
+  0711: 61
+  special2: 41
+  0720: 37
+  op: 36
+  0712: 33
+  zakki: 12
+  mem: 11
+  0721: 7
+  prof: 4
+  special1: 3
+  title: 3
+  config: 2
+  edmode: 2
+  ending: 2
+  ending_rec: 2
+  cgmode: 1
+  etc: 1
+  musmode: 1
+  sp: 1
+  svld: 1
+wrote defects.json

@@ -1,0 +1,320 @@
+[
+ {
+  "file_offset_hex": "0x08B328",
+  "jp": "現在の画面はフルカラーモード(1677万色)ではありません。\nフルカラーモードでの実行を推奨します。\n\n（このまま実行する場合は○、中止する場合は×）",
+  "zh": "当前画面不是全彩色模式(1677万色)。\n推荐在全彩色模式下运行。\n\n（继续运行请按○，中止请按×）",
+  "src": "transA"
+ },
+ {
+  "file_offset_hex": "0x08B528",
+  "jp": "%sのＣＤをドライブに入れて○を押してください。\n音楽を一旦ＯＦＦにする場合は×を押してください。",
+  "zh": "请将%s的光盘放入驱动器并按○。\n如需暂时关闭音乐请按×。",
+  "src": "transA"
+ },
+ {
+  "file_offset_hex": "0x08B5A0",
+  "jp": "ゲームを終了しますか？\nゲームを保存していない場合は破棄されます。\n\n（このまま終了する場合は○、まだゲームを続ける場合は×）",
+  "zh": "确定要退出游戏吗？\n未保存的游戏进度将会丢失。\n\n（继续退出请按○，返回游戏请按×）",
+  "src": "transA"
+ },
+ {
+  "file_offset_hex": "0x08B97C",
+  "jp": "解像度の候補がありませんでした。\nこのまま実行します",
+  "zh": "未找到合适的分辨率。\n将直接运行",
+  "src": "transA"
+ },
+ {
+  "file_offset_hex": "0x08BB78",
+  "jp": "おまけＣＧ(%d)を入手しました。\nタイトルメニューから閲覧出来ます。",
+  "zh": "获得了附赠CG(%d)。\n可从标题菜单中浏览。",
+  "src": "transA"
+ },
+ {
+  "file_offset_hex": "0x08BD90",
+  "jp": "ファイルが既に存在します。\n上書き保存しますか？",
+  "zh": "文件已存在。\n是否覆盖保存？",
+  "src": "transA"
+ },
+ {
+  "file_offset_hex": "0x08C00C",
+  "jp": "データをロードします。\nよろしいですか？",
+  "zh": "加载数据。\n确认吗？",
+  "src": "transB"
+ },
+ {
+  "file_offset_hex": "0x08C040",
+  "jp": "データをロードします。\n現在の状態は、まだ保存されていません。\nこのままロードすると、現在の情報は失われます。\nロードする場合は「○」、中止する場合は「Ｘ」",
+  "zh": "加载数据。\n当前状态尚未保存。\n直接加载将丢失当前信息。\n加载请按「○」、取消请按「Ｘ」",
+  "src": "transB"
+ },
+ {
+  "file_offset_hex": "0x08C130",
+  "jp": "使用不能文字を削除しました。\n削除後の名前は、\"%s\"です。\n決定は「○」、やり直す場合は「×」。",
+  "zh": "已删除不可用字符。\n删除后的名称为\"%s\"。\n确定按「○」、重试按「×」。",
+  "src": "transB"
+ },
+ {
+  "file_offset_hex": "0x08C260",
+  "jp": "以下の機能が有効になりました。\n%s",
+  "zh": "以下功能已启用。\n%s",
+  "src": "transB"
+ },
+ {
+  "file_offset_hex": "0x08C310",
+  "jp": "「%s」のＣＤ%sを入れて、「再試行」を押してください。\n%s\nドライブを変更する場合は「ドライブ変更」を押してください。",
+  "zh": "请插入「%s」的ＣＤ%s，然后按「重试」。\n%s\n如需更改驱动器请按「更改驱动器」。",
+  "src": "transB"
+ },
+ {
+  "file_offset_hex": "0x08C7FC",
+  "jp": "エラーが発生しました\nｳﾌﾐｴｽｫﾍﾋｳ｣",
+  "zh": "发生了错误\n程序即将退出。",
+  "src": "transB"
+ },
+ {
+  "file_offset_hex": "0x08C938",
+  "jp": "ハイカラー（６万色）以上の色数が必要です。\n色数を変更して、もう一度実行して下さい。",
+  "zh": "需要增强色（6万色）以上的色数。\n请更改色数后，再次运行。",
+  "src": "transC"
+ },
+ {
+  "file_offset_hex": "0x08C990",
+  "jp": "対応していないＯＳなので動作保証出来ません。\nこのまま実行する場合は「はい」、中断する場合は「いいえ」を選択して下さい。",
+  "zh": "此操作系统不受支持，无法保证正常运行。\n继续运行请选择「はい」，中止请选择「いいえ」。",
+  "src": "transC"
+ },
+ {
+  "file_offset_hex": "0x08CFE8",
+  "jp": "この設定：%dx%d(%dﾋﾞｯﾄ)に変更するには再起動する必要があります。\n再起動しますか？",
+  "zh": "更改为此设置：%dx%d(%d位)需要重新启动。\n是否重新启动？",
+  "src": "transC"
+ },
+ {
+  "file_offset_hex": "0x08D060",
+  "jp": "ＣＤを入れて「再試行」を押してください。\n中止する場合は「ｷｬﾝｾﾙ」を押して下さい",
+  "zh": "请插入ＣＤ并按「重试」。\n中止请按「取消」",
+  "src": "transC"
+ },
+ {
+  "file_offset_hex": "0x08AEA0",
+  "jp": "バックログ（巻き戻し）( F5、Alt+B、Alt+↑、ホイール )\n可查看过去的消息",
+  "zh": "回看日志（回卷）( F5、Alt+B、Alt+↑、ホイール )\n可查看过去的消息",
+  "src": "transC"
+ },
+ {
+  "file_offset_hex": "0x08AF18",
+  "jp": "既読スキップ  ( F4、Alt+K、Alt+↓ )\n次のメッセージが既読であればスキップします\n（選択肢・未読メッセージ出現で停止します）",
+  "zh": "已读跳过  ( F4、Alt+K、Alt+↓ )\n若下条消息已读则跳过\n（出现选项或未读消息时停止）",
+  "src": "transC"
+ },
+ {
+  "file_offset_hex": "0x08B438",
+  "jp": "幼なじみな彼女 copyright(c) イージーオー",
+  "zh": "青梅竹马的她 copyright(c) EASY-O",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08B46C",
+  "jp": "幼なじみな彼女",
+  "zh": "青梅竹马的她",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08B8A8",
+  "jp": "幼なじみな彼女 致命的エラー",
+  "zh": "青梅竹马的她 致命错误",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08BD38",
+  "jp": "[OS] 不明なOS",
+  "zh": "[OS] 未知的OS",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08BEF8",
+  "jp": " 項目をﾀﾞﾌﾞﾙｸﾘｯｸ、○、Enterキーで決定 (×、Escキーで中止)",
+  "zh": " 双击项目、○、Enter键确定 (×、Esc键中止)",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08BF70",
+  "jp": " 項目をﾀﾞﾌﾞﾙｸﾘｯｸ、○、Enterキーで決定 (×、Escキーで中止)　コメントは全角２０文字まで",
+  "zh": " 双击项目、○、Enter键确定 (×、Esc键中止)　备注最多全角２０字",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08C224",
+  "jp": " 全角 %d文字まで（全角文字のみ使用可能）",
+  "zh": " 全角 %d字以内（仅限全角字符）",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08C2C8",
+  "jp": "%s ( ESC、右クリック )",
+  "zh": "%s ( ESC、右键 )",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08C3AC",
+  "jp": "エラー : %s",
+  "zh": "错误 : %s",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08C3BC",
+  "jp": "ＣＤが入っていない、または製品ＣＤではない",
+  "zh": "未放入ＣＤ，或并非产品ＣＤ",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08C3F0",
+  "jp": "ファイルが見つかりません",
+  "zh": "找不到文件",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08C424",
+  "jp": "現在のドライブ : %s",
+  "zh": "当前驱动器 : %s",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08C778",
+  "jp": "成績ﾌｧｲﾙのﾊﾞｰｼﾞｮﾝが違う",
+  "zh": "成绩文件版本不符",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08C790",
+  "jp": "成績ﾌｧｲﾙの書込み失敗",
+  "zh": "成绩文件写入失败",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08C7A8",
+  "jp": "成績ﾌｧｲﾙが開けません",
+  "zh": "成绩文件无法打开",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08C7C0",
+  "jp": "成績ﾌｧｲﾙが壊れています",
+  "zh": "成绩文件已损坏",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08C7D8",
+  "jp": "%dx%dドット以上の解像度が必要です。",
+  "zh": "需要%dx%d点以上的分辨率。",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08C82C",
+  "jp": "グラフィックの初期化に失敗(2)",
+  "zh": "图形初始化失败(2)",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08C84C",
+  "jp": "グラフィックの初期化に失敗(1)",
+  "zh": "图形初始化失败(1)",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08C8D8",
+  "jp": "起動を中止する場合は「中止」を押してください。",
+  "zh": "若要中止启动，请按「中止」。",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08C908",
+  "jp": "レジストリが異常（インストールされていない？）",
+  "zh": "注册表异常（可能未安装？）",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08CA7C",
+  "jp": "成績ﾌｧｲﾙを新規作成します",
+  "zh": "新建成绩文件",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08CA98",
+  "jp": "CD-DAを使用しない場合は、「中止」を押して下さい。",
+  "zh": "若不使用CD-DA，请按「中止」。",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08CD00",
+  "jp": "WAVEが使用不能(CODE:%d)",
+  "zh": "WAVE无法使用(CODE:%d)",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08CEB4",
+  "jp": "削除しました(%s)",
+  "zh": "已删除(%s)",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08CED8",
+  "jp": "最新のファイルが存在(%s)",
+  "zh": "存在最新文件(%s)",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08CF00",
+  "jp": "ファイルが大きすぎます",
+  "zh": "文件过大",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08CF18",
+  "jp": "バージョンが違う",
+  "zh": "版本不符",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08CF2C",
+  "jp": "解凍エラー",
+  "zh": "解压错误",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08CF38",
+  "jp": "フォーマットエラー",
+  "zh": "格式错误",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08CF4C",
+  "jp": "書込みエラー",
+  "zh": "写入错误",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08CF5C",
+  "jp": "読み込みエラー",
+  "zh": "读取错误",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08CF6C",
+  "jp": "オープンエラー",
+  "zh": "打开错误",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08CF9C",
+  "jp": "ファイルエラー",
+  "zh": "文件错误",
+  "src": "remainingScan"
+ },
+ {
+  "file_offset_hex": "0x08D100",
+  "jp": "ラベルが見つかりません:%s",
+  "zh": "找不到标签:%s",
+  "src": "remainingScan"
+ }
+]

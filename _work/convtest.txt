@@ -1,0 +1,18 @@
+text_start 18296 size orig 173126 built 173126
+would convert 137 runs in op.te
+  @0x04822 '？？？'  814881488148 -> a3bfa3bfa3bf
+  @0x04890 '？？？'  814881488148 -> a3bfa3bfa3bf
+  @0x048dc '？？？'  814881488148 -> a3bfa3bfa3bf
+  @0x04950 '？？？'  814881488148 -> a3bfa3bfa3bf
+  @0x049d8 '？？？'  814881488148 -> a3bfa3bfa3bf
+  @0x04a0e '？？？'  814881488148 -> a3bfa3bfa3bf
+  @0x04a9c '？？？'  814881488148 -> a3bfa3bfa3bf
+  @0x04b26 '？？？'  814881488148 -> a3bfa3bfa3bf
+  @0x04b72 '？？？'  814881488148 -> a3bfa3bfa3bf
+  @0x04bc2 '？？？'  814881488148 -> a3bfa3bfa3bf
+  @0x04c30 '？？？'  814881488148 -> a3bfa3bfa3bf
+  @0x04c6c '@013「…………」'  40303133817581638163816381638176 -> 40303133a1b8a1ada1ada1ada1ada1b9
+  @0x04c80 '？？？'  814881488148 -> a3bfa3bfa3bf
+  @0x04d02 '？？？'  814881488148 -> a3bfa3bfa3bf
+  @0x04d7e '？？？'  814881488148 -> a3bfa3bfa3bf
+first ？？？ (81 48 x3) at 0x4822

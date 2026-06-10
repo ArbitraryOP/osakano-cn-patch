@@ -1,0 +1,526 @@
+
+========== LOADFILE(sce\%s.te caller) func 0x004408F0 ==========
+  0x004408F0: sub      esp, 0x234
+  0x004408F6: mov      eax, dword ptr [esp + 0x238]
+  0x004408FD: push     ebx
+  0x004408FE: push     ebp
+  0x004408FF: push     esi
+  0x00440900: mov      esi, ecx
+  0x00440902: push     edi
+  0x00440903: mov      edi, dword ptr [0x522bd0]  ; IMPORT KERNEL32.dll!lstrcpyA
+  0x00440909: lea      ecx, [esp + 0x3c]
+  0x0044090D: push     eax
+  0x0044090E: push     ecx
+  0x0044090F: mov      ebx, edx
+  0x00440911: mov      dword ptr [esp + 0x20], esi
+  0x00440915: xor      ebp, ebp
+  0x00440917: call     edi
+  0x00440919: mov      edx, 0x2b
+  0x0044091E: lea      ecx, [esp + 0x3c]
+  0x00440922: call     0x45c0c0
+  0x00440927: test     eax, eax
+  0x00440929: je       0x440a5a
+  0x0044092F: mov      byte ptr [eax], 0
+  0x00440932: inc      eax
+  0x00440933: mov      dword ptr [esp + ebp*4 + 0x1c], eax
+  0x00440937: mov      edx, 0x2b
+  0x0044093C: mov      ecx, eax
+  0x0044093E: inc      ebp
+  0x0044093F: call     0x45c0c0
+  0x00440944: test     eax, eax
+  0x00440946: jne      0x44092f
+  0x00440948: test     ebp, ebp
+  0x0044094A: jle      0x440a5a
+  0x00440950: mov      edx, dword ptr [esp + 0x25c]
+  0x00440957: mov      eax, dword ptr [esp + 0x258]
+  0x0044095E: mov      ecx, dword ptr [esp + 0x254]
+  0x00440965: push     edx
+  0x00440966: mov      edx, dword ptr [esp + 0x254]
+  0x0044096D: push     eax
+  0x0044096E: mov      eax, dword ptr [esp + 0x254]
+  0x00440975: push     ecx
+  0x00440976: push     edx
+  0x00440977: lea      ecx, [esp + 0x4c]
+  0x0044097B: push     eax
+  0x0044097C: push     ecx
+  0x0044097D: mov      edx, ebx
+  0x0044097F: mov      ecx, esi
+  0x00440981: call     0x4408f0
+  0x00440986: test     eax, eax
+  0x00440988: mov      dword ptr [esp + 0x10], eax
+  0x0044098C: je       0x440a4b
+  0x00440992: test     ebx, ebx
+  0x00440994: je       0x4409c6
+  0x00440996: lea      edx, [esp + 0x140]
+  0x0044099D: push     ebx
+  0x0044099E: push     edx
+  0x0044099F: call     edi
+  0x004409A1: mov      edx, 0x2e
+  0x004409A6: lea      ecx, [esp + 0x140]
+  0x004409AD: call     0x45c0c0
+  0x004409B2: test     eax, eax
+  0x004409B4: je       0x4409bf
+  0x004409B6: inc      eax
+  0x004409B7: push     0x48ca78  ; "gps"
+  0x004409BC: push     eax
+  0x004409BD: call     edi
+  0x004409BF: lea      ebx, [esp + 0x140]
+  0x004409C6: xor      edi, edi
+  0x004409C8: test     ebp, ebp
+  0x004409CA: jg       0x4409e1
+  0x004409CC: mov      eax, dword ptr [esp + 0x10]
+  0x004409D0: pop      edi
+  0x004409D1: pop      esi
+  0x004409D2: pop      ebp
+  0x004409D3: pop      ebx
+  0x004409D4: add      esp, 0x234
+  0x004409DA: ret      0x18
+
+========== FONT_BUILD_A func 0x00461D80 ==========
+  0x00461D80: sub      esp, 0x3c
+  0x00461D83: push     ebx
+  0x00461D84: push     esi
+  0x00461D85: push     edi
+  0x00461D86: mov      esi, ecx
+  0x00461D88: xor      ebx, ebx
+  0x00461D8A: mov      ecx, 8
+  0x00461D8F: xor      eax, eax
+  0x00461D91: lea      edi, [esp + 0x28]
+  0x00461D95: mov      dword ptr [esp + 0xc], 0x10
+  0x00461D9D: mov      dword ptr [esp + 0x10], ebx
+  0x00461DA1: mov      dword ptr [esp + 0x14], ebx
+  0x00461DA5: mov      dword ptr [esp + 0x18], ebx
+  0x00461DA9: mov      dword ptr [esp + 0x1c], 0x190
+  0x00461DB1: mov      byte ptr [esp + 0x20], bl
+  0x00461DB5: mov      byte ptr [esp + 0x21], bl
+  0x00461DB9: mov      byte ptr [esp + 0x22], bl
+  0x00461DBD: mov      byte ptr [esp + 0x23], 0x80
+  0x00461DC2: mov      byte ptr [esp + 0x24], bl
+  0x00461DC6: mov      byte ptr [esp + 0x25], bl
+  0x00461DCA: mov      byte ptr [esp + 0x26], 2
+  0x00461DCF: mov      byte ptr [esp + 0x27], 1
+  0x00461DD4: cmp      esi, ebx
+  0x00461DD6: rep stosd dword ptr es:[edi], eax
+  0x00461DD8: jl       0x461e33
+  0x00461DDA: mov      eax, dword ptr [esp + 0x4c]
+  0x00461DDE: mov      dword ptr [esp + 0xc], edx
+  0x00461DE2: cmp      eax, ebx
+  0x00461DE4: mov      byte ptr [esp + 0x28], bl
+  0x00461DE8: jl       0x461dee
+  0x00461DEA: mov      dword ptr [esp + 0x1c], eax
+  0x00461DEE: mov      edi, dword ptr [esp + 0x50]
+  0x00461DF2: cmp      edi, ebx
+  0x00461DF4: je       0x461e0d
+  0x00461DF6: mov      ecx, edi
+  0x00461DF8: call     0x461ea0
+  0x00461DFD: test     eax, eax
+  0x00461DFF: je       0x461e0d
+  0x00461E01: lea      eax, [esp + 0x28]
+  0x00461E05: push     edi
+  0x00461E06: push     eax
+  0x00461E07: call     dword ptr [0x522bd0]  ; IMPORT KERNEL32.dll!lstrcpyA
+  0x00461E0D: cmp      dword ptr [esi*4 + 0x510bcc], ebx
+  0x00461E14: je       0x461e1d
+  0x00461E16: mov      ecx, esi
+  0x00461E18: call     0x461e50
+  0x00461E1D: lea      ecx, [esp + 0xc]
+  0x00461E21: push     ecx
+  0x00461E22: call     dword ptr [0x522948]  ; IMPORT GDI32.dll!CreateFontIndirectA
+  0x00461E28: cmp      eax, ebx
+  0x00461E2A: mov      dword ptr [esi*4 + 0x510bcc], eax
+  0x00461E31: jne      0x461e44
+  0x00461E33: mov      edx, 0x48ca70  ; "Font"
+  0x00461E38: mov      ecx, 6
+  0x00461E3D: call     0x463220
+  0x00461E42: xor      eax, eax
+  0x00461E44: pop      edi
+  0x00461E45: pop      esi
+  0x00461E46: pop      ebx
+  0x00461E47: add      esp, 0x3c
+  0x00461E4A: ret      8
+
+========== FONT_SETUP func 0x00444510 ==========
+  0x00444510: sub      esp, 8
+  0x00444513: mov      eax, dword ptr [esp + 0xc]
+  0x00444517: push     ebx
+  0x00444518: push     ebp
+  0x00444519: mov      ebp, edx
+  0x0044451B: xor      edx, edx
+  0x0044451D: push     esi
+  0x0044451E: cmp      eax, edx
+  0x00444520: push     edi
+  0x00444521: mov      esi, ecx
+  0x00444523: mov      dword ptr [esp + 0x14], edx
+  0x00444527: mov      dword ptr [esp + 0x10], edx
+  0x0044452B: jge      0x444533
+  0x0044452D: mov      eax, dword ptr [esi + 0x2b48]
+  0x00444533: cmp      eax, edx
+  0x00444535: mov      ecx, 1
+  0x0044453A: je       0x44454e
+  0x0044453C: mov      dword ptr [esi + 0x2b8c], 0x2bc
+  0x00444546: mov      dword ptr [esi + 0x2b48], ecx
+  0x0044454C: jmp      0x44455e
+  0x0044454E: mov      dword ptr [esi + 0x2b8c], 0x190
+  0x00444558: mov      dword ptr [esi + 0x2b48], edx
+  0x0044455E: cmp      ebp, edx
+  0x00444560: jg       0x44456a
+  0x00444562: mov      ebp, dword ptr [esi + 0x2b04]
+  0x00444568: jmp      0x444580
+  0x0044456A: cmp      ebp, dword ptr [esi + 0x2b04]
+  0x00444570: je       0x444580
+  0x00444572: mov      eax, dword ptr [esi + 0x3030]
+  0x00444578: mov      dword ptr [esp + 0x10], ecx
+  0x0044457C: mov      dword ptr [esp + 0x14], eax
+  0x00444580: mov      edi, dword ptr [esp + 0x20]
+  0x00444584: cmp      edi, edx
+  0x00444586: je       0x4445a4
+  0x00444588: lea      ebx, [esi + 0x2cdc]
+  0x0044458E: push     edi
+  0x0044458F: push     ebx
+  0x00444590: call     dword ptr [0x522bac]  ; IMPORT KERNEL32.dll!lstrcmpiA
+  0x00444596: test     eax, eax
+  0x00444598: je       0x4445b8
+  0x0044459A: push     edi
+  0x0044459B: push     ebx
+  0x0044459C: call     dword ptr [0x522bd0]  ; IMPORT KERNEL32.dll!lstrcpyA
+  0x004445A2: jmp      0x4445c0
+  0x004445A4: mov      cl, byte ptr [esi + 0x2cdc]
+  0x004445AA: lea      eax, [esi + 0x2cdc]
+  0x004445B0: test     cl, cl
+  0x004445B2: je       0x4445ba
+  0x004445B4: mov      edi, eax
+  0x004445B6: jmp      0x4445ba
+  0x004445B8: xor      edx, edx
+  0x004445BA: cmp      dword ptr [esp + 0x10], edx
+  0x004445BE: je       0x4445e5
+  0x004445C0: mov      ecx, dword ptr [esi + 0x2b34]
+  0x004445C6: mov      edx, dword ptr [esi + 0x4f0]
+  0x004445CC: push     ecx
+  0x004445CD: push     edi
+  0x004445CE: push     edx
+  0x004445CF: mov      edx, dword ptr [esp + 0x20]
+  0x004445D3: push     ebp
+  0x004445D4: mov      ecx, esi
+  0x004445D6: call     0x445780
+  0x004445DB: pop      edi
+  0x004445DC: pop      esi
+  0x004445DD: pop      ebp
+  0x004445DE: pop      ebx
+  0x004445DF: add      esp, 8
+  0x004445E2: ret      8
+
+========== LAX_OPEN/$LapH check func 0x00454890 ==========
+  0x00454890: mov      edx, 0x2e4000
+  0x00454895: xor      ecx, ecx
+  0x00454897: call     0x457030
+  0x0045489C: lea      ecx, [esp + 0x10]
+  0x004548A0: mov      dword ptr [esi + 0x544], eax
+  0x004548A6: push     0x48cec8  ; "$LapH__"
+  0x004548AB: push     ecx
+  0x004548AC: call     ebp
+  0x004548AE: lea      edx, [esp + 0x10]
+  0x004548B2: mov      ecx, esi
+  0x004548B4: push     8
+  0x004548B6: call     0x4549d0
+  0x004548BB: pop      edi
+  0x004548BC: pop      esi
+  0x004548BD: pop      ebp
+  0x004548BE: pop      ebx
+  0x004548BF: add      esp, 8
+  0x004548C2: ret      
+
+
+###### CreateFontIndirectA call sites ######
+
+--- callsite 0x00461E22 (disasm 60 ins before) ---
+  0x00461D92: jl       0x461db8
+  0x00461D94: sub      bh, al
+  0x00461D96: inc      esp
+  0x00461D97: and      al, 0xc
+  0x00461D99: adc      byte ptr [eax], al
+  0x00461D9B: add      byte ptr [eax], al
+  0x00461D9D: mov      dword ptr [esp + 0x10], ebx
+  0x00461DA1: mov      dword ptr [esp + 0x14], ebx
+  0x00461DA5: mov      dword ptr [esp + 0x18], ebx
+  0x00461DA9: mov      dword ptr [esp + 0x1c], 0x190
+  0x00461DB1: mov      byte ptr [esp + 0x20], bl
+  0x00461DB5: mov      byte ptr [esp + 0x21], bl
+  0x00461DB9: mov      byte ptr [esp + 0x22], bl
+  0x00461DBD: mov      byte ptr [esp + 0x23], 0x80
+  0x00461DC2: mov      byte ptr [esp + 0x24], bl
+  0x00461DC6: mov      byte ptr [esp + 0x25], bl
+  0x00461DCA: mov      byte ptr [esp + 0x26], 2
+  0x00461DCF: mov      byte ptr [esp + 0x27], 1
+  0x00461DD4: cmp      esi, ebx
+  0x00461DD6: rep stosd dword ptr es:[edi], eax
+  0x00461DD8: jl       0x461e33
+  0x00461DDA: mov      eax, dword ptr [esp + 0x4c]
+  0x00461DDE: mov      dword ptr [esp + 0xc], edx
+  0x00461DE2: cmp      eax, ebx
+  0x00461DE4: mov      byte ptr [esp + 0x28], bl
+  0x00461DE8: jl       0x461dee
+  0x00461DEA: mov      dword ptr [esp + 0x1c], eax
+  0x00461DEE: mov      edi, dword ptr [esp + 0x50]
+  0x00461DF2: cmp      edi, ebx
+  0x00461DF4: je       0x461e0d
+  0x00461DF6: mov      ecx, edi
+  0x00461DF8: call     0x461ea0
+  0x00461DFD: test     eax, eax
+  0x00461DFF: je       0x461e0d
+  0x00461E01: lea      eax, [esp + 0x28]
+  0x00461E05: push     edi
+  0x00461E06: push     eax
+  0x00461E07: call     dword ptr [0x522bd0]  ; IMPORT KERNEL32.dll!lstrcpyA
+  0x00461E0D: cmp      dword ptr [esi*4 + 0x510bcc], ebx
+  0x00461E14: je       0x461e1d
+  0x00461E16: mov      ecx, esi
+  0x00461E18: call     0x461e50
+  0x00461E1D: lea      ecx, [esp + 0xc]
+  0x00461E21: push     ecx
+  0x00461E22: call     dword ptr [0x522948]  ; IMPORT GDI32.dll!CreateFontIndirectA <== CALL
+  0x00461E28: cmp      eax, ebx
+
+--- callsite 0x00467304 (disasm 60 ins before) ---
+  0x00467274: jmp      dword ptr [0x52298c]  ; IMPORT GDI32.dll!CreateSolidBrush
+  0x0046727A: jmp      dword ptr [0x522988]  ; IMPORT GDI32.dll!DeleteObject
+  0x00467280: jmp      dword ptr [0x522984]  ; IMPORT GDI32.dll!RestoreDC
+  0x00467286: jmp      dword ptr [0x522980]  ; IMPORT GDI32.dll!SetBkColor
+  0x0046728C: jmp      dword ptr [0x52297c]  ; IMPORT GDI32.dll!SetTextColor
+  0x00467292: jmp      dword ptr [0x522978]  ; IMPORT GDI32.dll!SaveDC
+  0x00467298: jmp      dword ptr [0x522974]  ; IMPORT GDI32.dll!BitBlt
+  0x0046729E: jmp      dword ptr [0x522970]  ; IMPORT GDI32.dll!Polyline
+  0x004672A4: jmp      dword ptr [0x52296c]  ; IMPORT GDI32.dll!SelectObject
+  0x004672AA: jmp      dword ptr [0x522968]  ; IMPORT GDI32.dll!CreatePen
+  0x004672B0: jmp      dword ptr [0x522964]  ; IMPORT GDI32.dll!TextOutA
+  0x004672B6: jmp      dword ptr [0x522960]  ; IMPORT GDI32.dll!SetDIBitsToDevice
+  0x004672BC: jmp      dword ptr [0x52295c]  ; IMPORT GDI32.dll!LineTo
+  0x004672C2: jmp      dword ptr [0x522958]  ; IMPORT GDI32.dll!MoveToEx
+  0x004672C8: jmp      dword ptr [0x522954]  ; IMPORT GDI32.dll!CreateDIBSection
+  0x004672CE: jmp      dword ptr [0x522950]  ; IMPORT GDI32.dll!CreateCompatibleDC
+  0x004672D4: jmp      dword ptr [0x52294c]  ; IMPORT GDI32.dll!DeleteDC
+  0x004672DA: jmp      dword ptr [0x52293c]  ; IMPORT GDI32.dll!GetDeviceCaps
+  0x004672E0: jmp      dword ptr [0x522930]  ; IMPORT GDI32.dll!SetBkMode
+  0x004672E6: jmp      dword ptr [0x522934]  ; IMPORT GDI32.dll!GetTextExtentPoint32A
+  0x004672EC: jmp      dword ptr [0x522938]  ; IMPORT GDI32.dll!GdiSetBatchLimit
+  0x004672F2: jmp      dword ptr [0x522990]  ; IMPORT GDI32.dll!StretchDIBits
+  0x004672F8: jmp      dword ptr [0x522940]  ; IMPORT GDI32.dll!ExtFloodFill
+  0x004672FE: jmp      dword ptr [0x522944]  ; IMPORT GDI32.dll!GetObjectA
+  0x00467304: jmp      dword ptr [0x522948]  ; IMPORT GDI32.dll!CreateFontIndirectA <== CALL
+
+
+###### MultiByteToWideChar call sites (check codepage arg) ######
+
+--- callsite 0x00418192 ---
+  0x00418152: push     edx
+  0x00418153: add      byte ptr [eax + 0x28], ch
+  0x00418156: dec      edi
+  0x00418157: dec      edi
+  0x00418158: add      byte ptr [eax + 0x6c], ch
+  0x0041815B: sbb      dword ptr [eax], ecx
+  0x0041815E: push     3
+  0x00418160: push     0
+  0x00418162: push     0x4831ac
+  0x00418167: call     dword ptr [0x522f9c]  ; IMPORT ole32.dll!CoCreateInstance
+  0x0041816D: test     eax, eax
+  0x0041816F: jge      0x418181
+  0x00418171: xor      ecx, ecx
+  0x00418173: call     0x4184f0
+  0x00418178: pop      edi
+  0x00418179: pop      esi
+  0x0041817A: add      esp, 0x218
+  0x00418180: ret      
+  0x00418181: lea      eax, [esp + 0x18]
+  0x00418185: push     0x104
+  0x0041818A: push     eax
+  0x0041818B: push     -1
+  0x0041818D: push     esi
+  0x0041818E: push     0
+  0x00418190: push     0
+  0x00418192: call     dword ptr [0x522ba0]  ; IMPORT KERNEL32.dll!MultiByteToWideChar <== CALL
+
+--- callsite 0x00466E90 ---
+  0x00466E50: shr      byte ptr [ebx], 1
+  0x00466E52: push     edx
+  0x00466E53: add      bh, bh
+  0x00466E55: and      eax, 0x522bcc
+  0x00466E5A: jmp      dword ptr [0x522bc8]  ; IMPORT KERNEL32.dll!GetThreadPriority
+  0x00466E60: jmp      dword ptr [0x522bc4]  ; IMPORT KERNEL32.dll!GetCurrentThread
+  0x00466E66: jmp      dword ptr [0x522bc0]  ; IMPORT KERNEL32.dll!lstrlenA
+  0x00466E6C: jmp      dword ptr [0x522bbc]  ; IMPORT KERNEL32.dll!GetLastError
+  0x00466E72: jmp      dword ptr [0x522bb8]  ; IMPORT KERNEL32.dll!GetProcAddress
+  0x00466E78: jmp      dword ptr [0x522bb4]  ; IMPORT KERNEL32.dll!LoadLibraryA
+  0x00466E7E: jmp      dword ptr [0x522bac]  ; IMPORT KERNEL32.dll!lstrcmpiA
+  0x00466E84: jmp      dword ptr [0x522ba8]  ; IMPORT KERNEL32.dll!lstrcatA
+  0x00466E8A: jmp      dword ptr [0x522ba4]  ; IMPORT KERNEL32.dll!lstrcpynA
+  0x00466E90: jmp      dword ptr [0x522ba0]  ; IMPORT KERNEL32.dll!MultiByteToWideChar <== CALL
+
+--- callsite 0x00469F3E ---
+  0x00469EFE: jne      0x469f10
+  0x00469F00: push     dword ptr [ebp + 0xc]
+  0x00469F03: push     dword ptr [ebp + 8]
+  0x00469F06: call     dword ptr [0x522aa4]  ; IMPORT KERNEL32.dll!LCMapStringA
+  0x00469F0C: jmp      0x469fef
+  0x00469F11: cmp      eax, 1
+  0x00469F14: jne      0x469fed
+  0x00469F1A: cmp      dword ptr [ebp + 0x20], edi
+  0x00469F1D: jne      0x469f27
+  0x00469F1F: mov      eax, dword ptr [0x520bf0]
+  0x00469F24: mov      dword ptr [ebp + 0x20], eax
+  0x00469F27: push     edi
+  0x00469F28: push     edi
+  0x00469F29: push     dword ptr [ebp + 0x14]
+  0x00469F2C: push     dword ptr [ebp + 0x10]
+  0x00469F2F: mov      eax, dword ptr [ebp + 0x24]
+  0x00469F32: neg      eax
+  0x00469F34: sbb      eax, eax
+  0x00469F36: and      eax, 8
+  0x00469F39: inc      eax
+  0x00469F3A: push     eax
+  0x00469F3B: push     dword ptr [ebp + 0x20]
+  0x00469F3E: call     dword ptr [0x522ba0]  ; IMPORT KERNEL32.dll!MultiByteToWideChar <== CALL
+  0x00469F44: mov      ebx, eax
+
+--- callsite 0x00469F96 ---
+  0x00469F56: sbb      eax, dword ptr [ebx - 0x3dbfc40]
+  0x00469F5C: call     0x467bb0
+  0x00469F61: mov      dword ptr [ebp - 0x18], esp
+  0x00469F64: mov      eax, esp
+  0x00469F66: mov      dword ptr [ebp - 0x24], eax
+  0x00469F69: or       dword ptr [ebp - 4], 0xffffffff
+  0x00469F6D: jmp      0x469f82
+  0x00469F6F: push     1
+  0x00469F71: pop      eax
+  0x00469F72: ret      
+  0x00469F73: mov      esp, dword ptr [ebp - 0x18]
+  0x00469F76: xor      edi, edi
+  0x00469F78: mov      dword ptr [ebp - 0x24], edi
+  0x00469F7B: or       dword ptr [ebp - 4], 0xffffffff
+  0x00469F7F: mov      ebx, dword ptr [ebp - 0x1c]
+  0x00469F82: cmp      dword ptr [ebp - 0x24], edi
+  0x00469F85: je       0x469fed
+  0x00469F87: push     ebx
+  0x00469F88: push     dword ptr [ebp - 0x24]
+  0x00469F8B: push     dword ptr [ebp + 0x14]
+  0x00469F8E: push     dword ptr [ebp + 0x10]
+  0x00469F91: push     1
+  0x00469F93: push     dword ptr [ebp + 0x20]
+  0x00469F96: call     dword ptr [0x522ba0]  ; IMPORT KERNEL32.dll!MultiByteToWideChar <== CALL
+  0x00469F9C: test     eax, eax
+
+--- callsite 0x0046A173 ---
+  0x0046A133: adc      bh, bh
+  0x0046A135: jne      0x46a143
+  0x0046A137: push     dword ptr [ebp + 8]
+  0x0046A13A: push     eax
+  0x0046A13B: call     dword ptr [0x522a9c]  ; IMPORT KERNEL32.dll!GetStringTypeA
+  0x0046A141: jmp      0x46a1e5
+  0x0046A146: cmp      eax, 1
+  0x0046A149: jne      0x46a1e3
+  0x0046A14F: cmp      dword ptr [ebp + 0x18], ebx
+  0x0046A152: jne      0x46a15c
+  0x0046A154: mov      eax, dword ptr [0x520bf0]
+  0x0046A159: mov      dword ptr [ebp + 0x18], eax
+  0x0046A15C: push     ebx
+  0x0046A15D: push     ebx
+  0x0046A15E: push     dword ptr [ebp + 0x10]
+  0x0046A161: push     dword ptr [ebp + 0xc]
+  0x0046A164: mov      eax, dword ptr [ebp + 0x20]
+  0x0046A167: neg      eax
+  0x0046A169: sbb      eax, eax
+  0x0046A16B: and      eax, 8
+  0x0046A16E: inc      eax
+  0x0046A16F: push     eax
+  0x0046A170: push     dword ptr [ebp + 0x18]
+  0x0046A173: call     dword ptr [0x522ba0]  ; IMPORT KERNEL32.dll!MultiByteToWideChar <== CALL
+
+--- callsite 0x0046A1C9 ---
+  0x0046A189: rol      byte ptr [ebx], 0x24
+  0x0046A18C: cld      
+  0x0046A18D: call     0x467bb0
+  0x0046A192: mov      dword ptr [ebp - 0x18], esp
+  0x0046A195: mov      esi, esp
+  0x0046A197: mov      dword ptr [ebp - 0x24], esi
+  0x0046A19A: push     edi
+  0x0046A19B: push     ebx
+  0x0046A19C: push     esi
+  0x0046A19D: call     0x46d010
+  0x0046A1A2: add      esp, 0xc
+  0x0046A1A5: jmp      0x46a1b2
+  0x0046A1A7: push     1
+  0x0046A1A9: pop      eax
+  0x0046A1AA: ret      
+  0x0046A1AB: mov      esp, dword ptr [ebp - 0x18]
+  0x0046A1AE: xor      ebx, ebx
+  0x0046A1B0: xor      esi, esi
+  0x0046A1B2: or       dword ptr [ebp - 4], 0xffffffff
+  0x0046A1B6: cmp      esi, ebx
+  0x0046A1B8: je       0x46a1e3
+  0x0046A1BA: push     dword ptr [ebp - 0x20]
+  0x0046A1BD: push     esi
+  0x0046A1BE: push     dword ptr [ebp + 0x10]
+  0x0046A1C1: push     dword ptr [ebp + 0xc]
+  0x0046A1C4: push     1
+  0x0046A1C6: push     dword ptr [ebp + 0x18]
+  0x0046A1C9: call     dword ptr [0x522ba0]  ; IMPORT KERNEL32.dll!MultiByteToWideChar <== CALL
+  0x0046A1CF: cmp      eax, ebx
+
+--- callsite 0x0046D6A5 ---
+  0x0046D665: pop      ebp
+  0x0046D666: sbb      al, 0x7e
+  0x0046D668: xor      dword ptr [ebx + 0x7202c47d], eax
+  0x0046D66E: movsd    dword ptr es:[edi], dword ptr [esi]
+  0x0046D66F: lea      eax, [ebp - 0x36]
+  0x0046D672: cmp      byte ptr [ebp - 0x36], bl
+  0x0046D675: je       0x46d614
+  0x0046D677: mov      dl, byte ptr [eax + 1]
+  0x0046D67A: cmp      dl, bl
+  0x0046D67C: je       0x46d614
+  0x0046D67E: mov      ecx, dword ptr [ebp + 0x18]
+  0x0046D681: mov      cl, byte ptr [ecx]
+  0x0046D683: cmp      cl, byte ptr [eax]
+  0x0046D685: jb       0x46d68f
+  0x0046D687: cmp      cl, dl
+  0x0046D689: jbe      0x46d607
+  0x0046D68F: inc      eax
+  0x0046D690: inc      eax
+  0x0046D691: cmp      byte ptr [eax], bl
+  0x0046D693: jne      0x46d677
+  0x0046D695: jmp      0x46d614
+  0x0046D69A: push     ebx
+  0x0046D69B: push     ebx
+  0x0046D69C: push     esi
+  0x0046D69D: push     dword ptr [ebp + 0x10]
+  0x0046D6A0: push     9
+  0x0046D6A2: push     dword ptr [ebp + 0x20]
+  0x0046D6A5: call     dword ptr [0x522ba0]  ; IMPORT KERNEL32.dll!MultiByteToWideChar <== CALL
+
+--- callsite 0x0046D765 ---
+  0x0046D725: jge      0x46d723
+  0x0046D727: lea      eax, [esi + esi]
+  0x0046D72A: add      eax, 3
+  0x0046D72D: and      al, 0xfc
+  0x0046D72F: call     0x467bb0
+  0x0046D734: mov      dword ptr [ebp - 0x18], esp
+  0x0046D737: mov      edi, esp
+  0x0046D739: mov      dword ptr [ebp - 0x28], edi
+  0x0046D73C: or       dword ptr [ebp - 4], 0xffffffff
+  0x0046D740: jmp      0x46d754
+  0x0046D742: push     1
+  0x0046D744: pop      eax
+  0x0046D745: ret      
+  0x0046D746: mov      esp, dword ptr [ebp - 0x18]
+  0x0046D749: xor      ebx, ebx
+  0x0046D74B: xor      edi, edi
+  0x0046D74D: or       dword ptr [ebp - 4], 0xffffffff
+  0x0046D751: mov      esi, dword ptr [ebp - 0x20]
+  0x0046D754: cmp      edi, ebx
+  0x0046D756: je       0x46d785
+  0x0046D758: push     esi
+  0x0046D759: push     edi
+  0x0046D75A: push     dword ptr [ebp + 0x1c]
+  0x0046D75D: push     dword ptr [ebp + 0x18]
+  0x0046D760: push     1
+  0x0046D762: push     dword ptr [ebp + 0x20]
+  0x0046D765: call     dword ptr [0x522ba0]  ; IMPORT KERNEL32.dll!MultiByteToWideChar <== CALL
+  0x0046D76B: test     eax, eax
+done

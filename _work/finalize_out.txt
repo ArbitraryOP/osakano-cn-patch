@@ -1,0 +1,6 @@
+merge_phase2b: applied 567 records across 23 te files (0 bad files)
+build_all: rebuilt; residual overflow records=1
+convert_untranslated: converted 997 runs to GBK; kept 0 (len-mismatch/unencodable)
+repack: -> E:\game\_work\build\scenario.lax (2256657 bytes, 31 entries)
+synced -> E:\game\jp\scenario.lax
+FINALIZE DONE

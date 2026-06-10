@@ -1,0 +1,10 @@
+.logopen E:\game\_work\cdb_audio.log
+.symopt+0x100
+bu winmm!waveOutGetNumDevs ".echo HIT waveOutGetNumDevs; gc"
+bu winmm!waveOutOpen ".echo HIT waveOutOpen; gc"
+bu winmm!waveOutWrite ".echo HIT waveOutWrite; gc"
+bu winmm!waveOutSetVolume ".printf \"HIT waveOutSetVolume vol=%08x\n\", poi(@esp+8); gc"
+bu winmm!mciSendCommandA ".printf \"HIT mciSendCommandA msg=%x\n\", poi(@esp+8); gc"
+bu dsound!DirectSoundCreate ".echo HIT DirectSoundCreate; gc"
+bu dsound!DirectSoundCreate8 ".echo HIT DirectSoundCreate8; gc"
+g

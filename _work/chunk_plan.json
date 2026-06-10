@@ -1,0 +1,1721 @@
+[
+ {
+  "name": "0708",
+  "start_id": 1,
+  "end_id": 100,
+  "n": 100,
+  "jp_chars": 2698,
+  "in_path": "E:\\game\\_work\\chunks\\0708__1_100.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0708__1_100.json"
+ },
+ {
+  "name": "0708",
+  "start_id": 101,
+  "end_id": 200,
+  "n": 100,
+  "jp_chars": 3414,
+  "in_path": "E:\\game\\_work\\chunks\\0708__101_200.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0708__101_200.json"
+ },
+ {
+  "name": "0708",
+  "start_id": 201,
+  "end_id": 300,
+  "n": 100,
+  "jp_chars": 3576,
+  "in_path": "E:\\game\\_work\\chunks\\0708__201_300.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0708__201_300.json"
+ },
+ {
+  "name": "0708",
+  "start_id": 301,
+  "end_id": 400,
+  "n": 100,
+  "jp_chars": 2915,
+  "in_path": "E:\\game\\_work\\chunks\\0708__301_400.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0708__301_400.json"
+ },
+ {
+  "name": "0708",
+  "start_id": 401,
+  "end_id": 500,
+  "n": 100,
+  "jp_chars": 2834,
+  "in_path": "E:\\game\\_work\\chunks\\0708__401_500.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0708__401_500.json"
+ },
+ {
+  "name": "0708",
+  "start_id": 501,
+  "end_id": 600,
+  "n": 100,
+  "jp_chars": 3445,
+  "in_path": "E:\\game\\_work\\chunks\\0708__501_600.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0708__501_600.json"
+ },
+ {
+  "name": "0708",
+  "start_id": 601,
+  "end_id": 700,
+  "n": 100,
+  "jp_chars": 2672,
+  "in_path": "E:\\game\\_work\\chunks\\0708__601_700.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0708__601_700.json"
+ },
+ {
+  "name": "0708",
+  "start_id": 701,
+  "end_id": 800,
+  "n": 100,
+  "jp_chars": 2541,
+  "in_path": "E:\\game\\_work\\chunks\\0708__701_800.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0708__701_800.json"
+ },
+ {
+  "name": "0708",
+  "start_id": 801,
+  "end_id": 900,
+  "n": 100,
+  "jp_chars": 3313,
+  "in_path": "E:\\game\\_work\\chunks\\0708__801_900.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0708__801_900.json"
+ },
+ {
+  "name": "0708",
+  "start_id": 901,
+  "end_id": 1000,
+  "n": 100,
+  "jp_chars": 3119,
+  "in_path": "E:\\game\\_work\\chunks\\0708__901_1000.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0708__901_1000.json"
+ },
+ {
+  "name": "0708",
+  "start_id": 1001,
+  "end_id": 1100,
+  "n": 100,
+  "jp_chars": 3152,
+  "in_path": "E:\\game\\_work\\chunks\\0708__1001_1100.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0708__1001_1100.json"
+ },
+ {
+  "name": "0708",
+  "start_id": 1101,
+  "end_id": 1200,
+  "n": 100,
+  "jp_chars": 3099,
+  "in_path": "E:\\game\\_work\\chunks\\0708__1101_1200.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0708__1101_1200.json"
+ },
+ {
+  "name": "0708",
+  "start_id": 1201,
+  "end_id": 1300,
+  "n": 100,
+  "jp_chars": 2783,
+  "in_path": "E:\\game\\_work\\chunks\\0708__1201_1300.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0708__1201_1300.json"
+ },
+ {
+  "name": "0708",
+  "start_id": 1301,
+  "end_id": 1400,
+  "n": 100,
+  "jp_chars": 3143,
+  "in_path": "E:\\game\\_work\\chunks\\0708__1301_1400.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0708__1301_1400.json"
+ },
+ {
+  "name": "0708",
+  "start_id": 1401,
+  "end_id": 1500,
+  "n": 100,
+  "jp_chars": 2057,
+  "in_path": "E:\\game\\_work\\chunks\\0708__1401_1500.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0708__1401_1500.json"
+ },
+ {
+  "name": "0708",
+  "start_id": 1501,
+  "end_id": 1600,
+  "n": 100,
+  "jp_chars": 2712,
+  "in_path": "E:\\game\\_work\\chunks\\0708__1501_1600.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0708__1501_1600.json"
+ },
+ {
+  "name": "0708",
+  "start_id": 1601,
+  "end_id": 1700,
+  "n": 100,
+  "jp_chars": 3418,
+  "in_path": "E:\\game\\_work\\chunks\\0708__1601_1700.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0708__1601_1700.json"
+ },
+ {
+  "name": "0708",
+  "start_id": 1701,
+  "end_id": 1800,
+  "n": 100,
+  "jp_chars": 3459,
+  "in_path": "E:\\game\\_work\\chunks\\0708__1701_1800.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0708__1701_1800.json"
+ },
+ {
+  "name": "0708",
+  "start_id": 1801,
+  "end_id": 1900,
+  "n": 100,
+  "jp_chars": 2862,
+  "in_path": "E:\\game\\_work\\chunks\\0708__1801_1900.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0708__1801_1900.json"
+ },
+ {
+  "name": "0708",
+  "start_id": 1901,
+  "end_id": 2000,
+  "n": 100,
+  "jp_chars": 3243,
+  "in_path": "E:\\game\\_work\\chunks\\0708__1901_2000.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0708__1901_2000.json"
+ },
+ {
+  "name": "0708",
+  "start_id": 2001,
+  "end_id": 2100,
+  "n": 100,
+  "jp_chars": 3570,
+  "in_path": "E:\\game\\_work\\chunks\\0708__2001_2100.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0708__2001_2100.json"
+ },
+ {
+  "name": "0708",
+  "start_id": 2101,
+  "end_id": 2200,
+  "n": 100,
+  "jp_chars": 3052,
+  "in_path": "E:\\game\\_work\\chunks\\0708__2101_2200.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0708__2101_2200.json"
+ },
+ {
+  "name": "0708",
+  "start_id": 2201,
+  "end_id": 2300,
+  "n": 100,
+  "jp_chars": 3023,
+  "in_path": "E:\\game\\_work\\chunks\\0708__2201_2300.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0708__2201_2300.json"
+ },
+ {
+  "name": "0708",
+  "start_id": 2301,
+  "end_id": 2400,
+  "n": 100,
+  "jp_chars": 3409,
+  "in_path": "E:\\game\\_work\\chunks\\0708__2301_2400.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0708__2301_2400.json"
+ },
+ {
+  "name": "0708",
+  "start_id": 2401,
+  "end_id": 2424,
+  "n": 24,
+  "jp_chars": 608,
+  "in_path": "E:\\game\\_work\\chunks\\0708__2401_2424.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0708__2401_2424.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 1,
+  "end_id": 100,
+  "n": 100,
+  "jp_chars": 2939,
+  "in_path": "E:\\game\\_work\\chunks\\0709__1_100.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__1_100.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 101,
+  "end_id": 200,
+  "n": 100,
+  "jp_chars": 2857,
+  "in_path": "E:\\game\\_work\\chunks\\0709__101_200.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__101_200.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 201,
+  "end_id": 300,
+  "n": 100,
+  "jp_chars": 3193,
+  "in_path": "E:\\game\\_work\\chunks\\0709__201_300.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__201_300.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 301,
+  "end_id": 400,
+  "n": 100,
+  "jp_chars": 3043,
+  "in_path": "E:\\game\\_work\\chunks\\0709__301_400.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__301_400.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 401,
+  "end_id": 500,
+  "n": 100,
+  "jp_chars": 3494,
+  "in_path": "E:\\game\\_work\\chunks\\0709__401_500.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__401_500.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 501,
+  "end_id": 600,
+  "n": 100,
+  "jp_chars": 3419,
+  "in_path": "E:\\game\\_work\\chunks\\0709__501_600.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__501_600.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 601,
+  "end_id": 700,
+  "n": 100,
+  "jp_chars": 3118,
+  "in_path": "E:\\game\\_work\\chunks\\0709__601_700.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__601_700.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 701,
+  "end_id": 800,
+  "n": 100,
+  "jp_chars": 3532,
+  "in_path": "E:\\game\\_work\\chunks\\0709__701_800.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__701_800.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 801,
+  "end_id": 900,
+  "n": 100,
+  "jp_chars": 3144,
+  "in_path": "E:\\game\\_work\\chunks\\0709__801_900.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__801_900.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 901,
+  "end_id": 1000,
+  "n": 100,
+  "jp_chars": 2737,
+  "in_path": "E:\\game\\_work\\chunks\\0709__901_1000.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__901_1000.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 1001,
+  "end_id": 1100,
+  "n": 100,
+  "jp_chars": 2727,
+  "in_path": "E:\\game\\_work\\chunks\\0709__1001_1100.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__1001_1100.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 1101,
+  "end_id": 1200,
+  "n": 100,
+  "jp_chars": 3625,
+  "in_path": "E:\\game\\_work\\chunks\\0709__1101_1200.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__1101_1200.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 1201,
+  "end_id": 1300,
+  "n": 100,
+  "jp_chars": 3941,
+  "in_path": "E:\\game\\_work\\chunks\\0709__1201_1300.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__1201_1300.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 1301,
+  "end_id": 1400,
+  "n": 100,
+  "jp_chars": 3304,
+  "in_path": "E:\\game\\_work\\chunks\\0709__1301_1400.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__1301_1400.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 1401,
+  "end_id": 1500,
+  "n": 100,
+  "jp_chars": 2853,
+  "in_path": "E:\\game\\_work\\chunks\\0709__1401_1500.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__1401_1500.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 1501,
+  "end_id": 1600,
+  "n": 100,
+  "jp_chars": 3629,
+  "in_path": "E:\\game\\_work\\chunks\\0709__1501_1600.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__1501_1600.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 1601,
+  "end_id": 1700,
+  "n": 100,
+  "jp_chars": 3795,
+  "in_path": "E:\\game\\_work\\chunks\\0709__1601_1700.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__1601_1700.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 1701,
+  "end_id": 1800,
+  "n": 100,
+  "jp_chars": 2843,
+  "in_path": "E:\\game\\_work\\chunks\\0709__1701_1800.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__1701_1800.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 1801,
+  "end_id": 1900,
+  "n": 100,
+  "jp_chars": 3189,
+  "in_path": "E:\\game\\_work\\chunks\\0709__1801_1900.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__1801_1900.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 1901,
+  "end_id": 2000,
+  "n": 100,
+  "jp_chars": 3465,
+  "in_path": "E:\\game\\_work\\chunks\\0709__1901_2000.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__1901_2000.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 2001,
+  "end_id": 2100,
+  "n": 100,
+  "jp_chars": 2756,
+  "in_path": "E:\\game\\_work\\chunks\\0709__2001_2100.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__2001_2100.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 2101,
+  "end_id": 2200,
+  "n": 100,
+  "jp_chars": 2835,
+  "in_path": "E:\\game\\_work\\chunks\\0709__2101_2200.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__2101_2200.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 2201,
+  "end_id": 2300,
+  "n": 100,
+  "jp_chars": 2277,
+  "in_path": "E:\\game\\_work\\chunks\\0709__2201_2300.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__2201_2300.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 2301,
+  "end_id": 2400,
+  "n": 100,
+  "jp_chars": 2608,
+  "in_path": "E:\\game\\_work\\chunks\\0709__2301_2400.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__2301_2400.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 2401,
+  "end_id": 2500,
+  "n": 100,
+  "jp_chars": 3225,
+  "in_path": "E:\\game\\_work\\chunks\\0709__2401_2500.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__2401_2500.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 2501,
+  "end_id": 2600,
+  "n": 100,
+  "jp_chars": 2915,
+  "in_path": "E:\\game\\_work\\chunks\\0709__2501_2600.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__2501_2600.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 2601,
+  "end_id": 2700,
+  "n": 100,
+  "jp_chars": 3364,
+  "in_path": "E:\\game\\_work\\chunks\\0709__2601_2700.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__2601_2700.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 2701,
+  "end_id": 2800,
+  "n": 100,
+  "jp_chars": 3465,
+  "in_path": "E:\\game\\_work\\chunks\\0709__2701_2800.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__2701_2800.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 2801,
+  "end_id": 2900,
+  "n": 100,
+  "jp_chars": 3826,
+  "in_path": "E:\\game\\_work\\chunks\\0709__2801_2900.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__2801_2900.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 2901,
+  "end_id": 3000,
+  "n": 100,
+  "jp_chars": 3404,
+  "in_path": "E:\\game\\_work\\chunks\\0709__2901_3000.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__2901_3000.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 3001,
+  "end_id": 3100,
+  "n": 100,
+  "jp_chars": 3104,
+  "in_path": "E:\\game\\_work\\chunks\\0709__3001_3100.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__3001_3100.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 3101,
+  "end_id": 3200,
+  "n": 100,
+  "jp_chars": 3374,
+  "in_path": "E:\\game\\_work\\chunks\\0709__3101_3200.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__3101_3200.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 3201,
+  "end_id": 3300,
+  "n": 100,
+  "jp_chars": 3857,
+  "in_path": "E:\\game\\_work\\chunks\\0709__3201_3300.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__3201_3300.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 3301,
+  "end_id": 3400,
+  "n": 100,
+  "jp_chars": 3621,
+  "in_path": "E:\\game\\_work\\chunks\\0709__3301_3400.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__3301_3400.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 3401,
+  "end_id": 3500,
+  "n": 100,
+  "jp_chars": 3153,
+  "in_path": "E:\\game\\_work\\chunks\\0709__3401_3500.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__3401_3500.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 3501,
+  "end_id": 3600,
+  "n": 100,
+  "jp_chars": 2762,
+  "in_path": "E:\\game\\_work\\chunks\\0709__3501_3600.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__3501_3600.json"
+ },
+ {
+  "name": "0709",
+  "start_id": 3601,
+  "end_id": 3642,
+  "n": 42,
+  "jp_chars": 1022,
+  "in_path": "E:\\game\\_work\\chunks\\0709__3601_3642.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0709__3601_3642.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 0,
+  "end_id": 99,
+  "n": 100,
+  "jp_chars": 2610,
+  "in_path": "E:\\game\\_work\\chunks\\0710__0_99.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__0_99.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 100,
+  "end_id": 199,
+  "n": 100,
+  "jp_chars": 3442,
+  "in_path": "E:\\game\\_work\\chunks\\0710__100_199.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__100_199.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 200,
+  "end_id": 299,
+  "n": 100,
+  "jp_chars": 3547,
+  "in_path": "E:\\game\\_work\\chunks\\0710__200_299.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__200_299.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 300,
+  "end_id": 399,
+  "n": 100,
+  "jp_chars": 3170,
+  "in_path": "E:\\game\\_work\\chunks\\0710__300_399.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__300_399.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 400,
+  "end_id": 499,
+  "n": 100,
+  "jp_chars": 3002,
+  "in_path": "E:\\game\\_work\\chunks\\0710__400_499.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__400_499.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 500,
+  "end_id": 599,
+  "n": 100,
+  "jp_chars": 3577,
+  "in_path": "E:\\game\\_work\\chunks\\0710__500_599.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__500_599.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 600,
+  "end_id": 699,
+  "n": 100,
+  "jp_chars": 3126,
+  "in_path": "E:\\game\\_work\\chunks\\0710__600_699.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__600_699.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 700,
+  "end_id": 799,
+  "n": 100,
+  "jp_chars": 3199,
+  "in_path": "E:\\game\\_work\\chunks\\0710__700_799.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__700_799.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 800,
+  "end_id": 899,
+  "n": 100,
+  "jp_chars": 3744,
+  "in_path": "E:\\game\\_work\\chunks\\0710__800_899.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__800_899.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 900,
+  "end_id": 999,
+  "n": 100,
+  "jp_chars": 3751,
+  "in_path": "E:\\game\\_work\\chunks\\0710__900_999.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__900_999.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 1000,
+  "end_id": 1099,
+  "n": 100,
+  "jp_chars": 2923,
+  "in_path": "E:\\game\\_work\\chunks\\0710__1000_1099.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__1000_1099.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 1100,
+  "end_id": 1199,
+  "n": 100,
+  "jp_chars": 2807,
+  "in_path": "E:\\game\\_work\\chunks\\0710__1100_1199.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__1100_1199.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 1200,
+  "end_id": 1299,
+  "n": 100,
+  "jp_chars": 2969,
+  "in_path": "E:\\game\\_work\\chunks\\0710__1200_1299.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__1200_1299.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 1300,
+  "end_id": 1399,
+  "n": 100,
+  "jp_chars": 2976,
+  "in_path": "E:\\game\\_work\\chunks\\0710__1300_1399.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__1300_1399.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 1400,
+  "end_id": 1499,
+  "n": 100,
+  "jp_chars": 3829,
+  "in_path": "E:\\game\\_work\\chunks\\0710__1400_1499.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__1400_1499.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 1500,
+  "end_id": 1599,
+  "n": 100,
+  "jp_chars": 2873,
+  "in_path": "E:\\game\\_work\\chunks\\0710__1500_1599.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__1500_1599.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 1600,
+  "end_id": 1699,
+  "n": 100,
+  "jp_chars": 3409,
+  "in_path": "E:\\game\\_work\\chunks\\0710__1600_1699.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__1600_1699.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 1700,
+  "end_id": 1799,
+  "n": 100,
+  "jp_chars": 3732,
+  "in_path": "E:\\game\\_work\\chunks\\0710__1700_1799.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__1700_1799.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 1800,
+  "end_id": 1899,
+  "n": 100,
+  "jp_chars": 3789,
+  "in_path": "E:\\game\\_work\\chunks\\0710__1800_1899.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__1800_1899.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 1900,
+  "end_id": 1999,
+  "n": 100,
+  "jp_chars": 3206,
+  "in_path": "E:\\game\\_work\\chunks\\0710__1900_1999.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__1900_1999.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 2000,
+  "end_id": 2099,
+  "n": 100,
+  "jp_chars": 3370,
+  "in_path": "E:\\game\\_work\\chunks\\0710__2000_2099.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__2000_2099.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 2100,
+  "end_id": 2199,
+  "n": 100,
+  "jp_chars": 2464,
+  "in_path": "E:\\game\\_work\\chunks\\0710__2100_2199.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__2100_2199.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 2200,
+  "end_id": 2299,
+  "n": 100,
+  "jp_chars": 2311,
+  "in_path": "E:\\game\\_work\\chunks\\0710__2200_2299.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__2200_2299.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 2300,
+  "end_id": 2399,
+  "n": 100,
+  "jp_chars": 2074,
+  "in_path": "E:\\game\\_work\\chunks\\0710__2300_2399.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__2300_2399.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 2400,
+  "end_id": 2499,
+  "n": 100,
+  "jp_chars": 3288,
+  "in_path": "E:\\game\\_work\\chunks\\0710__2400_2499.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__2400_2499.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 2500,
+  "end_id": 2599,
+  "n": 100,
+  "jp_chars": 3715,
+  "in_path": "E:\\game\\_work\\chunks\\0710__2500_2599.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__2500_2599.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 2600,
+  "end_id": 2699,
+  "n": 100,
+  "jp_chars": 3068,
+  "in_path": "E:\\game\\_work\\chunks\\0710__2600_2699.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__2600_2699.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 2700,
+  "end_id": 2799,
+  "n": 100,
+  "jp_chars": 3318,
+  "in_path": "E:\\game\\_work\\chunks\\0710__2700_2799.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__2700_2799.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 2800,
+  "end_id": 2899,
+  "n": 100,
+  "jp_chars": 3687,
+  "in_path": "E:\\game\\_work\\chunks\\0710__2800_2899.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__2800_2899.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 2900,
+  "end_id": 2999,
+  "n": 100,
+  "jp_chars": 2758,
+  "in_path": "E:\\game\\_work\\chunks\\0710__2900_2999.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__2900_2999.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 3000,
+  "end_id": 3099,
+  "n": 100,
+  "jp_chars": 2814,
+  "in_path": "E:\\game\\_work\\chunks\\0710__3000_3099.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__3000_3099.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 3100,
+  "end_id": 3199,
+  "n": 100,
+  "jp_chars": 2798,
+  "in_path": "E:\\game\\_work\\chunks\\0710__3100_3199.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__3100_3199.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 3200,
+  "end_id": 3299,
+  "n": 100,
+  "jp_chars": 3249,
+  "in_path": "E:\\game\\_work\\chunks\\0710__3200_3299.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__3200_3299.json"
+ },
+ {
+  "name": "0710",
+  "start_id": 3300,
+  "end_id": 3327,
+  "n": 28,
+  "jp_chars": 869,
+  "in_path": "E:\\game\\_work\\chunks\\0710__3300_3327.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0710__3300_3327.json"
+ },
+ {
+  "name": "0711",
+  "start_id": 1,
+  "end_id": 100,
+  "n": 100,
+  "jp_chars": 2376,
+  "in_path": "E:\\game\\_work\\chunks\\0711__1_100.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0711__1_100.json"
+ },
+ {
+  "name": "0711",
+  "start_id": 101,
+  "end_id": 200,
+  "n": 100,
+  "jp_chars": 2722,
+  "in_path": "E:\\game\\_work\\chunks\\0711__101_200.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0711__101_200.json"
+ },
+ {
+  "name": "0711",
+  "start_id": 201,
+  "end_id": 300,
+  "n": 100,
+  "jp_chars": 2909,
+  "in_path": "E:\\game\\_work\\chunks\\0711__201_300.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0711__201_300.json"
+ },
+ {
+  "name": "0711",
+  "start_id": 301,
+  "end_id": 400,
+  "n": 100,
+  "jp_chars": 3212,
+  "in_path": "E:\\game\\_work\\chunks\\0711__301_400.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0711__301_400.json"
+ },
+ {
+  "name": "0711",
+  "start_id": 401,
+  "end_id": 500,
+  "n": 100,
+  "jp_chars": 2691,
+  "in_path": "E:\\game\\_work\\chunks\\0711__401_500.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0711__401_500.json"
+ },
+ {
+  "name": "0711",
+  "start_id": 501,
+  "end_id": 600,
+  "n": 100,
+  "jp_chars": 3402,
+  "in_path": "E:\\game\\_work\\chunks\\0711__501_600.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0711__501_600.json"
+ },
+ {
+  "name": "0711",
+  "start_id": 601,
+  "end_id": 700,
+  "n": 100,
+  "jp_chars": 3414,
+  "in_path": "E:\\game\\_work\\chunks\\0711__601_700.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0711__601_700.json"
+ },
+ {
+  "name": "0711",
+  "start_id": 701,
+  "end_id": 800,
+  "n": 100,
+  "jp_chars": 3392,
+  "in_path": "E:\\game\\_work\\chunks\\0711__701_800.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0711__701_800.json"
+ },
+ {
+  "name": "0711",
+  "start_id": 801,
+  "end_id": 900,
+  "n": 100,
+  "jp_chars": 3541,
+  "in_path": "E:\\game\\_work\\chunks\\0711__801_900.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0711__801_900.json"
+ },
+ {
+  "name": "0711",
+  "start_id": 901,
+  "end_id": 1000,
+  "n": 100,
+  "jp_chars": 2765,
+  "in_path": "E:\\game\\_work\\chunks\\0711__901_1000.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0711__901_1000.json"
+ },
+ {
+  "name": "0711",
+  "start_id": 1001,
+  "end_id": 1100,
+  "n": 100,
+  "jp_chars": 3073,
+  "in_path": "E:\\game\\_work\\chunks\\0711__1001_1100.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0711__1001_1100.json"
+ },
+ {
+  "name": "0711",
+  "start_id": 1101,
+  "end_id": 1200,
+  "n": 100,
+  "jp_chars": 3414,
+  "in_path": "E:\\game\\_work\\chunks\\0711__1101_1200.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0711__1101_1200.json"
+ },
+ {
+  "name": "0711",
+  "start_id": 1201,
+  "end_id": 1300,
+  "n": 100,
+  "jp_chars": 3308,
+  "in_path": "E:\\game\\_work\\chunks\\0711__1201_1300.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0711__1201_1300.json"
+ },
+ {
+  "name": "0711",
+  "start_id": 1301,
+  "end_id": 1400,
+  "n": 100,
+  "jp_chars": 3013,
+  "in_path": "E:\\game\\_work\\chunks\\0711__1301_1400.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0711__1301_1400.json"
+ },
+ {
+  "name": "0711",
+  "start_id": 1401,
+  "end_id": 1500,
+  "n": 100,
+  "jp_chars": 3589,
+  "in_path": "E:\\game\\_work\\chunks\\0711__1401_1500.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0711__1401_1500.json"
+ },
+ {
+  "name": "0711",
+  "start_id": 1501,
+  "end_id": 1600,
+  "n": 100,
+  "jp_chars": 3170,
+  "in_path": "E:\\game\\_work\\chunks\\0711__1501_1600.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0711__1501_1600.json"
+ },
+ {
+  "name": "0711",
+  "start_id": 1601,
+  "end_id": 1700,
+  "n": 100,
+  "jp_chars": 3320,
+  "in_path": "E:\\game\\_work\\chunks\\0711__1601_1700.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0711__1601_1700.json"
+ },
+ {
+  "name": "0711",
+  "start_id": 1701,
+  "end_id": 1800,
+  "n": 100,
+  "jp_chars": 3810,
+  "in_path": "E:\\game\\_work\\chunks\\0711__1701_1800.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0711__1701_1800.json"
+ },
+ {
+  "name": "0711",
+  "start_id": 1801,
+  "end_id": 1900,
+  "n": 100,
+  "jp_chars": 2679,
+  "in_path": "E:\\game\\_work\\chunks\\0711__1801_1900.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0711__1801_1900.json"
+ },
+ {
+  "name": "0711",
+  "start_id": 1901,
+  "end_id": 2000,
+  "n": 100,
+  "jp_chars": 2517,
+  "in_path": "E:\\game\\_work\\chunks\\0711__1901_2000.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0711__1901_2000.json"
+ },
+ {
+  "name": "0711",
+  "start_id": 2001,
+  "end_id": 2100,
+  "n": 100,
+  "jp_chars": 2996,
+  "in_path": "E:\\game\\_work\\chunks\\0711__2001_2100.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0711__2001_2100.json"
+ },
+ {
+  "name": "0711",
+  "start_id": 2101,
+  "end_id": 2200,
+  "n": 100,
+  "jp_chars": 3762,
+  "in_path": "E:\\game\\_work\\chunks\\0711__2101_2200.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0711__2101_2200.json"
+ },
+ {
+  "name": "0711",
+  "start_id": 2201,
+  "end_id": 2300,
+  "n": 100,
+  "jp_chars": 3347,
+  "in_path": "E:\\game\\_work\\chunks\\0711__2201_2300.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0711__2201_2300.json"
+ },
+ {
+  "name": "0711",
+  "start_id": 2301,
+  "end_id": 2400,
+  "n": 100,
+  "jp_chars": 3578,
+  "in_path": "E:\\game\\_work\\chunks\\0711__2301_2400.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0711__2301_2400.json"
+ },
+ {
+  "name": "0711",
+  "start_id": 2401,
+  "end_id": 2500,
+  "n": 100,
+  "jp_chars": 3756,
+  "in_path": "E:\\game\\_work\\chunks\\0711__2401_2500.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0711__2401_2500.json"
+ },
+ {
+  "name": "0711",
+  "start_id": 2501,
+  "end_id": 2600,
+  "n": 100,
+  "jp_chars": 3006,
+  "in_path": "E:\\game\\_work\\chunks\\0711__2501_2600.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0711__2501_2600.json"
+ },
+ {
+  "name": "0711",
+  "start_id": 2601,
+  "end_id": 2700,
+  "n": 100,
+  "jp_chars": 3410,
+  "in_path": "E:\\game\\_work\\chunks\\0711__2601_2700.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0711__2601_2700.json"
+ },
+ {
+  "name": "0711",
+  "start_id": 2701,
+  "end_id": 2800,
+  "n": 100,
+  "jp_chars": 3435,
+  "in_path": "E:\\game\\_work\\chunks\\0711__2701_2800.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0711__2701_2800.json"
+ },
+ {
+  "name": "0711",
+  "start_id": 2801,
+  "end_id": 2863,
+  "n": 63,
+  "jp_chars": 1953,
+  "in_path": "E:\\game\\_work\\chunks\\0711__2801_2863.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0711__2801_2863.json"
+ },
+ {
+  "name": "0712",
+  "start_id": 2,
+  "end_id": 101,
+  "n": 100,
+  "jp_chars": 2494,
+  "in_path": "E:\\game\\_work\\chunks\\0712__2_101.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0712__2_101.json"
+ },
+ {
+  "name": "0712",
+  "start_id": 102,
+  "end_id": 201,
+  "n": 100,
+  "jp_chars": 2600,
+  "in_path": "E:\\game\\_work\\chunks\\0712__102_201.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0712__102_201.json"
+ },
+ {
+  "name": "0712",
+  "start_id": 202,
+  "end_id": 301,
+  "n": 100,
+  "jp_chars": 2871,
+  "in_path": "E:\\game\\_work\\chunks\\0712__202_301.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0712__202_301.json"
+ },
+ {
+  "name": "0712",
+  "start_id": 302,
+  "end_id": 401,
+  "n": 100,
+  "jp_chars": 3625,
+  "in_path": "E:\\game\\_work\\chunks\\0712__302_401.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0712__302_401.json"
+ },
+ {
+  "name": "0712",
+  "start_id": 402,
+  "end_id": 501,
+  "n": 100,
+  "jp_chars": 3110,
+  "in_path": "E:\\game\\_work\\chunks\\0712__402_501.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0712__402_501.json"
+ },
+ {
+  "name": "0712",
+  "start_id": 502,
+  "end_id": 601,
+  "n": 100,
+  "jp_chars": 2829,
+  "in_path": "E:\\game\\_work\\chunks\\0712__502_601.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0712__502_601.json"
+ },
+ {
+  "name": "0712",
+  "start_id": 602,
+  "end_id": 701,
+  "n": 100,
+  "jp_chars": 3077,
+  "in_path": "E:\\game\\_work\\chunks\\0712__602_701.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0712__602_701.json"
+ },
+ {
+  "name": "0712",
+  "start_id": 702,
+  "end_id": 801,
+  "n": 100,
+  "jp_chars": 2639,
+  "in_path": "E:\\game\\_work\\chunks\\0712__702_801.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0712__702_801.json"
+ },
+ {
+  "name": "0712",
+  "start_id": 802,
+  "end_id": 901,
+  "n": 100,
+  "jp_chars": 3613,
+  "in_path": "E:\\game\\_work\\chunks\\0712__802_901.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0712__802_901.json"
+ },
+ {
+  "name": "0712",
+  "start_id": 902,
+  "end_id": 1001,
+  "n": 100,
+  "jp_chars": 3239,
+  "in_path": "E:\\game\\_work\\chunks\\0712__902_1001.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0712__902_1001.json"
+ },
+ {
+  "name": "0712",
+  "start_id": 1002,
+  "end_id": 1101,
+  "n": 100,
+  "jp_chars": 3322,
+  "in_path": "E:\\game\\_work\\chunks\\0712__1002_1101.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0712__1002_1101.json"
+ },
+ {
+  "name": "0712",
+  "start_id": 1102,
+  "end_id": 1201,
+  "n": 100,
+  "jp_chars": 3447,
+  "in_path": "E:\\game\\_work\\chunks\\0712__1102_1201.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0712__1102_1201.json"
+ },
+ {
+  "name": "0712",
+  "start_id": 1202,
+  "end_id": 1301,
+  "n": 100,
+  "jp_chars": 3554,
+  "in_path": "E:\\game\\_work\\chunks\\0712__1202_1301.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0712__1202_1301.json"
+ },
+ {
+  "name": "0712",
+  "start_id": 1302,
+  "end_id": 1401,
+  "n": 100,
+  "jp_chars": 3722,
+  "in_path": "E:\\game\\_work\\chunks\\0712__1302_1401.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0712__1302_1401.json"
+ },
+ {
+  "name": "0712",
+  "start_id": 1402,
+  "end_id": 1501,
+  "n": 100,
+  "jp_chars": 3625,
+  "in_path": "E:\\game\\_work\\chunks\\0712__1402_1501.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0712__1402_1501.json"
+ },
+ {
+  "name": "0712",
+  "start_id": 1502,
+  "end_id": 1601,
+  "n": 100,
+  "jp_chars": 3088,
+  "in_path": "E:\\game\\_work\\chunks\\0712__1502_1601.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0712__1502_1601.json"
+ },
+ {
+  "name": "0712",
+  "start_id": 1602,
+  "end_id": 1701,
+  "n": 100,
+  "jp_chars": 3397,
+  "in_path": "E:\\game\\_work\\chunks\\0712__1602_1701.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0712__1602_1701.json"
+ },
+ {
+  "name": "0712",
+  "start_id": 1702,
+  "end_id": 1801,
+  "n": 100,
+  "jp_chars": 2906,
+  "in_path": "E:\\game\\_work\\chunks\\0712__1702_1801.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0712__1702_1801.json"
+ },
+ {
+  "name": "0712",
+  "start_id": 1802,
+  "end_id": 1901,
+  "n": 100,
+  "jp_chars": 3144,
+  "in_path": "E:\\game\\_work\\chunks\\0712__1802_1901.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0712__1802_1901.json"
+ },
+ {
+  "name": "0712",
+  "start_id": 1902,
+  "end_id": 2001,
+  "n": 100,
+  "jp_chars": 2933,
+  "in_path": "E:\\game\\_work\\chunks\\0712__1902_2001.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0712__1902_2001.json"
+ },
+ {
+  "name": "0712",
+  "start_id": 2002,
+  "end_id": 2101,
+  "n": 100,
+  "jp_chars": 3384,
+  "in_path": "E:\\game\\_work\\chunks\\0712__2002_2101.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0712__2002_2101.json"
+ },
+ {
+  "name": "0712",
+  "start_id": 2102,
+  "end_id": 2201,
+  "n": 100,
+  "jp_chars": 3686,
+  "in_path": "E:\\game\\_work\\chunks\\0712__2102_2201.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0712__2102_2201.json"
+ },
+ {
+  "name": "0712",
+  "start_id": 2202,
+  "end_id": 2301,
+  "n": 100,
+  "jp_chars": 3771,
+  "in_path": "E:\\game\\_work\\chunks\\0712__2202_2301.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0712__2202_2301.json"
+ },
+ {
+  "name": "0712",
+  "start_id": 2302,
+  "end_id": 2401,
+  "n": 100,
+  "jp_chars": 2472,
+  "in_path": "E:\\game\\_work\\chunks\\0712__2302_2401.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0712__2302_2401.json"
+ },
+ {
+  "name": "0712",
+  "start_id": 2402,
+  "end_id": 2502,
+  "n": 100,
+  "jp_chars": 2449,
+  "in_path": "E:\\game\\_work\\chunks\\0712__2402_2502.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0712__2402_2502.json"
+ },
+ {
+  "name": "0712",
+  "start_id": 2503,
+  "end_id": 2602,
+  "n": 100,
+  "jp_chars": 2267,
+  "in_path": "E:\\game\\_work\\chunks\\0712__2503_2602.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0712__2503_2602.json"
+ },
+ {
+  "name": "0712",
+  "start_id": 2603,
+  "end_id": 2605,
+  "n": 3,
+  "jp_chars": 25,
+  "in_path": "E:\\game\\_work\\chunks\\0712__2603_2605.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0712__2603_2605.json"
+ },
+ {
+  "name": "0720",
+  "start_id": 0,
+  "end_id": 99,
+  "n": 100,
+  "jp_chars": 3407,
+  "in_path": "E:\\game\\_work\\chunks\\0720__0_99.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0720__0_99.json"
+ },
+ {
+  "name": "0720",
+  "start_id": 100,
+  "end_id": 199,
+  "n": 100,
+  "jp_chars": 4096,
+  "in_path": "E:\\game\\_work\\chunks\\0720__100_199.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0720__100_199.json"
+ },
+ {
+  "name": "0720",
+  "start_id": 200,
+  "end_id": 299,
+  "n": 100,
+  "jp_chars": 3517,
+  "in_path": "E:\\game\\_work\\chunks\\0720__200_299.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0720__200_299.json"
+ },
+ {
+  "name": "0720",
+  "start_id": 300,
+  "end_id": 399,
+  "n": 100,
+  "jp_chars": 3027,
+  "in_path": "E:\\game\\_work\\chunks\\0720__300_399.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0720__300_399.json"
+ },
+ {
+  "name": "0720",
+  "start_id": 400,
+  "end_id": 499,
+  "n": 100,
+  "jp_chars": 4128,
+  "in_path": "E:\\game\\_work\\chunks\\0720__400_499.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0720__400_499.json"
+ },
+ {
+  "name": "0720",
+  "start_id": 500,
+  "end_id": 599,
+  "n": 100,
+  "jp_chars": 3600,
+  "in_path": "E:\\game\\_work\\chunks\\0720__500_599.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0720__500_599.json"
+ },
+ {
+  "name": "0720",
+  "start_id": 600,
+  "end_id": 699,
+  "n": 100,
+  "jp_chars": 3227,
+  "in_path": "E:\\game\\_work\\chunks\\0720__600_699.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0720__600_699.json"
+ },
+ {
+  "name": "0720",
+  "start_id": 700,
+  "end_id": 799,
+  "n": 100,
+  "jp_chars": 3666,
+  "in_path": "E:\\game\\_work\\chunks\\0720__700_799.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0720__700_799.json"
+ },
+ {
+  "name": "0720",
+  "start_id": 800,
+  "end_id": 899,
+  "n": 100,
+  "jp_chars": 3644,
+  "in_path": "E:\\game\\_work\\chunks\\0720__800_899.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0720__800_899.json"
+ },
+ {
+  "name": "0720",
+  "start_id": 900,
+  "end_id": 999,
+  "n": 100,
+  "jp_chars": 2789,
+  "in_path": "E:\\game\\_work\\chunks\\0720__900_999.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0720__900_999.json"
+ },
+ {
+  "name": "0720",
+  "start_id": 1000,
+  "end_id": 1099,
+  "n": 100,
+  "jp_chars": 3405,
+  "in_path": "E:\\game\\_work\\chunks\\0720__1000_1099.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0720__1000_1099.json"
+ },
+ {
+  "name": "0720",
+  "start_id": 1100,
+  "end_id": 1199,
+  "n": 100,
+  "jp_chars": 3433,
+  "in_path": "E:\\game\\_work\\chunks\\0720__1100_1199.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0720__1100_1199.json"
+ },
+ {
+  "name": "0720",
+  "start_id": 1200,
+  "end_id": 1299,
+  "n": 100,
+  "jp_chars": 3262,
+  "in_path": "E:\\game\\_work\\chunks\\0720__1200_1299.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0720__1200_1299.json"
+ },
+ {
+  "name": "0720",
+  "start_id": 1300,
+  "end_id": 1399,
+  "n": 100,
+  "jp_chars": 3666,
+  "in_path": "E:\\game\\_work\\chunks\\0720__1300_1399.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0720__1300_1399.json"
+ },
+ {
+  "name": "0720",
+  "start_id": 1400,
+  "end_id": 1499,
+  "n": 100,
+  "jp_chars": 3606,
+  "in_path": "E:\\game\\_work\\chunks\\0720__1400_1499.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0720__1400_1499.json"
+ },
+ {
+  "name": "0720",
+  "start_id": 1500,
+  "end_id": 1599,
+  "n": 100,
+  "jp_chars": 4000,
+  "in_path": "E:\\game\\_work\\chunks\\0720__1500_1599.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0720__1500_1599.json"
+ },
+ {
+  "name": "0720",
+  "start_id": 1600,
+  "end_id": 1699,
+  "n": 100,
+  "jp_chars": 3668,
+  "in_path": "E:\\game\\_work\\chunks\\0720__1600_1699.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0720__1600_1699.json"
+ },
+ {
+  "name": "0720",
+  "start_id": 1700,
+  "end_id": 1799,
+  "n": 100,
+  "jp_chars": 3370,
+  "in_path": "E:\\game\\_work\\chunks\\0720__1700_1799.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0720__1700_1799.json"
+ },
+ {
+  "name": "0720",
+  "start_id": 1800,
+  "end_id": 1899,
+  "n": 100,
+  "jp_chars": 3749,
+  "in_path": "E:\\game\\_work\\chunks\\0720__1800_1899.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0720__1800_1899.json"
+ },
+ {
+  "name": "0720",
+  "start_id": 1900,
+  "end_id": 1999,
+  "n": 100,
+  "jp_chars": 3508,
+  "in_path": "E:\\game\\_work\\chunks\\0720__1900_1999.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0720__1900_1999.json"
+ },
+ {
+  "name": "0720",
+  "start_id": 2000,
+  "end_id": 2099,
+  "n": 100,
+  "jp_chars": 2764,
+  "in_path": "E:\\game\\_work\\chunks\\0720__2000_2099.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0720__2000_2099.json"
+ },
+ {
+  "name": "0720",
+  "start_id": 2100,
+  "end_id": 2199,
+  "n": 100,
+  "jp_chars": 3221,
+  "in_path": "E:\\game\\_work\\chunks\\0720__2100_2199.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0720__2100_2199.json"
+ },
+ {
+  "name": "0720",
+  "start_id": 2200,
+  "end_id": 2246,
+  "n": 47,
+  "jp_chars": 1274,
+  "in_path": "E:\\game\\_work\\chunks\\0720__2200_2246.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0720__2200_2246.json"
+ },
+ {
+  "name": "special2",
+  "start_id": 2,
+  "end_id": 101,
+  "n": 100,
+  "jp_chars": 3000,
+  "in_path": "E:\\game\\_work\\chunks\\special2__2_101.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\special2__2_101.json"
+ },
+ {
+  "name": "special2",
+  "start_id": 102,
+  "end_id": 201,
+  "n": 100,
+  "jp_chars": 3911,
+  "in_path": "E:\\game\\_work\\chunks\\special2__102_201.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\special2__102_201.json"
+ },
+ {
+  "name": "special2",
+  "start_id": 202,
+  "end_id": 301,
+  "n": 100,
+  "jp_chars": 3149,
+  "in_path": "E:\\game\\_work\\chunks\\special2__202_301.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\special2__202_301.json"
+ },
+ {
+  "name": "special2",
+  "start_id": 302,
+  "end_id": 401,
+  "n": 100,
+  "jp_chars": 3617,
+  "in_path": "E:\\game\\_work\\chunks\\special2__302_401.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\special2__302_401.json"
+ },
+ {
+  "name": "special2",
+  "start_id": 402,
+  "end_id": 501,
+  "n": 100,
+  "jp_chars": 3541,
+  "in_path": "E:\\game\\_work\\chunks\\special2__402_501.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\special2__402_501.json"
+ },
+ {
+  "name": "special2",
+  "start_id": 502,
+  "end_id": 601,
+  "n": 100,
+  "jp_chars": 2923,
+  "in_path": "E:\\game\\_work\\chunks\\special2__502_601.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\special2__502_601.json"
+ },
+ {
+  "name": "special2",
+  "start_id": 602,
+  "end_id": 701,
+  "n": 100,
+  "jp_chars": 3852,
+  "in_path": "E:\\game\\_work\\chunks\\special2__602_701.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\special2__602_701.json"
+ },
+ {
+  "name": "special2",
+  "start_id": 702,
+  "end_id": 801,
+  "n": 100,
+  "jp_chars": 3402,
+  "in_path": "E:\\game\\_work\\chunks\\special2__702_801.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\special2__702_801.json"
+ },
+ {
+  "name": "special2",
+  "start_id": 802,
+  "end_id": 901,
+  "n": 100,
+  "jp_chars": 3685,
+  "in_path": "E:\\game\\_work\\chunks\\special2__802_901.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\special2__802_901.json"
+ },
+ {
+  "name": "special2",
+  "start_id": 902,
+  "end_id": 1001,
+  "n": 100,
+  "jp_chars": 3165,
+  "in_path": "E:\\game\\_work\\chunks\\special2__902_1001.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\special2__902_1001.json"
+ },
+ {
+  "name": "special2",
+  "start_id": 1002,
+  "end_id": 1101,
+  "n": 100,
+  "jp_chars": 3013,
+  "in_path": "E:\\game\\_work\\chunks\\special2__1002_1101.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\special2__1002_1101.json"
+ },
+ {
+  "name": "special2",
+  "start_id": 1102,
+  "end_id": 1201,
+  "n": 100,
+  "jp_chars": 3245,
+  "in_path": "E:\\game\\_work\\chunks\\special2__1102_1201.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\special2__1102_1201.json"
+ },
+ {
+  "name": "special2",
+  "start_id": 1202,
+  "end_id": 1301,
+  "n": 100,
+  "jp_chars": 3779,
+  "in_path": "E:\\game\\_work\\chunks\\special2__1202_1301.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\special2__1202_1301.json"
+ },
+ {
+  "name": "special2",
+  "start_id": 1302,
+  "end_id": 1373,
+  "n": 72,
+  "jp_chars": 2470,
+  "in_path": "E:\\game\\_work\\chunks\\special2__1302_1373.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\special2__1302_1373.json"
+ },
+ {
+  "name": "0721",
+  "start_id": 1,
+  "end_id": 100,
+  "n": 100,
+  "jp_chars": 2473,
+  "in_path": "E:\\game\\_work\\chunks\\0721__1_100.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0721__1_100.json"
+ },
+ {
+  "name": "0721",
+  "start_id": 101,
+  "end_id": 166,
+  "n": 66,
+  "jp_chars": 1508,
+  "in_path": "E:\\game\\_work\\chunks\\0721__101_166.in.json",
+  "out_path": "E:\\game\\_work\\translated_parts\\0721__101_166.json"
+ }
+]

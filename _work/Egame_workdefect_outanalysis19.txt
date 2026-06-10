@@ -1,0 +1,57 @@
+id=3626 te=0709 issues=['non-gbk-char']
+  budgets=[16, 40], total=56
+    jp[0]: '「それもそっか。' (16b)
+    jp[1]: '\u3000ヒロのチンコも十分、暴走族だもんね♪」' (40b)
+    zh[0]: '「也是啦。' (10b, gbk=True)
+    zh[1]: '广那里也够暴走族的♪」' (22b, gbk=False)
+
+id=3628 te=0709 issues=['non-gbk-char']
+  budgets=[32], total=32
+    jp[0]: '「うふふっ♪\u3000らぶりーチンコ♪」' (32b)
+    zh[0]: '「呵呵♪\u3000可爱的那个♪」' (24b, gbk=False)
+
+id=3631 te=0709 issues=['non-gbk-char']
+  budgets=[46, 12], total=58
+    jp[0]: '「俺は『らぶりーチンコ♪』とか笑顔で言うお前の' (46b)
+    jp[1]: '\u3000方が怖い」' (12b)
+    zh[0]: '「我觉得你笑着说『可爱的那个♪』' (32b, gbk=False)
+    zh[1]: '才恐怖」' (8b, gbk=True)
+
+id=3641 te=0709 issues=['non-gbk-char']
+  budgets=[44], total=44
+    jp[0]: '「きゃっ！？\u3000やっ、ダメぇっ。やああ～ん♪」' (44b)
+    zh[0]: '「哎呀！？不、不行啦。不要～♪」' (32b, gbk=False)
+
+id=0 te=0710 issues=['kana-remains']
+  budgets=[46], total=46
+    jp[0]: '■■■■\u3000幼なじみな彼女\u3000７月１０日\u3000■■■■' (46b)
+    zh[0]: '■■■■\u3000幼なじみな彼女\u3000７月１０日\u3000■■■■' (46b, gbk=True)
+
+id=3 te=0710 issues=['non-gbk-char']
+  budgets=[14], total=14
+    jp[0]: '「…おはよ♪」' (14b)
+    zh[0]: '「…早安♪」' (12b, gbk=False)
+
+id=14 te=0710 issues=['non-gbk-char']
+  budgets=[10, 48], total=58
+    jp[0]: '「大丈夫♪' (10b)
+    jp[1]: '\u3000ヒロが寝てる間に、いっぱい甘えておいたから…」' (48b)
+    zh[0]: '「没事♪' (8b, gbk=False)
+    zh[1]: '\u3000广睡着时，我撒了好多娇…」' (28b, gbk=True)
+
+id=29 te=0710 issues=['span-count 1vs2']
+  budgets=[44, 12], total=56
+    jp[0]: 'そう言って腰をへこへこ動かし、頻りにベッドを' (44b)
+    jp[1]: '軋ませる舞。' (12b)
+    zh[0]: '说着她扭动腰肢，不停地让床架嘎吱作响。' (38b, gbk=True)
+
+id=54 te=0710 issues=['kana-remains']
+  budgets=[24], total=24
+    jp[0]: '幼なじみな彼女\u3000回想２２' (24b)
+    zh[0]: '幼なじみな彼女\u3000回想２２' (24b, gbk=True)
+
+id=56 te=0710 issues=['kana-remains']
+  budgets=[44], total=44
+    jp[0]: '■■■■\u3000幼なじみな彼女\u3000回想２２\u3000■■■■' (44b)
+    zh[0]: '■■■■\u3000幼なじみな彼女\u3000回想２２\u3000■■■■' (44b, gbk=True)
+

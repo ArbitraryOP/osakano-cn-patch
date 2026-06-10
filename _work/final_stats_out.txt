@@ -1,0 +1,32 @@
+Translatable records (excl. font/UNSURE): 21970
+Translated to Chinese: 21728  (98.90%)
+Residual Japanese (un-fittable): 242  (1.10%)
+
+file           translatable      zh  jp_left
+0708                   2424    2395       29
+0709                   3642    3597       45
+0710                   3328    3273       55
+0711                   2863    2842       21
+0712                   2603    2588       15
+0720                   2247    2229       18
+0721                    166     164        2
+cgmode                    6       6        0
+config                   61      60        1
+edmode                   13      13        0
+ending                   63      61        2
+ending_rec               66      64        2
+etc                      11      10        1
+mem                     311     301       10
+musmode                   3       3        0
+op                     2166    2144       22
+prof                     30      30        0
+sp                        6       6        0
+special1                347     345        2
+special2               1372    1361       11
+special3                 61      61        0
+staff                     4       4        0
+svld                     12      12        0
+system                   44      44        0
+title                    10      10        0
+zakki                   111     105        6
+done
