@@ -1,0 +1,3 @@
+# osakano-cn-patch
+
+code for verifying：RD9pHtUX1jExpv5KQImPBYGzaZ6Q9TlKJTAdKhGbiqnPuAqeXcJDeRtcNz6l9mLG
